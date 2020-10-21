@@ -12,10 +12,11 @@ Metadata represents data that describes a media content. The metadata varies in 
 
 | Amagi Service | Service Description | Metadata | Remarks |
 |----------------|----------------|----------------|----------------|
-| CLOUDPORT | Linear Channel Playout | Title, Segments |  |
-|  |  | Segments |  |
-| CLOUDPORT Live | Linear Channel Playout | Title, Segments |  |
-| EPG | Electronic Programming Guide | Depending on MVPD platform where EPG is delivered |  |
-| VoD | Video on Demand Delivery | Depending on MVPD platform where VoD is delivered |  |
-| Analytics | Analytics | Analytics data - Title, Content Id |  |
-
+| CLOUDPORT | Linear Channel Playout | Title |  |
+|   |   | Segments | Segements |
+|   |   | V-Chip |  |
+|   |   | AFD | Active Field Descriptor |
+| EPG | Electronic Programming Guide | Depending on MVPD platform | As per EPG specification from MVPD  |
+| VoD | Video on Demand Delivery | Depending on MVPD platform | As per requirements for VoD Delivery  |
+| Analytics | Analytics | Title |  |
+|   |   | Content Id | External Content Id |
