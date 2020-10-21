@@ -1,3 +1,7 @@
-## Welcome to GitHub Pages
+## Welcome to Amagi Documentation Pages
 
-You can use the [editor on GitHub](https://vinod-amagi.github.io/amgdoc/metadata) to maintain and preview the content for your website in Markdown files.
+These pages provide information to help channels and content providers to leverage Amagi platforms and services.
+
+### Metadata ingest service
+
+[Metadata Ingest Services](https://vinod-amagi.github.io/amgdoc/metadata) helps to ingest content metadata to Amagi systems.
