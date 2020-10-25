@@ -2,7 +2,7 @@
 
 The section describes the different methods for ingesting metadata to Amagi Services. The method is largely classified as Push and Pull methods.
 
-![Amagi Metadata Services](https://vinod-amagi.github.io/amgdoc/metadata_ingest_svc.png)
+![Amagi Metadata Services](https://vinod-amagi.github.io/amgdoc/metadata/metadata_ingest_svc.png)
 
 
 ### Push
@@ -11,11 +11,11 @@ In this method, customers are provided all four methods for ingesting metadata t
 
 These methods are:
 
-**S3 Upload**
+> **S3 Upload**
 
-**SFTP Upload**
+> **SFTP Upload**
 
-**HTTP Post Endpoint**
+> **HTTP Post Endpoint**
 
-**Simple Web page supporting multiple metadata**
+> **Simple Web page supporting multiple metadata**
 
