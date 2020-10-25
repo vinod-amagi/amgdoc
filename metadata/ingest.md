@@ -23,23 +23,11 @@ These methods are:
 
 All metadata upload for all customers are processed through a common AWS S3 Bucket.
 
-Directories
-* Customer
-
-  A directory is created for each customer
-
-* Account
-
-  A directory is created under “Customer” directory for each account for a customer
-
-* ToProcess
-  
-  Customer ingests metadata input files to “ToProcess” directory
-
-* Processed
-
-  Processed metadata is moved to “Processed” directory
-  
-* Errors
-  
-  Metadata with error is moved to “Errors” directory
+ | Directories | Description |
+ |-------------|-------------|
+ |Customer | A directory is created for each customer|
+ |Account| A directory is created under “Customer” directory for each account for a customer|
+ |ToProcess|Customer ingests metadata input files to “ToProcess” directory|
+ |Processed|Processed metadata is moved to “Processed” directory|
+ |Errors|Metadata with error is moved to “Errors” directory|
+ 
