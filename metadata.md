@@ -24,4 +24,4 @@ Metadata represents data that describes a media content, specifically video cont
 
 ## How is metadata ingested to Amagi services?
 
-
+There are different methods to ingest metadata to Amagi Services. These are broadly classified into **Push** and **Pull** methods. The different ways to ingest metadata using these methods are described in [Metadata Ingest Methods](https://vinod-amagi.github.io/amgdoc/metadata/ingest).
