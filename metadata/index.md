@@ -26,7 +26,7 @@ Metadata represents data that describes a media content, specifically video cont
 
 Content provider ingest metadata to Amagi metadata store using [Metadata Ingest Service](https://vinod-amagi.github.io/amgdoc/metadata/ingest). The metadata is stored and maintained in a common metastore, and various Amagi sevices use metadata from the common store.
 
-![Amagi Metadata Services](https://github.com/vinod-amagi/amgdoc/blob/gh-pages/metadata/metadata_svc.png)
+![Amagi Metadata Services](https://vinod-amagi.github.io/amgdoc/metadata/metadata_svc.png)
 
 ## How is metadata ingested to Amagi services?
 
