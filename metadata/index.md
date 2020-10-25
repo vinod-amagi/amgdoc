@@ -22,6 +22,12 @@ Metadata represents data that describes a media content, specifically video cont
 | Analytics | Analytics | Title |  |
 |   |   | Content Id | External Content Id |
 
+## Metadata and Amagi Services
+
+Content provider ingest metadata to Amagi metadata store using [Metadata Ingest Service](https://vinod-amagi.github.io/amgdoc/metadata/ingest). The metadata is stored and maintained in a common metastore, and various Amagi sevices use metadata from the common store.
+
+![Amagi Metadata Services](https://github.com/vinod-amagi/amgdoc/blob/gh-pages/metadata/metadata_svc.png)
+
 ## How is metadata ingested to Amagi services?
 
 There are different methods to ingest metadata to Amagi Services. These are broadly classified into **Push** and **Pull** methods. The different ways to ingest metadata using these methods are described in [Metadata Ingest Methods](https://vinod-amagi.github.io/amgdoc/metadata/ingest).
