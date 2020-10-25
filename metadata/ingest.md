@@ -7,7 +7,7 @@ The section describes the different methods for ingesting metadata to Amagi Serv
 
 ### Push
 
-In this method, customers are provided all four methods for ingesting metadata to Amagi Metadata Service. The input metadata formats are published and maintained by Amagi Metadata service. These formats are available here (TBD).
+In this method, content providers are provided all four methods for ingesting metadata to Amagi Metadata Service. The input metadata formats are published and maintained by Amagi Metadata service. These formats are available here (TBD).
 
 These methods are:
 
@@ -19,3 +19,27 @@ These methods are:
 
 4. **Simple Web page supporting multiple metadata**
 
+### S3 Upload
+
+All metadata upload for all customers are processed through a common AWS S3 Bucket.
+
+Directories
+* Customer
+
+  A directory is created for each customer
+
+* Account
+
+  A directory is created under “Customer” directory for each account for a customer
+
+* ToProcess
+  
+  Customer ingests metadata input files to “ToProcess” directory
+
+* Processed
+
+  Processed metadata is moved to “Processed” directory
+  
+* Errors
+  
+  Metadata with error is moved to “Errors” directory
