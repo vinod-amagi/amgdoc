@@ -11,8 +11,11 @@ In this method, customers are provided all four methods for ingesting metadata t
 
 These methods are:
 
-> **S3 Upload**
-> **SFTP Upload**
-> **HTTP Post Endpoint**
-> **Simple Web page supporting multiple metadata**
+1. **S3 Upload**
+
+2. **SFTP Upload**
+
+3. **HTTP Post Endpoint**
+
+4. **Simple Web page supporting multiple metadata**
 
