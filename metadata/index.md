@@ -34,4 +34,4 @@ There are different methods to ingest metadata to Amagi Services. These are broa
 
 ## What are the supported formats for ingesting to Amagi services?
 
-The metadata service supports different formats for ingesting to Amagi services. These formats are described in this [link](https://vinod-amagi.github.io/amgdoc/metadata/formats).
+The metadata service supports different formats for ingesting to Amagi services. The various formats supported are described in this [link](https://vinod-amagi.github.io/amgdoc/metadata/formats). The links to sample formats are provided in this [link](https://vinod-amagi.github.io/amgdoc/metadata/sample_formats).
