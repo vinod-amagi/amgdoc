@@ -27,8 +27,7 @@ The following table describes the metadata details required for ingesting conten
 |File Path|File path or location of video file|Complete path with filename (URL or S3 Path#)|http://localhost/movie/harry_potter.mp4|
 |Closed Captions Path|File path or location of closed caption file|Complete Path with filename (URL or S3 Path#)|s3://bucket/movie/haary_potter.scc|
 |Image Landscape Path|File path or location of landscape image file|Complete Path with filename (URL or S3 Path#) Format: JPG, PNG etc Aspect Ratio: 16:9|s3://bucket/movie/haary_potter_L.jpg|
-|Image Portrait Path|File path or location of portrait image file|Complete Path with filename (URL or S3 Path#)
-Format: JPG, PNG etc Aspect Ratio: 3:4|s3://bucket/movie/haary_potter_P.jpg|
+|Image Portrait Path|File path or location of portrait image file|Complete Path with filename (URL or S3 Path#) Format: JPG, PNG etc Aspect Ratio: 3:4|s3://bucket/movie/haary_potter_P.jpg|
 |Series Image Landscape Path|File path or location of landscape image file for the series|Complete Path with filename (URL or S3 Path#) Format: JPG, PNG etc Aspect Ratio: 16:9|s3://bucket/movie/haary_potter_L.jpg|"
 |Series Image Portrait Path|File path or location of portrait image file for the series|Complete Path with filename (URL or S3 Path#) Format: JPG, PNG etc Aspect Ratio: 3:4|s3://bucket/movie/haary_potter_P.jpg|
 |Release Date|Original air date of the episode or movie.|Format: YYYY-MM-DD|39114|
