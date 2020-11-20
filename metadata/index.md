@@ -31,3 +31,7 @@ Content provider ingest metadata to Amagi metadata store using [Metadata Ingest 
 ## How is metadata ingested to Amagi services?
 
 There are different methods to ingest metadata to Amagi Services. These are broadly classified into **Push** and **Pull** methods. The different ways to ingest metadata using these methods are described in [Metadata Ingest Methods](https://vinod-amagi.github.io/amgdoc/metadata/ingest).
+
+## What are the supported formats for ingesting to Amagi services?
+
+The metadata service supports different formats for ingesting to Amagi services. These formats are described in this [link](https://vinod-amagi.github.io/amgdoc/metadata/formats).
