@@ -31,3 +31,16 @@ All metadata upload for all customers are processed through a common AWS S3 Buck
  |Processed|Processed metadata is moved to “Processed” directory|
  |Errors|Metadata with error is moved to “Errors” directory|
  
+
+### Pull
+
+Amagi metadata service can be configured to periodically pull new and updated metadata from mRSS and API Endpoints. As these methods involve development of custom endpoints, provisioning a new account will be specific to the request.
+
+1. **mRSS**
+
+The mRSS format is usually customer specific and hence involves additional development time to create a custom endpoint to parse mRSS feed. If the mRSS format follows closely with Amagi format, the development time for ingesting a new type of mRSS feed can be reduced.
+
+2. **API**
+
+Third party API involves additional development effort to create custom workflow to scan API periodically and ingest metadata.
+
