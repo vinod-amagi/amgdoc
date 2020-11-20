@@ -7,7 +7,7 @@ The section describes the different methods for ingesting metadata to Amagi Serv
 
 ### Push
 
-In this method, content providers are provided all four methods for ingesting metadata to Amagi Metadata Service. The input metadata formats are published and maintained by Amagi Metadata service. These formats are available here (TBD).
+In this method, content providers are provided all four methods for ingesting metadata to Amagi Metadata Service. The input metadata formats are published and maintained by Amagi Metadata service. These formats are available [here](https://vinod-amagi.github.io/amgdoc/metadata/ingest).
 
 These methods are:
 
