@@ -38,4 +38,4 @@ The metadata service supports different formats for ingesting to Amagi services.
   
   * [**Supported Formats**](https://vinod-amagi.github.io/amgdoc/metadata/formats)
   
-  * [**Sample Formats](https://vinod-amagi.github.io/amgdoc/metadata/sample_formats)
+  * [**Sample Formats**](https://vinod-amagi.github.io/amgdoc/metadata/sample_formats)
