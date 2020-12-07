@@ -28,7 +28,7 @@ twitter_username: AmagiCorp
 github_username:  amagimedia
 
 # Build settings
-theme: just-the-docs
+remote-theme: just-the-docs
 plugins:
   - jekyll-feed
 
