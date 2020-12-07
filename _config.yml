@@ -28,7 +28,8 @@ twitter_username: AmagiCorp
 github_username:  amagimedia
 
 # Build settings
-remote_theme: pmarsceill/just-the-docs
+#remote_theme: pmarsceill/just-the-docs
+theme: jekyll-theme-leap-day
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
