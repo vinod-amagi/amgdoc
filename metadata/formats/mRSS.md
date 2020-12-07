@@ -4,7 +4,7 @@ title: mRSS
 parent: Formats
 permalink: /metadata/formats/mrss/
 grand_parent: Metadata
-nav_order: 3
+nav_order: 4
 ---
 ## Amagi mRSS Format
 

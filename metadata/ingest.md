@@ -3,7 +3,7 @@ layout: page
 title: Ingest
 parent: Metadata
 permalink: /metadata/ingest/
-nav_order: 1
+nav_order: 2
 ---
 ## Ingest Methods
 
