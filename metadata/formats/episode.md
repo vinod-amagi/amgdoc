@@ -3,7 +3,7 @@ layout: default
 title: Episode
 parent: Formats
 grand_parent: Metadata
-nav_order: 2
+nav_order: 1
 permalink: /metadata/formats/episode/
 ---
 ## Episode

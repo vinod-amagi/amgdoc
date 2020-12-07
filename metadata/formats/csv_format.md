@@ -4,7 +4,7 @@ title: CSV Format
 parent: Formats
 grand_parent: Metadata
 permalink: /metadata/formats/csv_format/
-nav_order: 5
+nav_order: 4
 ---
 ## Metadata Ingest Formats
 
