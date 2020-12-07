@@ -4,7 +4,7 @@ title: Movies
 parent: Formats
 grand_parent: Metadata
 permalink: /metadata/formats/movies/
-nav_order: 3
+nav_order: 2
 ---
 ## Movie
 
