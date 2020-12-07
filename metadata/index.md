@@ -1,3 +1,10 @@
+---
+layout: page
+title: Metadata
+permalink: /metadata/
+has_children: true
+nav_order: 2
+---
 ## What is metadata?
 
 Metadata represents data that describes a media content, specifically video content in Amagi services. The metadata varies in depth, and it could be one of the following as provided below, but not necessarily confining to these details:-
@@ -24,18 +31,18 @@ Metadata represents data that describes a media content, specifically video cont
 
 ## Metadata and Amagi Services
 
-Content provider ingest metadata to Amagi metadata store using [Metadata Ingest Service](https://vinod-amagi.github.io/amgdoc/metadata/ingest). The metadata is stored and maintained in a common metastore, and various Amagi sevices use metadata from the common store.
+Content provider ingest metadata to Amagi metadata store using [Metadata Ingest Service](ingest). The metadata is stored and maintained in a common metastore, and various Amagi sevices use metadata from the common store.
 
-![Amagi Metadata Services](https://vinod-amagi.github.io/amgdoc/metadata/metadata_svc.png)
+![Amagi Metadata Services](metadata_svc.png)
 
 ## How is metadata ingested to Amagi services?
 
-There are different methods to ingest metadata to Amagi Services. These are broadly classified into **Push** and **Pull** methods. The different ways to ingest metadata using these methods are described in [**Metadata Ingest Methods**](https://vinod-amagi.github.io/amgdoc/metadata/ingest).
+There are different methods to ingest metadata to Amagi Services. These are broadly classified into **Push** and **Pull** methods. The different ways to ingest metadata using these methods are described in [**Metadata Ingest Methods**](ingest).
 
 ## What are the supported formats for ingesting to Amagi services?
 
 The metadata service supports different formats for ingesting to Amagi services. The following links provides a brief description about the formats and links to the sample formats.
   
-  * [**Supported Formats**](https://vinod-amagi.github.io/amgdoc/metadata/formats)
+  * [**Supported Formats**](formats)
   
-  * [**Sample Formats**](https://vinod-amagi.github.io/amgdoc/metadata/sample_formats)
+  * [**Sample Formats**](sampleformats)
