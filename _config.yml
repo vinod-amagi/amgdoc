@@ -22,7 +22,7 @@ title: Amagi Media Labs Pvt Ltd
 email: supportworkflows@amagi.com
 description: >- # this means to ignore newlines until "baseurl:"
   Amagi is a next-generation media technology company that provides cloud broadcast and targeted advertising platforms to TV networks and OTT providers, globally.
-baseurl: "/01-intro/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: AmagiCorp
 github_username:  amagimedia
