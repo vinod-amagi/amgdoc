@@ -1,26 +1,49 @@
 ---
 layout: page
-title: Asset Ingest Service
-permalink: /02-asset-ingest/
+title: Media Ingest Service
+permalink: /02-media-ingest/
 nav_order: 2
 ---
 
-# Asset Ingest Service
+# Media Ingest Service
 
 ## Getting Started
 
-This section introduces the process guidelines for Asset Ingest Service, the services provided and platforms supported. The following diagram represents a process for enabling customers to ingest assets and metadata to Amagi platforms.
+This article describes an overview of Media Ingest Service and how to get started with the service for ingesting contents. The access to Media Ingest Service is invite-only. For access, please contact your onboarding contact at Amagi.
 
-## Process
+Media Ingest Service enables content partners to self-service their content ingest (e.g., CLOUDPORT, EPG, VoD) with Amagi. 
 
-### Create a new customer
+| In this article|
+|-----|
+| Overview |
+| Create an account |
+| Create a channel |
+| Deliveries |
 
-* If you are a new customer, you will be added to the Asset Ingest Service by Onboarding. 
-* Currently, there is no Amagi-wide customer portal service, so a new account will be created by Onboarding.
-* Jira will be used for maintaining customer accounts.
-* New customer account details will be sent to you upon account creation.
+## Overview
+
+Media Ingest Service accepts requests to setup media ingest workflow and manage change request to the workflow through an account created for the partner. The account provides access:-
+
+* Methods of content ingest to Amagi platform
+
+* Information about requirements - content, metadata, artwork - for various platforms for different services
+
+* How-to and best practices for ingesting contents based on the target MVPDs
+
+* Frequently asked questions and troubleshooting guides to help partners
 
 ### Create an account
+
+* If you are new to Media Ingest Service, you will be added to the Media Ingest Service by Amagi Onboarding. 
+
+* Currently, there is no Amagi-wide customer portal service, so a new account will be created by Onboarding.
+
+* [Jira](https://www.atlassian.com/software/jira) is used for managing accounts.
+
+* When a new account is created, additional information will be sent as an email.
+
+### Create a channel
+
 * You can create a request in Jira to add a new account to Asset Ingest Service.
 * After creation, you will have to select an ingest method from the list of methods provided as part of the guide.
 * Based on the selected ingest method, the timeline for provisioning will be provided by the Service team.
