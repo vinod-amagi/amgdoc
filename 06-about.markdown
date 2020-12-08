@@ -13,5 +13,3 @@ Amagi is a next-generation media technology company that provides cloud broadcas
 
 
 [amagi-organization]: https://www.amagi.com/
-
-kjdnskjn
