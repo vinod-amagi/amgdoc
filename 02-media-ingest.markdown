@@ -15,10 +15,9 @@ Media Ingest Service enables content partners to self-service their content inge
 
 | In this article|
 |-----|
-| Overview |
-| Create an account |
-| Create and setup *Ingest Flow* |
-| Deliveries |
+| [Overview](https://vinod-amagi.github.io/amgdoc/02-media-ingest/#overview) |
+| [Create an account](https://vinod-amagi.github.io/amgdoc/02-media-ingest/#create-an-account) |
+| [Create and setup *Ingest Flow*](https://vinod-amagi.github.io/amgdoc/02-media-ingest/#create-and-setup-ingest-flow) |
 
 ## Overview
 
