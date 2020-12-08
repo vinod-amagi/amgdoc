@@ -2,7 +2,7 @@
 layout: page
 title: Media Ingest Service
 permalink: /02-media-ingest/
-nav_order: 2
+nav_order: 1
 ---
 
 # Media Ingest Service
