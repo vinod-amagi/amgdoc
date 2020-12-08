@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Introduction
-permalink: /01-intro/
+permalink: /
 nav_order: 1
 ---
 
