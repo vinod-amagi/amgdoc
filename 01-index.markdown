@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Introduction
+title: Media Ingest Service
 permalink: /
 nav_order: 1
 ---
