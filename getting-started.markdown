@@ -6,9 +6,7 @@ permalink: /getting-started
 nav_order: 1
 ---
 
-# Media Ingest Service
-
-## Getting Started
+# Getting Started
 
 This article describes an overview of Media Ingest Service and how to get started with the service for ingesting contents. The access to Media Ingest Service is invite-only. For access, please contact your onboarding contact at Amagi.
 
