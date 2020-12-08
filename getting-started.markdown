@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Media Ingest Service
-permalink: /02-media-ingest/
+title: Getting Started
+parent: Media Ingest Service
+permalink: /getting-started/
 nav_order: 1
 ---
 
