@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Media Ingest Service
+has_children: true
 permalink: /
 nav_order: 1
 ---
