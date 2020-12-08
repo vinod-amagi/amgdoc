@@ -17,7 +17,7 @@ Media Ingest Service enables content partners to self-service their content inge
 |-----|
 | Overview |
 | Create an account |
-| Create a channel |
+| Create and setup *Ingest Flow* |
 | Deliveries |
 
 ## Overview
@@ -38,20 +38,26 @@ Media Ingest Service accepts requests to setup media ingest workflow and manage 
 
 * Currently, there is no Amagi-wide customer portal service, so a new account will be created by Onboarding.
 
-* [Jira](https://www.atlassian.com/software/jira) is used for managing accounts.
+* [Atlassian Jira](https://www.atlassian.com/software/jira) is used for managing accounts.
 
 * When a new account is created, additional information will be sent as an email.
 
-### Create a channel
+### Create and setup *Ingest Flow*
 
-* You can create a request in Jira to add a new account to Asset Ingest Service.
-* After creation, you will have to select an ingest method from the list of methods provided as part of the guide.
-* Based on the selected ingest method, the timeline for provisioning will be provided by the Service team.
-* Communication of the request will be facilitated through Jira. There should be a conscious effort to minimize or avoid entirely the meetings 
-  to discuss requirements and workflow.
-* Jira requests can be received over email also. Jira email handler will be added to create and update Jira tickets from emails.
+* A new *Ingest Flow* is required to setup workflow for ingesting content using Media Ingest Service
+
+* Partner can raise a ticket to add a new "*Ingest Flow*" using the account
+
+* While requesting a new *Ingest Flow*, an existing ingest method can be selected from the supported list of methods. The list of methods are described in details as part of the guide.
+
+* Based on the ingest method selected, Media Service Team will provide schedule for setup of *Ingest Flow*.
+
+* Team will be providing frequent updates on the progress of "*Ingest Flow*" to the partner through the ticket.
+  
+* Request to setup "*Ingest Flow*" can be created using email also. The email will automatically create a ticket and updates will be communicated through emails.
 
 ### Change request
+
 * In order to raise change requests, you can use Jira for raising tickets.
 * New account creation will also be served through Jira.
 * Change request communication will be handled through Jira tickets. Timeline for provisioning will be provided by the Service team.
