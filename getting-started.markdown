@@ -2,7 +2,7 @@
 layout: page
 title: Getting Started
 parent: Media Ingest Service
-permalink: /getting-started/
+permalink: /getting-started
 nav_order: 1
 ---
 
