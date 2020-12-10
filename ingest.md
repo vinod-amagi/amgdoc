@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Ingest
-parent: Metadata
-permalink: /metadata/ingest/
+title: Ingest Methods
+parent: Media Ingest Service
+permalink: /ingest/
 nav_order: 2
 ---
 ## Ingest Methods
@@ -28,13 +28,25 @@ These methods are:
 
 ### S3 Upload
 
-All metadata upload for all customers are processed through a common AWS S3 Bucket.
+All metadata upload for all partners are processed through a common AWS S3 Bucket.
+
+```
+<Partner-Name>
+    |
+    |--<Account-Name>
+       |
+       |--<Ingest-Flow-Name>
+              |
+              |--ToProcess
+              |--Processed
+              |--Errors
+```
 
  | Directories | Description |
  |-------------|-------------|
- |Customer | A directory is created for each customer|
- |Account| A directory is created under “Customer” directory for each account for a customer|
- |ToProcess|Customer ingests metadata input files to “ToProcess” directory|
+ |Partner | A directory is created for each partner|
+ |Account| A directory is created under “partner” directory for each account for a partner|
+ |ToProcess|partner ingests metadata input files to “ToProcess” directory|
  |Processed|Processed metadata is moved to “Processed” directory|
  |Errors|Metadata with error is moved to “Errors” directory|
  
@@ -45,7 +57,7 @@ Amagi metadata service can be configured to periodically pull new and updated me
 
 1. **mRSS**
 
-The mRSS format is usually customer specific and hence involves additional development time to create a custom endpoint to parse mRSS feed. If the mRSS format follows closely with Amagi format, the development time for ingesting a new type of mRSS feed can be reduced.
+The mRSS format is usually partner specific and hence involves additional development time to create a custom endpoint to parse mRSS feed. If the mRSS format follows closely with Amagi format, the development time for ingesting a new type of mRSS feed can be reduced.
 
 2. **API**
 

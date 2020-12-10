@@ -5,8 +5,29 @@ parent: Platform Requirements
 permalink: /platform/epg/
 nav_order: 1
 ---
+## Introduction
 
-# Metadata Requirements
+Amagi EPG service is an auxilliary service along with CLOUDPORT playout platform. The EPG service creates EPG in various formats and deliver to various vMVPDs and partners. The following are the list of platforms where EPG is being delivered.
+
+  * **Samsung**
+  
+  * **Roku**
+  
+  * **Plex**
+  
+  * **Sling**
+  
+  * **STIRR**
+  
+  * **Tivo**
+  
+  * **Rakuten**
+  
+  * **Vizio**
+  
+  * **Gracenote**
+
+## Metadata Requirements
 
 Metadata|Description|Samsung|Roku|Plex|Sling|STIRR|Tivo|Rakuten|Vizio|Gracenote
 |---|---|---|---|---|---|---|---|---|---|---|

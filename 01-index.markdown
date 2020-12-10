@@ -23,4 +23,4 @@ The media ingest service integrates contents and metadata delivery methods for d
 </p>
 
 
-![Amagi Metadata Services](https://vinod-amagi.github.io/amgdoc/amagi-media-ingest-svc.png)
+![Amagi Metadata Services](media-ingest.png)

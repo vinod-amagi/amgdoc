@@ -14,9 +14,13 @@ Media Ingest Service enables content partners to self-service their content inge
 
 | In this article|
 |-----|
-| [Overview](https://vinod-amagi.github.io/amgdoc/02-media-ingest/#overview) |
-| [Create an account](https://vinod-amagi.github.io/amgdoc/02-media-ingest/#create-an-account) |
-| [Create and setup *Ingest Flow*](https://vinod-amagi.github.io/amgdoc/02-media-ingest/#create-and-setup-ingest-flow) |
+| [Overview](#overview) |
+| [Create an account](#create-an-account) |
+| [Create and setup *Ingest Flow*](#create-and-setup-ingest-flow) |
+| [Change Request](#change-request)|
+| [Business As Usual process](#business-as-usual-process)|
+
+------
 
 ## Overview
 
@@ -30,15 +34,19 @@ Media Ingest Service accepts requests to setup media ingest workflow and manage 
 
 * Frequently asked questions and troubleshooting guides to help partners
 
+------
+
 ### Create an account
 
 * If you are new to Media Ingest Service, you will be added to the Media Ingest Service by Amagi Onboarding. 
 
 * Currently, there is no Amagi-wide customer portal service, so a new account will be created by Onboarding.
 
-* [Atlassian Jira](https://www.atlassian.com/software/jira) is used for managing accounts.
+* A helpdesk service is used for managing accounts.
 
 * When a new account is created, additional information will be sent as an email.
+
+------
 
 ### Create and setup *Ingest Flow*
 
@@ -54,19 +62,24 @@ Media Ingest Service accepts requests to setup media ingest workflow and manage 
   
 * Request to setup "*Ingest Flow*" can be created using email also. The email will automatically create a ticket and updates will be communicated through emails.
 
-### Change request
+------
 
-* In order to raise change requests, you can use Jira for raising tickets.
-* New account creation will also be served through Jira.
-* Change request communication will be handled through Jira tickets. Timeline for provisioning will be provided by the Service team.
+### Change Request
 
-### Operational Phase
-* You will be provided with an interface for ingesting assets and metadata to Amagi Asset Ingest Service without needing involvement of Amagi 
-  personnel.
-* Alerts and notifications will be provided to the customer.
+* Changes to the "*Ingest Flow*" can be initiated through the helpdesk service.
 
-### Ad-hoc requests
-* No ad-hoc request to make changes is planned to be entertained during the operational phase. 
-* Amagi operations’ role is limited to Infra monitoring of the service
-* Change requests are accepted through Jira
-* In case of issues with usage, Amagi Operations will be providing guidance as per defined SOP
+* Discussion on the change and updates on change will be facilitated using the helpdesk service.
+
+------
+
+### Business As Usual process
+
+* Alerts over email can be configured to receive status on ingest progress.
+
+* Partners can receive alerts on error during the ingest process.
+
+* Periodica reports on the ingested content is provided over email.
+
+* In case of issues with usage, Amagi Operations will be providing necessary guidance.
+
+------
