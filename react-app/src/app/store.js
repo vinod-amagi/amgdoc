@@ -1,0 +1,8 @@
+import { configureStore } from '@reduxjs/toolkit';
+import metapropsReducer from '../features/metaprops/MetapropsSlice';
+
+export default configureStore({
+  reducer: {
+    metaprops: metapropsReducer,
+  },
+});
