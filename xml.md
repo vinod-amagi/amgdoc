@@ -2,7 +2,7 @@
 title: XML Formats
 description: Supported metadata XML formats
 published: true
-date: 2021-01-08T22:02:43.847Z
+date: 2021-01-08T22:02:57.462Z
 tags: 
 editor: markdown
 ---
@@ -13,7 +13,7 @@ editor: markdown
 
 **XML Version 2 - Cablelabs**
 
-***Episode***
+***Episode XML Sample***
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
