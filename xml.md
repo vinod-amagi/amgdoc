@@ -2,7 +2,7 @@
 title: XML Formats
 description: Supported metadata XML formats
 published: true
-date: 2021-01-08T22:01:38.715Z
+date: 2021-01-08T22:02:30.734Z
 tags: 
 editor: markdown
 ---
@@ -277,6 +277,73 @@ editor: markdown
 			<App_Data App="SVOD" Name="Content_CheckSum" Value="a653cfdaabc93f2e106b31ecda43181f"/>
 		</Metadata>
 		<Content Value="amagi202000000001-cap_mal.srt"/>
+	</Asset>
+</ADI>
+```
+
+***Music Video Sample***
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<ADI>
+	<Metadata>
+		<AMS Asset_Class="package" Asset_ID="amagi202000000001" Asset_Name="Sample Music M1 package" Creation_Date="2020-01-19" Description="Sample Music M1" Product="SVOD" Provider="Amagi Media" Provider_ID="amagi.com" Update_Time="2020-01-19'T'11:52:01" Version_Major="1" Version_Minor="1"/>
+		<App_Data App="SVOD" Name="Metadata_Spec_Version" Value="CableLabsVOD1.1"/>
+		<App_Data App="SVOD" Name="Provider_Content_Tier" Value=""/>
+	</Metadata>
+	<Asset>
+		<Metadata>
+			<AMS Asset_Class="title" Asset_ID="amagi202000000002" Asset_Name="Sample Music M1 title" Creation_Date="2020-01-19" Description="Sample Music M1" Product="SVOD" Provider="Amagi Media" Provider_ID="amagi.com" Version_Major="1" Version_Minor="1"/>
+			<App_Data App="SVOD" Name="Type" Value="title"/>
+			<App_Data App="SVOD" Name="Title_Brief" Value="Sample Music M1 (Brief)"/>
+			<App_Data App="SVOD" Name="Title" Value="Sample Music M1"/>
+			<App_Data App="SVOD" Name="Summary_Long" Value="A long description"/>
+			<App_Data App="SVOD" Name="Summary_Short" Value="A short description"/>
+			<App_Data App="SVOD" Name="Rating" Value="G"/>
+			<App_Data App="SVOD" Name="Closed_Captioning" Value="N"/>
+			<App_Data App="SVOD" Name="Run_Time" Value="00:06:00"/>
+			<App_Data App="SVOD" Name="Display_Run_Time" Value="06:00"/>
+			<App_Data App="SVOD" Name="Year" Value="2012"/>
+			<App_Data App="SVOD" Name="Country_of_Origin" Value="Thailand"/>
+			<App_Data App="SVOD" Name="Director" Value="Lastname,Firstname"/>
+			<App_Data App="SVOD" Name="Actors" Value="Lastname,Firstname"/>
+			<App_Data App="SVOD" Name="Genre" Value="None"/>
+			<App_Data App="SVOD" Name="Billing_ID" Value="11111"/>
+			<App_Data App="SVOD" Name="Category" Value="/Music Videos"/>
+			<App_Data App="SVOD" Name="Show_Type" Value="Music"/>
+			<App_Data App="SVOD" Name="Licensing_Window_Start" Value="2020-01-01T00:00:00"/>
+			<App_Data App="SVOD" Name="Licensing_Window_End" Value="2020-12-31T00:00:00"/>
+			<App_Data App="SVOD" Name="Provider_QA_Contact" Value="vodsupport@amagi.com"/>
+			<App_Data App="SVOD" Name="Subscription_Packages" Value="package1;package2;package3"/>
+			<App_Data App="SVOD" Name="Keywords" Value="keyword1, keyword2, keyword3"/>
+			<App_Data App="SVOD" Name="Language" Value="eng"/>
+			<App_Data App="SVOD" Name="Recording_Artist" Value="A sample artist"/>
+			<App_Data App="SVOD" Name="Country" Value="TH"/>
+			<App_Data App="SVOD" Name="Platforms" Value="amazon,samsung_tv,sling"/>
+		</Metadata>
+	</Asset>
+	<Asset>
+		<Metadata>
+			<AMS Asset_Class="movie" Asset_ID="amagi202000000003" Asset_Name="Sample Music M1 movie" Creation_Date="2020-01-19" Description="Sample Music M1" Product="SVOD" Provider="Amagi Media" Provider_ID="amagi.com" Version_Major="1" Version_Minor="1"/>
+			<App_Data App="SVOD" Name="Type" Value="movie"/>
+			<App_Data App="SVOD" Name="Audio_Type" Value="Stereo"/>
+			<App_Data App="SVOD" Name="Languages" Value="eng_1234"/>
+			<App_Data App="SVOD" Name="Languages" Value="tna_1238"/>
+			<App_Data App="SVOD" Name="Codec" Value="H264"/>
+			<App_Data App="SVOD" Name="Resolution" Value="480i"/>
+			<App_Data App="SVOD" Name="Content_FileSize" Value="1678924756"/>
+			<App_Data App="SVOD" Name="Content_CheckSum" Value="e653cffaabc93f4e107b31bcea33181e"/>
+		</Metadata>
+		<Content Value="amagi202000000001-feature.ts"/>
+	</Asset>
+	<Asset>
+		<Metadata>
+			<AMS Asset_Class="poster" Asset_ID="amagi202000000004" Asset_Name="Sample Music M1 poster" Creation_Date="2020-01-19" Description="Sample Music M1" Product="SVOD" Provider="Amagi Media" Provider_ID="amagi.com" Version_Major="1" Version_Minor="1"/>
+			<App_Data App="SVOD" Name="Type" Value="poster"/>
+			<App_Data App="SVOD" Name="Image_Aspect_Ratio" Value="530x764"/>
+			<App_Data App="SVOD" Name="Content_FileSize" Value="25434756"/>
+			<App_Data App="SVOD" Name="Content_CheckSum" Value="e653cffaabc93f4e107b31bcea33181e"/>
+		</Metadata>
+		<Content Value="amagi202000000001-poster.jpg"/>
 	</Asset>
 </ADI>
 ```
