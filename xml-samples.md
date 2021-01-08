@@ -2,12 +2,10 @@
 title: XML Formats
 description: Supported metadata XML formats
 published: true
-date: 2021-01-08T22:09:32.340Z
+date: 2021-01-08T22:43:37.522Z
 tags: 
 editor: markdown
 ---
-
-## XML Formats
 
 **XML Version 1**
 
