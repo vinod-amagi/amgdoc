@@ -1,10 +1,10 @@
 ---
-title: About
+title: About Us
 description: 
 published: true
-date: 2021-01-08T19:04:33.266Z
+date: 2021-01-08T19:37:50.605Z
 tags: 
-editor: undefined
+editor: markdown
 ---
 
 Amagi is a next-generation media technology company that provides cloud broadcast and targeted advertising platforms to TV networks and OTT providers, globally.
