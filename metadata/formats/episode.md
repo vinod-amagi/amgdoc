@@ -1,13 +1,13 @@
 ---
-title: Episode
+title: TV Episodes
 description: 
 published: true
-date: 2021-01-08T19:04:47.744Z
+date: 2021-01-08T21:45:49.204Z
 tags: 
-editor: undefined
+editor: markdown
 ---
 
-## Episode
+## TV Episodes
 
 The following table describes the metadata details required for ingesting content metadata of an episode of TV Series to Amagi Meta Store. 
 
