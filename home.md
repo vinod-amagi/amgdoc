@@ -2,7 +2,7 @@
 title: Introduction
 description: Integrates media assets and metadata delivery for different Amagi services like CLOUDPORT, EPG, VoD and Analytics
 published: true
-date: 2021-01-08T18:25:11.088Z
+date: 2021-01-08T19:04:37.254Z
 tags: 
 editor: undefined
 ---
