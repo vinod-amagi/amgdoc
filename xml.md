@@ -2,7 +2,7 @@
 title: XML Formats
 description: Supported metadata XML formats
 published: true
-date: 2021-01-08T22:01:00.925Z
+date: 2021-01-08T22:01:38.715Z
 tags: 
 editor: markdown
 ---
@@ -156,7 +156,6 @@ editor: markdown
 	</Asset>
 </ADI>
 ```
-
 ***Movie***
 ```
 <?xml version="1.0" encoding="UTF-8"?>
