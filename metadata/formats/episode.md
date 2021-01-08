@@ -1,11 +1,12 @@
 ---
-layout: default
 title: Episode
-parent: Formats
-grand_parent: Metadata
-nav_order: 1
-permalink: /metadata/formats/episode/
+description: 
+published: true
+date: 2021-01-08T18:17:44.508Z
+tags: 
+editor: undefined
 ---
+
 ## Episode
 
 The following table describes the metadata details required for ingesting content metadata of an episode of TV Series to Amagi Meta Store. 

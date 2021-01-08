@@ -1,11 +1,12 @@
 ---
-layout: default
 title: CSV Format
-parent: Formats
-grand_parent: Metadata
-permalink: /metadata/formats/csv_format/
-nav_order: 4
+description: 
+published: true
+date: 2021-01-08T18:17:42.688Z
+tags: 
+editor: undefined
 ---
+
 ## Metadata Ingest Formats
 
 ## Amagi CSV Format

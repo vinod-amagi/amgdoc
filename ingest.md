@@ -1,10 +1,12 @@
 ---
-layout: page
 title: Ingest Methods
-parent: Media Ingest Service
-permalink: /ingest/
-nav_order: 2
+description: 
+published: true
+date: 2021-01-08T18:17:35.738Z
+tags: 
+editor: undefined
 ---
+
 ## Ingest Methods
 
 The section describes the different methods for ingesting media assets and metadata to Amagi services. The method is largely classified as Push (drop-off) and Pull (feed) methods.

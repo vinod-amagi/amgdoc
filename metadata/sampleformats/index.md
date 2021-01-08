@@ -1,10 +1,12 @@
 ---
-layout: page
 title: Download Sample Formats
-parent: Metadata
-permalink: /metadata/sampleformats/
-nav_order: 3
+description: 
+published: true
+date: 2021-01-08T18:17:49.691Z
+tags: 
+editor: undefined
 ---
+
 |Format|Content Type|Link|
 |---|---|---|
 |CSV|All|[https://d3bd0tgyk368z1.cloudfront.net/feeds/Metadata/Amagi-v2.csv](https://d3bd0tgyk368z1.cloudfront.net/feeds/Metadata/Amagi-v2.csv)|

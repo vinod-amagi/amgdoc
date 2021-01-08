@@ -1,10 +1,12 @@
 ---
-layout: page
 title: Metadata
-permalink: /metadata/
-has_children: true
-nav_order: 2
+description: 
+published: true
+date: 2021-01-08T18:17:39.080Z
+tags: 
+editor: undefined
 ---
+
 ## What is metadata?
 
 Metadata represents data that describes a media content, specifically video content in Amagi services. The metadata varies in depth, and it could be one of the following as provided below, but not necessarily confining to these details:-

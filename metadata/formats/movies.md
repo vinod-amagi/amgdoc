@@ -1,11 +1,12 @@
 ---
-layout: default
 title: Movies
-parent: Formats
-grand_parent: Metadata
-permalink: /metadata/formats/movies/
-nav_order: 2
+description: 
+published: true
+date: 2021-01-08T18:17:48.016Z
+tags: 
+editor: undefined
 ---
+
 ## Movie
 
 The following table describes the metadata details required for ingesting content metadata of a movie to Amagi Meta Store. 

@@ -1,11 +1,12 @@
 ---
-layout: default
 title: mRSS
-parent: Formats
-permalink: /metadata/formats/mrss/
-grand_parent: Metadata
-nav_order: 3
+description: 
+published: true
+date: 2021-01-08T18:17:46.256Z
+tags: 
+editor: undefined
 ---
+
 ## Amagi mRSS Format
 
 mRSS Feed that can be used for ingesting metadata to Amagi systems are based on the following specifications:
