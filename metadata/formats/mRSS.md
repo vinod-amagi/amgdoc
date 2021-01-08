@@ -2,7 +2,7 @@
 title: mRSS
 description: 
 published: true
-date: 2021-01-08T18:17:46.256Z
+date: 2021-01-08T18:25:23.144Z
 tags: 
 editor: undefined
 ---

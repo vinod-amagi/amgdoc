@@ -2,7 +2,7 @@
 title: CSV Format
 description: 
 published: true
-date: 2021-01-08T18:17:42.688Z
+date: 2021-01-08T18:25:19.644Z
 tags: 
 editor: undefined
 ---
