@@ -2,7 +2,7 @@
 title: CSV / XLSX Formats
 description: All supported CSV formats
 published: true
-date: 2021-01-08T20:02:03.492Z
+date: 2021-01-08T20:04:00.309Z
 tags: 
 editor: markdown
 ---
@@ -11,8 +11,9 @@ editor: markdown
 
 ## Amagi Cloudport CSV v1
 
+The table below details the metadata fields to be populated in the Amagi Cloudport CSV format. 
 
-|Metadata Field|Field Description|Allowed Values|Example|
+|Metadata Field / Header|Field Description|Allowed Values|Example|
 |----|----|----|----|
 |Type|Type of the content that the row represents|Movie or Episode|Movie|
 |GUID|Globally unique ID for the content from the content provider|Alpha-Numeric with 128 character limit|AMAGI9999
