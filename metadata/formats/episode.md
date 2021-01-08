@@ -2,27 +2,14 @@
 title: TV Episodes
 description: 
 published: true
-date: 2021-01-08T21:45:49.204Z
+date: 2021-01-08T21:51:19.342Z
 tags: 
 editor: markdown
 ---
 
 ## TV Episodes
 
-The following table describes the metadata details required for ingesting content metadata of an episode of TV Series to Amagi Meta Store. 
-
-**Series**
-
-JSON and XML format allows multiple series information provided within the same JSON/XML document. Multiple series are provided as an array in the JSON document. For the XML document, multiple “series” tags are used.
-
-**Season**
-
-Multiple seasons can be added as part of a Series in JSON/XML documents. Multiple Seasons are specified as an array in the JSON document. For the XML document, multiple “season” tags are used.
-
-**Episodes**
-
-Multiple episodes can be added as part of a Season in JSON/XML documents. Multiple espisodes are specified as an array in the JSON document. For the XML document, multiple “episode” tags are used.
-
+The following table describes the metadata details required for ingesting content metadata of an episode of TV Series to Amagi services. 
 
 Field|Description|Remarks
 ---|---|---
