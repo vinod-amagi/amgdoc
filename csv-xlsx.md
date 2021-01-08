@@ -2,14 +2,14 @@
 title: CSV / XLSX Formats
 description: All supported CSV formats
 published: true
-date: 2021-01-08T20:04:00.309Z
+date: 2021-01-08T20:05:38.310Z
 tags: 
 editor: markdown
 ---
 
 # Supported CSV / XLSX / Delimited formats
 
-## Amagi Cloudport CSV v1
+## CSV Version 1
 
 The table below details the metadata fields to be populated in the Amagi Cloudport CSV format. 
 
