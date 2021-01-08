@@ -2,14 +2,12 @@
 title: JSON Sample Formats
 description: All supported metadata JSON formats
 published: true
-date: 2021-01-08T22:40:36.099Z
+date: 2021-01-08T22:43:14.938Z
 tags: 
 editor: markdown
 ---
 
-**JSON Sample**
-
-***Episode JSON***
+**Episode JSON**
 
 ```
 {
