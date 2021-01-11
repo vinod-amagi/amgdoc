@@ -2,7 +2,7 @@
 title: Getting Started
 description: Summarise the provisioning process
 published: true
-date: 2021-01-11T14:27:28.208Z
+date: 2021-01-11T14:48:52.704Z
 tags: 
 editor: markdown
 ---
@@ -17,7 +17,7 @@ Media Ingest Service enables content partners to self-service their content inge
 |-----|
 | [Overview](#overview) |
 | [Create an account](#create-an-account) |
-| [Create and setup *Ingest Flow*](#create-and-setup-ingest-flow) |
+| [Set up *Ingest Flow*](#create-and-setup-ingest-flow) |
 | [Change Request](#change-request)|
 | [Business As Usual process](#business-as-usual-process)|
 
@@ -49,7 +49,7 @@ Media Ingest Service accepts requests to setup media ingest workflow and manage 
 
 ------
 
-## Create and setup *Ingest Flow*
+## Set up *Ingest Flow*
 
 * A new *Ingest Flow* is required to setup workflow for ingesting content using Media Ingest Service
 
