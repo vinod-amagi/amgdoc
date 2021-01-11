@@ -2,7 +2,7 @@
 title: Getting Started
 description: Summarise the provisioning process
 published: true
-date: 2021-01-11T14:48:52.704Z
+date: 2021-01-11T14:49:44.549Z
 tags: 
 editor: markdown
 ---
@@ -12,16 +12,6 @@ editor: markdown
 This article describes an overview of Media Ingest Service and how to get started with the service for ingesting contents. The access to Media Ingest Service is invite-only. For access, please contact your onboarding contact at Amagi.
 
 Media Ingest Service enables content partners to self-service their content ingest (e.g., CLOUDPORT, EPG, VoD) with Amagi. 
-
-| In this article|
-|-----|
-| [Overview](#overview) |
-| [Create an account](#create-an-account) |
-| [Set up *Ingest Flow*](#create-and-setup-ingest-flow) |
-| [Change Request](#change-request)|
-| [Business As Usual process](#business-as-usual-process)|
-
-------
 
 ## Overview
 
