@@ -1,8 +1,8 @@
 ---
-title: Introduction
+title: Amagi Media DataBase
 description: Integrates media assets and metadata delivery for different Amagi services like CLOUDPORT, EPG, VoD and Analytics
 published: true
-date: 2021-01-11T13:35:00.814Z
+date: 2021-01-11T14:11:46.240Z
 tags: 
 editor: markdown
 ---
