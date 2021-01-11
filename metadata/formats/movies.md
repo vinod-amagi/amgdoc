@@ -2,12 +2,10 @@
 title: Movies
 description: 
 published: true
-date: 2021-01-11T16:57:17.905Z
+date: 2021-01-11T17:01:27.163Z
 tags: 
 editor: markdown
 ---
-
-## Movie
 
 The following table describes the metadata details required for ingesting content metadata of a movie to Amagi Meta Store. 
 
