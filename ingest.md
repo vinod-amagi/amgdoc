@@ -2,9 +2,9 @@
 title: Ingest Methods
 description: 
 published: true
-date: 2021-01-08T19:04:38.993Z
+date: 2021-01-11T14:26:09.663Z
 tags: 
-editor: undefined
+editor: markdown
 ---
 
 ## Ingest Methods
@@ -28,7 +28,7 @@ These methods are:
 
 4. **Simple Web page supporting multiple metadata**
 
-### Note
+**Note**
 
 In cases where the media assets' locations are delivered as part of the metadata, the Media Ingest Service will download the files into Amagi S3 for further processing and consumption. 
 
