@@ -2,14 +2,15 @@
 title: Introduction
 description: Integrates media assets and metadata delivery for different Amagi services like CLOUDPORT, EPG, VoD and Analytics
 published: true
-date: 2021-01-08T19:04:37.254Z
+date: 2021-01-11T11:25:29.665Z
 tags: 
-editor: undefined
+editor: markdown
 ---
 
 # Introduction
+
 <p align="justify">
-Amagi CLOUDPORT platform enables TV Channels, Broadcasters and Digital TV platforms to run TV Channels on cloud. In the beginning stages CLOUDPORT platform uses a limited set of metadata for channel playout. As Amagi began delivering linear channels to various MVPD platforms, there was an evolving requirements to deliver EPG and VOD content to these platforms. The additional services for VOD delivery and EPG required additional assets and metadata for processing as per various MVPD specifications. Amagi's Media Ingest Service is designed to consolidate the ingest of content and related metadata required for various platforms and services. This service will be providing easy interfaces for content partners to deliver contents to Amagi platforms and services.
+Amagi CLOUDPORT platform enables TV Channels, Broadcasters and Digital TV platforms to run TV Channels on cloud. Amagi has been delivering linear channels to an increasing number of MVPD/Streaming TV platforms and traditional Broadcasting networks. As these platforms and networks have been increasing, there is a growing demand to provide additional services to deliver EPG and VOD content to these platforms and networks. The additional services for VOD delivery and EPG require additional assets (artwork) and metadata for processing as per various MVPD specifications. So there is a need for ingesting a set of contents and metadata that are common to all services, and also a set of contents and metadata that are used by specific services. This led to additional effort for Amagi and our partners to provide required content and metadata for all services. Amagi's Media Ingest Service is designed to consolidate the ingest of content and related metadata required for all services - CLOUDPORT, EPG, VOD. This service will be providing easy interfaces for content partners to deliver contents and metadata to Amagi.
 </p>
 
 
