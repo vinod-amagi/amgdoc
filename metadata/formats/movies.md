@@ -2,75 +2,47 @@
 title: Movies
 description: 
 published: true
-date: 2021-01-08T19:04:51.199Z
+date: 2021-01-11T16:57:17.905Z
 tags: 
-editor: undefined
+editor: markdown
 ---
 
 ## Movie
 
 The following table describes the metadata details required for ingesting content metadata of a movie to Amagi Meta Store. 
 
-The following table describes the metadata details required for ingesting content metadata of a movie to Amagi Meta Store.
-
-Field|Description|Remarks
----|---|---
-updateAt|Last update time|Time in UTC Format: YYYY-MM-DDTHH:MM:SSZ
-provider|The channel name|
-type|tv_episode|tv_episode represents an Episode of TV series
-Series|Details of the series: Series name| description etc"
-id|Series id|Series Id used by channel
-seriesName|Series Name|
-longDescription|A lengthy description about series|Number of characters is mandated by MVPDs
-shortDescription|Short description about the series|Number of characters is mandated by MVPDs
-createdAt|Created Time of the series|Time in UTC Format: YYYY-MM-DDTHH:MM:SSZ
-externalIDs|List of external Ids|Provides a list of external ids
-id|Id|TMS Id or equivalent
-provider|Provider of ID|gracenote if the provider is Gracenote
-images|List of images for Series|
+Field|Description
+---|---
+updateAt|Last update time
+provider|Channel name|
+type|movie
+**movie>>**|Details of the movie: name, description etc.,
+id|Unique id of the movie
+name|Name of the movie
+longDescription|A lengthy description about the movie
+shortDescription|Short description about the movie
+createdAt|Created time of the movie
+externalIDs|List of external Ids such as TMS ID / EIDR ID etc.,
+**images>>**|List of images
 filePath|HTTP Url or S3 Uri|HTTP Url : https:// S3 Uri: s3://channel-bucket/object-key
 height|Height of image|
 width|Width of image|
-type|Types associated|"series-portait, series-landscape, series-poster etc"
-metadata|Metadata for the series: genre category ratings|
-genre|List of genre|As per MVPD specification
-category|List of category|As per MVPD specification
-ratings|Ratings associated with content|
-ratingValue|Rating for the series|
-ratingBody|Rating Body|
-ratingReason|Rating reason|
-Episode|Details of the episode: - Episode name number - Assets - Video Captions Images|
-episodeName|Episode name|
-episodeNumber|Episode Number|
-externalIDs|List of external Ids for the episode|Provides a list of external ids
-id|Id|TMS Id or equivalent
-provider|Provider of ID|gracenote if the provider is Gracenote
-longDescription|Long description about episode|
-shortDescription|Short description about episode|
-updatedAt|Updated datetime of episode data|e.g. 2020-10-04T23:30:24Z
-id|Episode Id|
-seasonNumber|Season Number|
-metadata|Metadata for the episode:- genre, category, ratings|
-genre|List of genre|As per MVPD specification
-category|List of category|As per MVPD specification
-ratings|Ratings associated with content|
-ratingValue|Rating for the series|
-ratingBody|Rating Body|
-ratingReason|Rating reason|
-assets|List of assets for the content - video, captions, images|
-adBreaks|List of Ad break points|HH:MM:SS.msec e.g. 00:15:29.310
-durationInSeconds|Duration of video in seconds|
-filePath|HTTP Url or S3 Uri of video|HTTP Url : https:// <br/> S3 Uri: s3://channel-bucket/object-key
-frameRate|Frame rate of the video|29.97 <br/> 25.0 etc.,
-createdAt|Creation time of the video|Time in UTC Format <br/> YYYY-MM-DDTHH:MM:SSZ
-images|List of images for Episode|
-filePath|HTTP Url or S3 Uri|HTTP Url : https:// <br/> S3 Uri: s3://channel-bucket/object-key
-height|Height of image|
-width|Width of image|
-type|Types associated|series-portait, series-landscape, series-poster etc
-captions||
-filePath|HTTP Url or S3 Uri of captions file|HTTP Url : https:// <br/> S3 Uri: s3://channel-bucket/object-key
-createdAt|Creation time of the captions|Time in UTC Format <br/> YYYY-MM-DDTHH:MM:SSZ
-subtitles||
-filePath|HTTP Url or S3 Uri of subtitles file|HTTP Url : https:// <br/> S3 Uri: s3://channel-bucket/object-key
-createdAt|Creation time of the subtitles|Time in UTC Format <br/> YYYY-MM-DDTHH:MM:SSZ
+type|Types of the image
+metadata|Metadata for the series: genre category ratings
+genre|List of genre as per MVPD specification
+category|List of categories as per MVPD specification
+ratings|Ratings associated with content
+ratingValue|Rating for the series
+ratingBody|Rating Body
+ratingReason|Rating reason
+assets|List of assets for the content - video, captions, images
+adBreaks|List of Ad break points: HH:MM:SS.msec e.g. 00:15:29.310
+durationInSeconds|Duration of video in seconds
+filePath|HTTP Url or S3 Uri of video
+frameRate|Frame rate of the video
+createdAt|Creation time of the video
+**captions>>**||
+filePath|HTTP Url or S3 Uri of captions file
+createdAt|Creation time of the captions
+filePath|HTTP Url or S3 Uri of subtitles file
+createdAt|Creation time of the subtitles file
