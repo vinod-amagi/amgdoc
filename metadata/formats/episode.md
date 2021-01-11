@@ -2,7 +2,7 @@
 title: TV Episodes
 description: 
 published: true
-date: 2021-01-08T21:51:19.342Z
+date: 2021-01-11T14:45:13.117Z
 tags: 
 editor: markdown
 ---
@@ -16,7 +16,7 @@ Field|Description|Remarks
 updateAt|Last update time|Time in UTC Format <br/> YYYY-MM-DDTHH:MM:SSZ
 provider|The channel name|
 type|tv_episode|tv_episode represents an Episode of TV series
-Series|Details of the series:- Series name, description etc
+|**Series**| Details of the series - Series name, description etc
 id|Series id|Series Id used by channel
 seriesName|Series Name|
 longDescription|A lengthy description about series|Number of characters is mandated by MVPDs
