@@ -2,19 +2,14 @@
 title: CSV / XLSX Formats
 description: All supported CSV formats
 published: true
-date: 2021-01-08T20:16:29.359Z
+date: 2021-01-11T14:19:23.669Z
 tags: 
 editor: markdown
 ---
 
 # Supported CSV / XLSX / Delimited formats
 
-## CSV Version 1
-The table below details the metadata fields to be populated in the CSV version 1.
-
-## CSV Version 2
-
-The table below details the metadata fields to be populated in the CSV version 2. 
+The table below details the metadata fields to be populated in the CSV. 
 
 |Metadata Field / Header|Field Description|Allowed Values|Example|
 |----|----|----|----|
