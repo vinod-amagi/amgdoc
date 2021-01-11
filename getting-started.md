@@ -2,9 +2,9 @@
 title: Getting Started
 description: Summarise the provisioning process
 published: true
-date: 2021-01-08T19:04:35.659Z
+date: 2021-01-11T14:27:28.208Z
 tags: 
-editor: undefined
+editor: markdown
 ---
 
 # Getting Started
@@ -37,7 +37,7 @@ Media Ingest Service accepts requests to setup media ingest workflow and manage 
 
 ------
 
-### Create an account
+## Create an account
 
 * If you are new to Media Ingest Service, you will be added to the Media Ingest Service by Amagi Onboarding. 
 
@@ -49,7 +49,7 @@ Media Ingest Service accepts requests to setup media ingest workflow and manage 
 
 ------
 
-### Create and setup *Ingest Flow*
+## Create and setup *Ingest Flow*
 
 * A new *Ingest Flow* is required to setup workflow for ingesting content using Media Ingest Service
 
@@ -65,7 +65,7 @@ Media Ingest Service accepts requests to setup media ingest workflow and manage 
 
 ------
 
-### Change Request
+## Change Request
 
 * Changes to the "*Ingest Flow*" can be initiated through the helpdesk service.
 
@@ -73,7 +73,7 @@ Media Ingest Service accepts requests to setup media ingest workflow and manage 
 
 ------
 
-### Business As Usual process
+## Business As Usual (BAU) process
 
 * Alerts over email can be configured to receive status on ingest progress.
 
