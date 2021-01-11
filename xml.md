@@ -2,7 +2,7 @@
 title: XML Formats
 description: Supported XML Formats
 published: true
-date: 2021-01-11T11:34:50.587Z
+date: 2021-01-11T14:18:19.607Z
 tags: 
 editor: markdown
 ---
@@ -94,5 +94,75 @@ editor: markdown
          <seasonNumber>1</seasonNumber>
       </season>
    </series>
+</root>
+```
+
+## Movie XML
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+   <provider>channel name</provider>
+   <type>movie</type>
+   <version>1.0</version>
+   <updatedAt>2020-10-04T23:10:44Z</updatedAt>
+   <movie>
+      <id>movie-id</id>
+      <title>Title of the movie</title>
+      <releaseDate>1992-01-31</releaseDate>
+      <longDescription>Long description</longDescription>
+      <shortDescription>Short description</shortDescription>
+      <createdAt>2020-10-04T23:10:44Z</createdAt>
+      <assets>
+         <duration>7114.048</duration>
+         <filePath>https://video-url</filePath>
+         <frameRate>29.97</frameRate>
+         <createdAt>2020-10-04T23:30:24Z</createdAt>
+         <adBreaks>HH:MM:SS.msec</adBreaks>
+         <adBreaks>00:15:29.310</adBreaks>
+      </assets>
+      <captions>
+         <filePath>https://s3.amazonaws.com/en-us/MGM_CuttingEdgeThe_1992_Feature_HD_4ch.scc</filePath>
+         <createdAt>2020-10-04T23:30:24Z</createdAt>
+      </captions>
+      <subtitles>
+         <filePath>https://s3.amazonaws.com/en-us/MGM_CuttingEdgeThe_1992_Feature_HD_4ch.scc</filePath>
+         <createdAt>2020-10-04T23:30:24Z</createdAt>
+      </subtitles>
+      <images>
+         <filePath>https://image-url</filePath>
+         <height>height-in-pixels</height>
+         <width>width-in-pixels</width>
+         <type>type-name</type>
+      </images>
+      <images>
+         <filePath>https://image-url</filePath>
+         <height>height-in-pixels</height>
+         <width>width-in-pixels</width>
+         <type>type-name-1</type>
+      </images>
+      <metadata>
+         <credits>
+            <names>Name1</names>
+            <names>Name2</names>
+            <role>director</role>
+         </credits>
+         <credits>
+            <names>Name1</names>
+            <names>Name2</names>
+            <role>cast</role>
+         </credits>
+         <genre>Comedy</genre>
+         <genre>Romance</genre>
+         <genre>Sports</genre>
+         <category>category-1</category>
+         <category>category-2</category>
+         <ratings>
+            <ratingValue>TV-14</ratingValue>
+            <ratingBody>USAP</ratingBody>
+            <ratingReason>Reason</ratingReason>
+         </ratings>
+      </metadata>
+   </movie>
 </root>
 ```
