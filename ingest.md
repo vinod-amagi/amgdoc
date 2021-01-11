@@ -2,7 +2,7 @@
 title: Ingest Methods
 description: 
 published: true
-date: 2021-01-11T14:26:09.663Z
+date: 2021-01-11T16:32:43.473Z
 tags: 
 editor: markdown
 ---
@@ -13,10 +13,10 @@ The section describes the different methods for ingesting media assets and metad
 
 ![Amagi Media Ingest Service](https://vinod-amagi.github.io/amgdoc/metadata/metadata_ingest_svc.png)
 
+### Push (drop-off)
 
-### Push
-
-In this method, content providers are facilitated with four methods for ingesting media assets and metadata to Amagi services. The media assets may be delivered as part of the meta-data (e.g. a "url" field/tag/attribute in metadata) or separately on their own. If the media assets are delivered separately, the video file name will be used as the identifier to match the respective metadata. The input metadata formats are published and maintained by Amagi Media Ingest Service. These formats are available [here](https://vinod-amagi.github.io/amgdoc/metadata/ingest) for reference.
+<p>In this method, content providers are facilitated with four methods for ingesting media assets and metadata to Amagi services. The media assets may be delivered as part of the meta-data (e.g. a "url" field/tag/attribute in metadata) or separately on their own. If the media assets are delivered separately, the video file name will be used as the identifier to match the respective metadata. The input metadata formats are published and maintained by Amagi Media Ingest Service. These formats are available here for reference.
+</p>
 
 These methods are:
 
