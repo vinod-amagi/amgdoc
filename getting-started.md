@@ -2,20 +2,20 @@
 title: Getting Started
 description: Summarise the provisioning process
 published: true
-date: 2021-01-11T14:49:44.549Z
+date: 2021-01-11T16:16:35.151Z
 tags: 
 editor: markdown
 ---
 
 # Getting Started
 
-This article describes an overview of Media Ingest Service and how to get started with the service for ingesting contents. The access to Media Ingest Service is invite-only. For access, please contact your onboarding contact at Amagi.
+This article describes an overview of the Media Ingest Service and how to get started with ingesting contents. Access to this service is invite-only. For access, please contact your Onboarding contact at Amagi.
 
 Media Ingest Service enables content partners to self-service their content ingest (e.g., CLOUDPORT, EPG, VoD) with Amagi. 
 
 ## Overview
 
-Media Ingest Service accepts requests to setup media ingest workflow and manage change request to the workflow through an account created for the partner. The account provides access:-
+Media Ingest Service accepts requests to setup media ingest workflow and manage change requests to the workflow through an account created for the partner. The account provides access to:
 
 * Methods of content ingest to Amagi platform
 
@@ -31,9 +31,9 @@ Media Ingest Service accepts requests to setup media ingest workflow and manage 
 
 * If you are new to Media Ingest Service, you will be added to the Media Ingest Service by Amagi Onboarding. 
 
-* Currently, there is no Amagi-wide customer portal service, so a new account will be created by Onboarding.
+* Currently, there is no Amagi-wide customer portal service, so a new account will be created by Onboarding in the Ingest Service portal.
 
-* A helpdesk service is used for managing accounts.
+* A helpdesk service is used for managing accounts and operations.
 
 * When a new account is created, additional information will be sent as an email.
 
@@ -45,11 +45,11 @@ Media Ingest Service accepts requests to setup media ingest workflow and manage 
 
 * Partner can raise a ticket to add a new "*Ingest Flow*" using the account
 
-* While requesting a new *Ingest Flow*, an existing ingest method can be selected from the supported list of methods. The list of methods are described in details as part of the guide.
+* While requesting, an existing ingest method can be selected from the supported list of methods. The list of methods are described in detail as part of this guide.
 
-* Based on the ingest method selected, Media Service Team will provide schedule for setup of *Ingest Flow*.
+* Based on the ingest method and the metadata formats selected, Media Service Team will provide a timescales for setup of *Ingest Flow*.
 
-* Team will be providing frequent updates on the progress of "*Ingest Flow*" to the partner through the ticket.
+* Regular updates will be provided on the progress of "*Ingest Flow*" setup to the partner through the ticket.
   
 * Request to setup "*Ingest Flow*" can be created using email also. The email will automatically create a ticket and updates will be communicated through emails.
 
@@ -71,6 +71,6 @@ Media Ingest Service accepts requests to setup media ingest workflow and manage 
 
 * Periodical reports on the ingested content is provided over email.
 
-* In case of issues with usage, Amagi Operations will be providing necessary guidance.
+* In case of issues, Amagi Operations will provide necessary guidance.
 
 ------
