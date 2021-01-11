@@ -2,7 +2,7 @@
 title: Metadata
 description: 
 published: true
-date: 2021-01-11T16:29:52.455Z
+date: 2021-01-11T16:31:03.522Z
 tags: 
 editor: markdown
 ---
@@ -37,7 +37,7 @@ Media ingest service ingests the content-partner provided metadata to a common A
 
 ## How is metadata ingested to Amagi services?
 
-There are different methods to ingest metadata to Amagi Services. These are broadly classified into **Push (drop-off)** and **Pull (feed)** methods. The different ways to ingest metadata using these methods are described in [**Metadata Ingest Methods**]([ingest](/ingest)).
+There are different methods to ingest metadata to Amagi Services. These are broadly classified into **Push (drop-off)** and **Pull (feed)** methods. The different ways to ingest metadata using these methods are described in [**Metadata Ingest Methods**](/ingest).
 
 ## What are the supported formats for ingesting to Amagi services?
 
