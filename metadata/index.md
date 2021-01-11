@@ -2,19 +2,17 @@
 title: Metadata
 description: 
 published: true
-date: 2021-01-08T19:04:42.358Z
+date: 2021-01-11T16:24:01.231Z
 tags: 
-editor: undefined
+editor: markdown
 ---
 
 ## What is metadata?
 
-Metadata represents data that describes a media content, specifically video content in Amagi services. The metadata varies in depth, and it could be one of the following as provided below, but not necessarily confining to these details:-
+Metadata represents data that describes a media content, specifically video content in Amagi services. The metadata varies in depth, and it could be one or more of the following, but not necessarily confining to these details.
 
 * Title of a content
-
 * Information required for EPG (Electronic Programming Guide)
-
 * Information required for delivering content for Video on Demand
 
 ## How is metadata used by Amagi services?
@@ -33,17 +31,17 @@ Metadata represents data that describes a media content, specifically video cont
 
 ## Metadata and Amagi Services
 
-Content provider ingest metadata to Amagi metadata store using [Metadata Ingest Service](ingest). The metadata is stored and maintained in a common metastore, and various Amagi sevices use metadata from the common store.
+Media ingest service ingests the content-partner provided metadata to a common Amagi metadata store from which various Amagi sevices use metadata.
 
-![Amagi Metadata Services](metadata_svc.png)
+![metadata_svc.png](/metadata_svc.png)
 
 ## How is metadata ingested to Amagi services?
 
-There are different methods to ingest metadata to Amagi Services. These are broadly classified into **Push** and **Pull** methods. The different ways to ingest metadata using these methods are described in [**Metadata Ingest Methods**](ingest).
+There are different methods to ingest metadata to Amagi Services. These are broadly classified into **Push (drop-off)** and **Pull (feed)** methods. The different ways to ingest metadata using these methods are described in [**Metadata Ingest Methods**](ingest).
 
 ## What are the supported formats for ingesting to Amagi services?
 
-The metadata service supports different formats for ingesting to Amagi services. The following links provides a brief description about the formats and links to the sample formats.
+The service supports different formats for ingesting to Amagi services. The following links provides a brief description about the formats and links to the sample formats.
   
   * [**Supported Formats**](formats)
   
