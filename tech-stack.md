@@ -2,7 +2,7 @@
 title: Technology Stack
 description: Details on the technology stack used to implement the ingest service
 published: true
-date: 2021-01-08T19:21:39.228Z
+date: 2021-01-11T13:40:24.932Z
 tags: 
 editor: markdown
 ---
@@ -10,20 +10,26 @@ editor: markdown
 # Technology Stack
 
 ## Cloud Infrastructure
-**AWS EKS Cluster**
-**AWS S3**
+
+The service is a set of micro-services that are deployed as **kubernetes** cluster. The kubernetes infra is deployed in **AWS EKS Cluster**.
 
 ## Cluster Management
-**Rancher**
+The cluster is managed using [**Rancher**](https://rancher.com/).
 
 ## Workflow Orchestration
-**Argo**
+
+The media ingest and processing workflows are managed using [**Argo**](https://argoproj.github.io/).
 
 ## Ingest Provisioning API
-**FastAPI**
+
+The REST interfaces are implemented using [**FastAPI**](https://fastapi.tiangolo.com/).
 
 ## Ingest Dashboard
-**ReactJS**
 
-## Workflows Implementation
+The front-end user interface is developed using [**ReactJS**](https://reactjs.org/).
+
+## Programming Languages
+
 **Python**
+**GoLang**
+**Javascript**
