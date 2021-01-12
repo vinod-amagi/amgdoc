@@ -2,7 +2,7 @@
 title: Artwork
 description: Artwork requirements for all the MVPDs
 published: true
-date: 2021-01-12T21:05:47.309Z
+date: 2021-01-12T21:10:39.944Z
 tags: 
 editor: markdown
 ---
@@ -63,13 +63,16 @@ Image dimensions must be 1920x1080 (width x height, 16x9 aspect ratio) for lands
 
 ## Vizio
 
-## Plex
-
 ### Series Image 
 **One 2x3 image**
 
 ### Episode Thumbnail
 **One 16x9 thumbnail image**
+
+## Plex
+
+**One mandatory 2x3 image for the series / program**
+**One optional 16x9 thumbnail image for the episode**
 
 ## Gracenote
 |Type|Aspect Ratio|Dimensions|
