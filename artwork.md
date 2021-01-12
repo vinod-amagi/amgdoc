@@ -2,7 +2,7 @@
 title: Artwork
 description: Artwork requirements for all the MVPDs
 published: true
-date: 2021-01-12T20:55:58.929Z
+date: 2021-01-12T21:05:47.309Z
 tags: 
 editor: markdown
 ---
@@ -72,3 +72,22 @@ Image dimensions must be 1920x1080 (width x height, 16x9 aspect ratio) for lands
 **One 16x9 thumbnail image**
 
 ## Gracenote
+|Type|Aspect Ratio|Dimensions|
+|-|-|-|
+|**Banner (titled)**|||
+|Horizontal|4x3|1440x1080
+|Horizontal|16x9|3840x2160 
+|Horizontal|2x1|2048x1024
+|Square|1x1|3000x3000|
+|Vertical|3x4|2160x2880|
+|**Iconic (not titled)**|||
+|Horizontal|4x3|1440x1080
+|Horizontal|16x9|3840x2160 
+|Horizontal|2x1|2048x1024
+|Square|1x1|3000x3000|
+|Vertical|3x4|2160x2880|
+|**Backdrop (not titled)**||
+|Horizontal|16x9|3840x2160
+|**Transparent Title Treatment**||
+|Horizontal|9x5|1800x1000
+
