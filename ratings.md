@@ -2,7 +2,7 @@
 title: Program Ratings
 description: Detailed information on the accepted values for ratings
 published: true
-date: 2021-01-12T19:18:37.634Z
+date: 2021-01-12T19:19:01.558Z
 tags: 
 editor: markdown
 ---
@@ -18,9 +18,9 @@ For Roku, the ratings are required to be provided for every program. The rating 
 
 The list below captures the list of allowed rating values that can be delivered to Roku.
 
-|12|12A|14+|14A|15|18|18+|18A|A|
-|AA|C|C8|E|G|NC17|NR|PG|PG13|R|
-|R18|TV14|TVG|TVMA|TVPG|TVY|TVY14|
-|TVY7|U|Uc|UNRATED
+12|12A|14+|14A|15|18|18+|18A|A
+AA|C|C8|E|G|NC17|NR|PG|PG13|R
+R18|TV14|TVG|TVMA|TVPG|TVY|TVY14
+TVY7|U|Uc|UNRATED
 
 ### Samsung
