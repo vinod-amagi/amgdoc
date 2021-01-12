@@ -2,7 +2,7 @@
 title: Program Ratings
 description: Detailed information on the accepted values for ratings
 published: true
-date: 2021-01-12T19:46:25.300Z
+date: 2021-01-12T19:47:39.759Z
 tags: 
 editor: markdown
 ---
@@ -73,7 +73,7 @@ TV-Y7|This program is designed for children age 7 and above.
 TV-G|This program is suitable for all ages.
 TV-PG|This program contains material that parents may find unsuitable for younger children.
 TV-14|This program contains some material that many parents would find unsuitable for children under 14 years of age.
-TV-MA|This program is specifically designed to be viewed by adults and therefore may be unsuitable for children under 17. <br/> **Content descriptors**<br/>D: Suggestive dialogue<br/>L: Coarse or crude language<br/>S: Sexual situations<br/>V: Violence<br/>FV: Fantasy violence<br/>For example, content provider can feed format about 1 program like this. TV-14-V, TV-14-S, TV-14-L<br/>TV Setting:<br/> Samsung TV user can set conditional bans using checkboxes.
+TV-MA|This program is specifically designed to be viewed by adults and therefore may be unsuitable for children under 17. <br/> **Content descriptors**<br/>D: Suggestive dialogue<br/>L: Coarse or crude language<br/>S: Sexual situations<br/>V: Violence<br/>FV: Fantasy violence<br/>For example, content provider can feed format about 1 program like this. TV-14-V, TV-14-S, TV-14-L<br/>**TV Setting:**<br/> Samsung TV user can set conditional bans using checkboxes.
 **Movie**|
 G|(General Audiences): All ages are admitted.
 PG|(Parental Guidance Suggested): Some material may not be suitable for children.
