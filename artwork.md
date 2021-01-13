@@ -2,7 +2,7 @@
 title: Artwork
 description: Artwork requirements for all the MVPDs
 published: true
-date: 2021-01-13T05:36:33.821Z
+date: 2021-01-13T05:37:02.969Z
 tags: 
 editor: markdown
 ---
@@ -10,8 +10,6 @@ editor: markdown
 # Artwork
 
 ## Roku
-
-### Series Thumbnails
 
 Level|Mandatory|Aspect Ratio|Minimum Dimension|Preferred Dimension|Titled
 |-|-|-|-|-|-|
@@ -35,6 +33,7 @@ Default^*^|**Yes**|16x9|1280x720|1920x1080|Yes
 ^**^ At least one of either series/program level or episode level is mandatory
 
 ## Sling
+
 Level|Mandatory|Aspect Ratio|Minimum Dimension|Preferred Dimension|Titled
 |-|-|-|-|-|-|
 Series/Program|**Yes**|16x9|1920x1080|1920x1080|Yes
