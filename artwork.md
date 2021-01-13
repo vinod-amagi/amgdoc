@@ -2,7 +2,7 @@
 title: Artwork
 description: Artwork requirements for all the MVPDs
 published: true
-date: 2021-01-13T05:27:20.597Z
+date: 2021-01-13T05:36:33.821Z
 tags: 
 editor: markdown
 ---
@@ -19,35 +19,53 @@ Series/Program|**Yes**|16x9|800x450|1920x1080|Yes
 Series/Program|No|2x3|532x800|532x800|Yes
 Episode|**Yes**|16x9|800x450|1920x1080|Yes
 Episode|No|2x3|532x800|532x800|No
-Default(usually channel)|**Yes**|16x9|800x450|1920x1080|Yes
+Default^*^|**Yes**|16x9|800x450|1920x1080|Yes
+
+^*^ A fall-back image to be used to deliver for all the programs that are missing program-specific images, usually representing the channel
 
 ## Samsung
 
 Level|Mandatory|Aspect Ratio|Minimum Dimension|Preferred Dimension|Titled
 |-|-|-|-|-|-|
-Series/Program|**Yes**|16x9|1280x720|1920x1080|Yes
-Episode|**Yes**|16x9|1280x720|1920x1080|Yes
-Default(usually channel)|**Yes**|16x9|1280x720|1920x1080|Yes
+Series/Program^**^|**Yes**|16x9|1280x720|1920x1080|Yes
+Episode^**^|**Yes**|16x9|1280x720|1920x1080|No
+Default^*^|**Yes**|16x9|1280x720|1920x1080|Yes
+
+^*^ Fall-back to be used to deliver for programs without images, usually representing the channel
+^**^ At least one of either series/program level or episode level is mandatory
 
 ## Sling
+Level|Mandatory|Aspect Ratio|Minimum Dimension|Preferred Dimension|Titled
+|-|-|-|-|-|-|
+Series/Program|**Yes**|16x9|1920x1080|1920x1080|Yes
+Episode|**No**|16x9|1920x1080|1920x1080|Yes
+Default^*^|**Yes**|16x9|1920x1080|1920x1080|Yes
 
-One 16x9 (min. 1920x1080) titled image
-One 16x9 (min. 1920x1080) image
+^*^ Fall-back to be used to deliver for programs without images, usually representing the channel
 
 ## Tivo
 
-One 16x9 (min. 1280x720) titled image for the series / program
-One 16x9 (min. 1280x720) image for the episode
+Level|Mandatory|Aspect Ratio|Minimum Dimension|Preferred Dimension|Titled
+|-|-|-|-|-|-|
+Series/Program|**Yes**|16x9|1920x1080|1920x1080|Yes
+Episode|**No**|16x9|1920x1080|1920x1080|No
+Default^*^|**Yes**|16x9|1920x1080|1920x1080|Yes
+
+^*^ Fall-back to be used to deliver for programs without images, usually representing the channel
 
 ## Vizio
 
-One 2x3 image for the series / program
-One 16x9 thumbnail image for the episode
+Level|Mandatory|Aspect Ratio|Minimum Dimension|Preferred Dimension|Titled
+|-|-|-|-|-|-|
+Series/Program|**Yes**|2x3|NA|2000x3000|Yes
+Episode|**No**|16x9|1920x1080|1920x1080|No
 
 ## Plex
 
-One mandatory 2x3 image for the series / program
-One optional 16x9 thumbnail image for the episode
+Level|Mandatory|Aspect Ratio|Minimum Dimension|Preferred Dimension|Titled
+|-|-|-|-|-|-|
+Series/Program|**Yes**|2x3|NA|NA|Yes
+Episode|**No**|16x9|NA|NA|No
 
 ## Gracenote
 
