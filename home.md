@@ -2,15 +2,16 @@
 title: Introduction
 description: Describes Amagi Media DataBase serving Amagi services - CLOUDPORT, EPG, VoD and Analytics
 published: true
-date: 2021-01-11T16:11:13.831Z
+date: 2021-01-15T10:55:17.047Z
 tags: 
 editor: markdown
+dateCreated: 2021-01-14T10:11:45.287Z
 ---
 
 # *A*magi *M*edia *D*ata*B*ase (AMDB)
 
 <p align="justify">
-Amagi CLOUDPORT platform enables TV Channels, Broadcasters and Digital TV platforms to run TV Channels on cloud. Amagi has been delivering linear channels to an increasing number of MVPD/Streaming TV platforms and traditional Broadcasting networks. As these platforms and networks have been increasing, there is a growing demand to provide additional services to deliver EPG and VOD content to these platforms and networks. The additional services for VOD delivery and EPG require additional assets (artwork) and metadata for processing and delivering as per various MVPD specifications. So there is a need for ingesting a set of contents and metadata that are common to all services, and also a set of contents and metadata that are used by specific services. This led to additional efforts for Amagi and our partners to provide all the required content and metadata. Amagi's Media DataBase is designed to consolidate the ingest of content and related metadata required for all services - CLOUDPORT, EPG, VOD etc., This service will provide interfaces for content partners to deliver contents and metadata to Amagi Media DataBase.
+Amagi CLOUDPORT platform enables TV Networks and OTT providers to play TV Channels on cloud and deliver to various MVPD/Streaming TV platforms and Broadcasting networks. Along with linear channel delivery, EPG and VOD contents are provided to these platforms and networks. The VOD and EPG services require assets (artwork) and metadata for processing and delivering as per various MVPD specifications. Amagi provides a unified interface to ingest media contents, artwork and metadata that is required for linear TV channels, EPG and VOD deliveries. Amagi's Media DataBase is designed to consolidate the ingest of contents, artworks and metadata required for all services - CLOUDPORT, EPG, VOD etc., This service provides various mechanisms for content partners to deliver contents and metadata to Amagi Media DataBase.
 </p>
 
 
