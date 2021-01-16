@@ -2,7 +2,7 @@
 title: Contents
 description: Describes contents and various formats
 published: true
-date: 2021-01-16T13:29:30.214Z
+date: 2021-01-16T13:38:41.873Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-16T12:32:04.354Z
@@ -100,3 +100,15 @@ The following table describes format for audio that are provided additionally.
   
   * CC-608
   * CC-708
+
+  ## Metadata
+  
+The following table describes the metadata used by Amagi CLOUDPORT playout platform.
+  
+| Metadata | Remarks |
+|----------------|----------------|
+|  Title | Title is shown in Amagi CLOUDPORT Media Library |
+| Segments | Segements of video that are identified by [SMPTE Timecode](https://en.wikipedia.org/wiki/SMPTE_timecode) |
+|  Media Type | Media Types are used for various automations - identify commercial breaks, program contents etc.<br> Examples - *program, movie, promo* |
+|  V-Chip | [V-Chip](https://en.wikipedia.org/wiki/V-chip#:~:text=V%2Dchip%20is%20a%20technology,viewing%20based%20on%20blocking%20systems.) Data  |
+|  AFD | [Active Field Descriptor](https://en.wikipedia.org/wiki/Active_Format_Description) |
