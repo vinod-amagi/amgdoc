@@ -2,7 +2,7 @@
 title: Metadata
 description: 
 published: true
-date: 2021-01-16T13:56:10.128Z
+date: 2021-01-16T14:08:52.399Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-14T10:17:39.768Z
@@ -48,6 +48,11 @@ The service supports different formats for ingesting to Amagi services. The foll
   
   * [Media RSS - mRSS](../metadata/formats/mRSS)
   * [CSV](../../csv-xlsx)
+  * [XML](../../xml)
+  * [JSON](/../../json)
   
   
-  **Sample Formats**](sampleformats)
+  **Sample Formats**
+  * [CSV](../../csv-xlsx)
+  * [XML](../../xml)
+  * [JSON](/../../json)
