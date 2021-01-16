@@ -2,7 +2,7 @@
 title: Contents
 description: Describes contents and various formats
 published: true
-date: 2021-01-16T13:29:08.011Z
+date: 2021-01-16T13:29:30.214Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-16T12:32:04.354Z
@@ -89,7 +89,7 @@ The following table describes format for audio that are provided additionally.
   * Teletext
   * Burn-in
   
-### Closed Captions
+## Closed Captions
   
   ### Input Formats
   
