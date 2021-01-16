@@ -2,7 +2,7 @@
 title: Metadata
 description: 
 published: true
-date: 2021-01-16T14:08:52.399Z
+date: 2021-01-16T14:09:59.506Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-14T10:17:39.768Z
@@ -42,7 +42,7 @@ There are different methods to ingest metadata to Amagi Services. These are broa
 
 ## What are the supported formats for ingesting to Amagi services?
 
-The service supports different formats for ingesting to Amagi services. The following links provides a brief description about the formats and links to the sample formats.
+The service supports different formats for ingesting to Amagi services. The following links provides a brief description about the formats.
   
   **Supported Formats**
   
@@ -51,8 +51,3 @@ The service supports different formats for ingesting to Amagi services. The foll
   * [XML](../../xml)
   * [JSON](/../../json)
   
-  
-  **Sample Formats**
-  * [CSV](../../csv-xlsx)
-  * [XML](../../xml)
-  * [JSON](/../../json)
