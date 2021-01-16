@@ -2,7 +2,7 @@
 title: Contents
 description: Describes contents and various formats
 published: true
-date: 2021-01-16T13:38:41.873Z
+date: 2021-01-16T13:40:08.829Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-16T12:32:04.354Z
@@ -112,3 +112,7 @@ The following table describes the metadata used by Amagi CLOUDPORT playout platf
 |  Media Type | Media Types are used for various automations - identify commercial breaks, program contents etc.<br> Examples - *program, movie, promo* |
 |  V-Chip | [V-Chip](https://en.wikipedia.org/wiki/V-chip#:~:text=V%2Dchip%20is%20a%20technology,viewing%20based%20on%20blocking%20systems.) Data  |
 |  AFD | [Active Field Descriptor](https://en.wikipedia.org/wiki/Active_Format_Description) |
+  
+ ## Artwork
+  
+Amagi CLOUDPORT does not use Artwork. The video thumbnail extracted from the video is used in Amagi CLOUDPORT Media Library.
