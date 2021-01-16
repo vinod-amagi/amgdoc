@@ -2,7 +2,7 @@
 title: Genre
 description: Details on the genre metadata
 published: true
-date: 2021-01-16T13:46:41.333Z
+date: 2021-01-16T18:31:05.123Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-14T10:17:10.122Z
@@ -18,10 +18,10 @@ Genres are stylistic categories where a particular TV program / movie can be pla
 The list below captures all the genres accepted by Roku.
 |||||||||
 |-|-|-|-|-|-|-|-|
-action|adventure|animals|animated|anime|comedy|crime|documentary
-|drama|educational|fantasy|faith|food|fashion|gaming|health
-|history|horror|miniseries|mystery|nature|news|reality|romance|
-science|science fiction|sitcom|special|sports|thriller|technology
+`action`|`adventure`|`animals`|`animated`|`anime`|`comedy`|`crime`|`documentary`
+|`drama`|`educational`|`fantasy`|`faith`|`food`|`fashion`|`gaming`|`health`
+|`history`|`horror`|`miniseries`|`mystery`|`nature`|`news`|`reality`|`romance`|
+`science`|`science fiction`|`sitcom`|`special`|`sports`|`thriller`|`technology`
 
 
 ## Samsung
