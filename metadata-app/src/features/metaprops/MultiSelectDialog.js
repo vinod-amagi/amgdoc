@@ -8,7 +8,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import CheckboxList from './CheckboxList'
 import KeyboardArrowDown from '@material-ui/icons/KeyboardArrowDown';
-import { green } from '@material-ui/core/colors';
+import { teal } from '@material-ui/core/colors';
 
 const styles = theme => ({
     container: {
@@ -30,9 +30,9 @@ const styles = theme => ({
 const ColorButton = withStyles((theme) => ({
     root: {
       color: '#FFFFFF',
-      backgroundColor: green[500],
+      backgroundColor: teal[500],
       '&:hover': {
-        backgroundColor: green[700],
+        backgroundColor: teal[700],
       },
     },
   }))(Button);
@@ -64,7 +64,7 @@ class MultiSelectDialog extends React.Component {
                         scroll='paper'
                         open={this.state.open} 
                         onClose={this.handleClose}>
-                    <DialogTitle>Select Platforms</DialogTitle>
+                    <DialogTitle>Platforms</DialogTitle>
                     <DialogContent>
                         <form className={classes.container}>
                             <CheckboxList

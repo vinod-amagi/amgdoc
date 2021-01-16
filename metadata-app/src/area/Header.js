@@ -38,22 +38,6 @@ const styles = theme => ({
     hide: {
         display: 'none',
     },
-    subscriptionMenu: {
-        top: "-10px !important",
-        left: "unset !important"
-    },
-    logoutMenu: {
-        top: "-10px !important",
-        right: "0px !important",
-        left: "unset !important"
-    },
-    logout: {
-        color: theme.palette.error.main
-    },
-    subscription: {
-        color: theme.palette.primary.main
-    }
-
 });
 
 class Header extends React.Component {

@@ -1,14 +1,15 @@
 import { createSlice } from '@reduxjs/toolkit';
-import {MetaProps, Platforms} from './MetaProps'
+import {MetaProps as EPGMetaProps, Platforms as EPGPlatforms} from './EPGMetaProps'
+import {MetaProps as VODMetaProps, Platforms as VODPlatforms} from './VODMetaProps'
 
 export const metapropsSlice = createSlice({
   name: 'metaprops',
   initialState: {
     value: 0,
-    metaProps: MetaProps(),
-    platforms: Platforms(),
+    metaProps: EPGMetaProps(),
+    platforms: EPGPlatforms(),
     selectedPlatforms : ["Samsung", "Roku"],
-    hideEmptyProps: true,
+    showEPG: true,
   },
   reducers: {
     update: state => {
@@ -21,13 +22,17 @@ export const metapropsSlice = createSlice({
     updatePlatforms: (state, action) => {
       state.selectedPlatforms = action.payload;
     },
-    toggleHideEmptyProps: (state) => {
-      state.hideEmptyProps = !state.hideEmptyProps
+
+    toggleShowEPG: (state) => {
+      state.showEPG = !state.showEPG
+      state.metaProps = state.showEPG ? EPGMetaProps() : VODMetaProps()
+      state.platforms = state.showEPG ? EPGPlatforms() : VODPlatforms()
+      state.selectedPlatforms = state.showEPG ? ["Samsung", "Roku"] : ["Sling", "Xumo"]
     }
   },
 });
 
-export const { update, updateByType, updatePlatforms, toggleHideEmptyProps } = metapropsSlice.actions;
+export const { update, updateByType, updatePlatforms, toggleShowEPG } = metapropsSlice.actions;
 
 // The function below is called a thunk and allows us to perform async logic. It
 // can be dispatched like a regular action: `dispatch(incrementAsync(10))`. This
@@ -50,6 +55,6 @@ export const selectCount = state => state.metaprops.value;
 export const selectMetaProps = state => state.metaprops.metaProps;
 export const selectPlatforms = state => state.metaprops.platforms;
 export const selectSelectedPlatforms = state => state.metaprops.selectedPlatforms;
-export const selectHideEmptyProps = state => state.metaprops.hideEmptyProps;
+export const selectShowEPG = state => state.metaprops.showEPG;
 
 export default metapropsSlice.reducer;

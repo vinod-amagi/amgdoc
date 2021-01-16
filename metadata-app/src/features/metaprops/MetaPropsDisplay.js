@@ -1,4 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
+import { withStyles } from '@material-ui/core/styles';
+import { teal } from '@material-ui/core/colors';
 import MetaPropertiesTable from './MetaPropsTable'
 import MultiSelectDialog from './MultiSelectDialog'
 import AppBar from '@material-ui/core/AppBar';
@@ -11,17 +13,30 @@ import {
   selectMetaProps,
   selectPlatforms,
   selectSelectedPlatforms,
-  selectHideEmptyProps,
+  selectShowEPG,
   updatePlatforms,
-  toggleHideEmptyProps,
-} from './MetapropsSlice';
+  toggleShowEPG,
+} from './MetaPropsSlice';
 
+const GreenSwitch = withStyles({
+  switchBase: {
+    color: teal[300],
+    '&$checked': {
+      color: teal[500],
+    },
+    '&$checked + $track': {
+      backgroundColor: teal[500],
+    },
+  },
+  checked: {},
+  track: {},
+})(Switch);
 
 export function MetaPropsDisplay() {
   const metaProps = useSelector(selectMetaProps);
   const platforms = useSelector(selectPlatforms);
   const selectedPlatforms = useSelector(selectSelectedPlatforms);
-  const hideEmptyProps = useSelector(selectHideEmptyProps);
+  const showEPG = useSelector(selectShowEPG);
   const dispatch = useDispatch();
 
   function selectionChanged(selected) {
@@ -29,13 +44,14 @@ export function MetaPropsDisplay() {
   }
 
   function handleToggleClick() {
-    dispatch(toggleHideEmptyProps())
+    dispatch(toggleShowEPG())
   }
 
   return (
     <div>
       <AppBar position="static">
         <Toolbar>
+        <div style={{ alignItems: "center", display: "flex", flexGrow: 1 }}>
           <MultiSelectDialog
             names={platforms}
             selectedNames={selectedPlatforms}
@@ -43,18 +59,25 @@ export function MetaPropsDisplay() {
 
           <Typography component="div">
             <Grid component="label" container alignItems="center" spacing={1} style={{ marginLeft: 20 }}>
-              <Grid item>Show All</Grid>
+              <Grid item>VOD</Grid>
               <Grid item>
-                <Switch checked={hideEmptyProps ? true : false} onChange={() => handleToggleClick()} name="popmechBlip" />
+                <GreenSwitch checked={showEPG ? true : false} onChange={() => handleToggleClick()} name="popmechBlip" />
               </Grid>
-              <Grid item>Hide Empty</Grid>
+              <Grid item>EPG</Grid>
             </Grid>
           </Typography>
-
+          </div>
+          <div style={{ display: "flex", alignItems: "center" }}>
+              <div style={{display: "flex", flexDirection: "column", alignItems: "center", padding: 10}}>
+                  <Typography  style={{fontSize: "1.0125rem", fontStyle: "italic", color: teal[500]}}>
+                    Select metadata for EPG and VOD delivery to platforms
+                  </Typography>
+              </div>
+          </div>
         </Toolbar>
       </AppBar>
       <MetaPropertiesTable
-        data={{ metaProps, names: selectedPlatforms, hideEmptyProps }}
+        data={{ metaProps, names: selectedPlatforms, hideEmptyProps : false }}
       />
     </div>
   );

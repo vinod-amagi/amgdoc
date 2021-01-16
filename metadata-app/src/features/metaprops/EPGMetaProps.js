@@ -18,7 +18,7 @@ const  metaProps =  (
     {
         "name": "TMS ID",
         "prop": "tms_id",
-        "description": "TMS ID allocated by Gracenote for the program",
+        "description": "TMS ID from Gracenote",
         "platforms": [
             {
                 "name": "Samsung",
@@ -409,7 +409,7 @@ const  metaProps =  (
     {
         "name": "Images",
         "prop": "images",
-        "description": "16x9 (1920x1080) is usually preferred",
+        "description": "16x9 (1920x1080) is preferred",
         "platforms": [
             {
                 "name": "Samsung",
@@ -459,7 +459,7 @@ const  metaProps =  (
     {
         "name": "Image Rights",
         "prop": "image_rights",
-        "description": "Validity start and end if this is licensed",
+        "description": "Validity Start and End for licensed images",
         "platforms": [
             {
                 "name": "Samsung",
