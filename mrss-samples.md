@@ -2,13 +2,15 @@
 title: Media RSS Samples
 description: All supported media RSS samples
 published: true
-date: 2021-01-08T22:46:28.657Z
+date: 2021-01-16T18:07:20.010Z
 tags: 
 editor: markdown
+dateCreated: 2021-01-14T10:17:23.505Z
 ---
 
-Media RSS Version 1
-```
+# Media RSS Version 1.0
+
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:amagi="http://www.amagi.com/rss/namespace" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
    <title><![CDATA[Title of the Feed]]></title>
@@ -205,7 +207,3 @@ Media RSS Version 1
 </rss>
 ```
 
-Media RSS Version 2
-```
-
-```
