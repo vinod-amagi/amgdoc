@@ -2,7 +2,7 @@
 title: Metadata
 description: 
 published: true
-date: 2021-01-16T13:43:53.723Z
+date: 2021-01-16T13:56:10.128Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-14T10:17:39.768Z
@@ -44,6 +44,10 @@ There are different methods to ingest metadata to Amagi Services. These are broa
 
 The service supports different formats for ingesting to Amagi services. The following links provides a brief description about the formats and links to the sample formats.
   
-  * **Supported Formats**
-  			* [Media RSS - mRSS](../metadata/formats/mRSS)
-  * [**Sample Formats**](sampleformats)
+  **Supported Formats**
+  
+  * [Media RSS - mRSS](../metadata/formats/mRSS)
+  * [CSV](../../csv-xlsx)
+  
+  
+  **Sample Formats**](sampleformats)
