@@ -2,7 +2,7 @@
 title: Contents
 description: Describes contents and various formats
 published: true
-date: 2021-01-16T13:11:44.626Z
+date: 2021-01-16T13:13:43.419Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-16T12:32:04.354Z
@@ -24,8 +24,8 @@ The contents used by Amagi CLOUDPORT are as listed below:-
 |Video|SD PAL|SD NTSC|720P|HD [1080i50]|HD [1080i60]|HD [1080p25]|
 |--|--|--|--|--|--|--|
 |Standard|PAL|NTSC|NTSC|PAL|NTSC|PAL|
-|Format|MPEG TS/MXF/MP4/Mov|MPEG TS/MXF/MP4/Mov|MPEG TS/MXF/MP4/Mov|MPEG TS/MXF/MP4/Mov|MPEG TS/MXF/MP4/Mov|MPEG TS/MXF/MP4/Mov|
-|File Extension|ts/mxf/mp4/Mov|ts/mxf/mp4/Mov|ts/mxf/mp4/Mov|ts/mxf/mp4/Mov|ts/mxf/mp4/Mov|ts/mxf/mp4/Mov|
+|Format|MPEG TS/MXF/MP4/MOV|MPEG TS/MXF/MP4/MOV|MPEG TS/MXF/MP4/MOV|MPEG TS/MXF/MP4/MOV|MPEG TS/MXF/MP4/MOV|MPEG TS/MXF/MP4/MOV|
+|File Extension|ts/mxf/mp4/mov|ts/mxf/mp4/mov|ts/mxf/mp4/mov|ts/mxf/mp4/mov|ts/mxf/mp4/mov|ts/mxf/mp4/mov|
 |Video Pid|2064 (0x810)|2064 (0x810)|2064 (0x810)|2064 (0x810)|2064 (0x810)|2064 (0x810)|
 |Video Format|AVC|AVC|AVC|AVC|AVC|AVC|
 |Video Resolution|720x576|720x480|1280x720|1920x1080|1920x1080|1920x1080|
