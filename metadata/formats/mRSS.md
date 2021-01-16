@@ -2,7 +2,7 @@
 title: mRSS
 description: 
 published: true
-date: 2021-01-16T18:05:31.382Z
+date: 2021-01-16T18:06:22.085Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-14T10:17:49.451Z
@@ -14,7 +14,7 @@ mRSS Feed that can be used for ingesting metadata to Amagi systems are based on 
 
 1. [Media RSS (mRSS) Specification, Version 1.5.1](https://www.rssboard.org/media-rss)
 2. [RSS 2.0 Specification](https://www.rssboard.org/rss-specification)
-3. [Amagi mRSS Sample](../mrss-samples)
+3. [Amagi mRSS Sample](../../mrss-samples)
 
 |Field|Description|
 |---|---|
