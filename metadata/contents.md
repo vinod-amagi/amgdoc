@@ -2,7 +2,7 @@
 title: Contents
 description: Describes contents and various formats
 published: true
-date: 2021-01-16T13:13:43.419Z
+date: 2021-01-16T13:29:08.011Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-16T12:32:04.354Z
@@ -21,6 +21,25 @@ The contents used by Amagi CLOUDPORT are as listed below:-
 
 ## Video
 
+
+### Playout Output Formats
+
+|Parameters|Supported|
+|---|---|
+|Aspect Ratio|	<li>16:9<li>4:3|
+|Video resolution|	<li>1080i50<li>1080i60<li>1080p29.97<li>720p<li>SD-PAL<li>SD-NTSC|
+|Video Format|	<li>H.264<li>MPEG-2|
+|Audio format|	<li>MPEG-1 Layer 2<li>AAC<li>AC3|
+|Audio Tracks|	No of tracks, Stereo
+|Subtitles output|	<li>Burn-in<li>DVB Teletext<li>Closed Caption<li>Tele-Text|
+|Additional Info|	<li>AFD<li>Aspect Ratio<li>VChip<li>EIT<li>AIT|
+|Playout Output|<li>TSoIP<li>ASI<li>SDI|
+
+  
+### Input Formats - Video
+ 
+The following table describes the input formats for Video content.
+  
 |Video|SD PAL|SD NTSC|720P|HD [1080i50]|HD [1080i60]|HD [1080p25]|
 |--|--|--|--|--|--|--|
 |Standard|PAL|NTSC|NTSC|PAL|NTSC|PAL|
@@ -45,10 +64,39 @@ The contents used by Amagi CLOUDPORT are as listed below:-
 
 ## Audio
 
-|Codec|AAC|AAC|AAC|AAC|AAC|AAC|
-|--|--|--|--|--|--|--|
-|Audio Level|Normalized to -12dB|Normalized to -12dB|Normalized to -12dB|Normalized to -12dB|Normalized to -12dB|Normalized to -12dB|
-|Format Profile|LC|LC|LC|LC|LC|LC|
-|Audio Bitrate (kbps)|192 to 320|192 to 320|192 to 320|192 to 320|192 to 320|192 to 320|
-|Sampling Rate (KHz)|48|48|48|48|48|48|
-|Channels|Upto sixteen stereo tracks|Upto sixteen stereo tracks|Upto four stereo tracks|Upto sixteen stereo tracks|Upto sixteen stereo tracks|Upto sixteen stereo tracks|
+### Input Audio Formats
+
+The following table describes format for audio that are provided additionally.
+  
+|Codec|WAV|
+|--|--|
+|Audio Level|Normalized to -12dB
+|Audio Bitrate (kbps)|192 to 320|
+|Sampling Rate (KHz)|48|
+|Channels|Stereo, 2-Mono|
+  
+## Subtitles
+  
+### Input Formats
+  
+  * PAC
+  * SRT
+  * STL
+  
+### Output Formats
+  
+  * DVB
+  * Teletext
+  * Burn-in
+  
+### Closed Captions
+  
+  ### Input Formats
+  
+  * SCC
+  * MCC
+  
+### Output Formats
+  
+  * CC-608
+  * CC-708
