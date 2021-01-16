@@ -2,7 +2,7 @@
 title: Contents
 description: Describes contents and various formats
 published: true
-date: 2021-01-16T13:08:57.878Z
+date: 2021-01-16T13:11:44.626Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-16T12:32:04.354Z
@@ -42,3 +42,13 @@ The contents used by Amagi CLOUDPORT are as listed below:-
 |GOP|M=2; N=25|M=2; N=33|M=2; N=33|M=2; N=25|M=2; N=33|M=2; N=33|
 |Scan Type|Progressive<br>Interlaced <br> - Interleaved Fields<br> Separated Fields|Progressive<br>Interlaced <br> - Interleaved Fields<br> Separated Fields|Progressive|Progressive<br>Interlaced <br> - Interleaved Fields<br> Separated Fields|Progressive<br>Interlaced <br> - Interleaved Fields<br> Separated Fields|Progressive<br>Interlaced <br> - Interleaved Fields<br> Separated Fields|
 |Field Order|Top Field First (for interlaced video)|Top Field First (for interlaced video)|NA|Top Field First (for interlaced video)|Top Field First (for interlaced video)|Top Field First (for interlaced video)|
+
+## Audio
+
+|Codec|AAC|AAC|AAC|AAC|AAC|AAC|
+|--|--|--|--|--|--|--|
+|Audio Level|Normalized to -12dB|Normalized to -12dB|Normalized to -12dB|Normalized to -12dB|Normalized to -12dB|Normalized to -12dB|
+|Format Profile|LC|LC|LC|LC|LC|LC|
+|Audio Bitrate (kbps)|192 to 320|192 to 320|192 to 320|192 to 320|192 to 320|192 to 320|
+|Sampling Rate (KHz)|48|48|48|48|48|48|
+|Channels|Upto sixteen stereo tracks|Upto sixteen stereo tracks|Upto four stereo tracks|Upto sixteen stereo tracks|Upto sixteen stereo tracks|Upto sixteen stereo tracks|
