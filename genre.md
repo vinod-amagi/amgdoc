@@ -2,17 +2,18 @@
 title: Genre
 description: Details on the genre metadata
 published: true
-date: 2021-01-12T20:36:13.997Z
+date: 2021-01-16T13:46:41.333Z
 tags: 
 editor: markdown
+dateCreated: 2021-01-14T10:17:10.122Z
 ---
 
-## Genre
+# Genre
 <p align="justify">
 Genres are stylistic categories where a particular TV program / movie can be placed based on the setting, characters, plot, mood, tone, and theme. The main genre will be based on where the majority of the content lands. A sub-genre is a smaller category that fits inside a particular genre. Often this is a mixture of two separate genres. Genres and sub-genres change over time and are informed by one another.
 </p>
 
-### Roku
+## Roku
 
 The list below captures all the genres accepted by Roku.
 |||||||||
@@ -23,7 +24,7 @@ action|adventure|animals|animated|anime|comedy|crime|documentary
 science|science fiction|sitcom|special|sports|thriller|technology
 
 
-### Samsung
+## Samsung
 <p aling="justify">
 The following table lists the available genres or categorizations for programs and groups. If
 more than one genre can be assigned for the original program or group, set the primary
