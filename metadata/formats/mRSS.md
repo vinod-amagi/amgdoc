@@ -2,9 +2,10 @@
 title: mRSS
 description: 
 published: true
-date: 2021-01-11T16:47:20.041Z
+date: 2021-01-16T17:58:11.934Z
 tags: 
 editor: markdown
+dateCreated: 2021-01-14T10:17:49.451Z
 ---
 
 ## Amagi mRSS Format
@@ -31,8 +32,8 @@ media:keywords|List of keywords
 media:category|List of categories
 media:rating|Rating as per the rating agency
 media:thumbnail|Thumbnail images
-**episodes**>>|Episodes in a series
-**item**>>|Episode item
+**episodes**|**Episodes in a series**|
+**item**|**Episode item**|
 guid|Unique id of episode
 amagi:externalId|External Id such as TMS ID, EIDR ID etc.,
 title|Title of the episode
