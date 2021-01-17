@@ -2,7 +2,7 @@
 title: Program Ratings
 description: Detailed information on the accepted values for ratings
 published: true
-date: 2021-01-17T17:42:32.002Z
+date: 2021-01-17T17:43:16.673Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-14T10:17:25.832Z
@@ -46,7 +46,7 @@ This document captures the various specifications for the Ratings, including the
 
 The following sections describes the ratings information required by MVPDs.
 
-### Roku
+## Roku
 
 For Roku, the ratings are required to be provided for every program, which includes a rating value and a rating source. <br/>
 The list below captures the allowed rating sources that are accepted by Roku.
@@ -66,7 +66,7 @@ The list below captures the allowed rating values that can be delivered to Roku.
 C|C8|E|G|NC17|NR|PG|PG13|R|R18|
 TV14|TVG|TVMA|TVPG|TVY|TVY14|TVY7|U|Uc|UNRATED
 
-### Samsung
+## Samsung
 
 <p align="justify">
 The following table lists the content ratings available in countries where TV PLUS is currently
