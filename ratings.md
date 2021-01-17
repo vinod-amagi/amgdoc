@@ -2,17 +2,49 @@
 title: Program Ratings
 description: Detailed information on the accepted values for ratings
 published: true
-date: 2021-01-12T19:47:39.759Z
+date: 2021-01-17T17:40:41.525Z
 tags: 
 editor: markdown
+dateCreated: 2021-01-14T10:17:25.832Z
 ---
 
 # Ratings
+
+
+## TV Content Ratings - USA
+
+The Television content rating system in the United States used by the television industry and the Federal Communications Commission (FCC).
+
+| Rating| Type| Description|
+|--|--|--|
+|**TV-Y**|All Children| Intended for children ages 2 to 6 and is not designed or expected to frighten|
+|**TV-Y7**|Directed to Older Children|Intended for children ages 7 and older. Best suited for children who know the difference between real life and make-believe. Contains mild fantasy or comedic violence. Some content could frighten younger children (under age 7).|
+|**TV-Y7 FV**|Directed to Older Children - Fantasy Violence|Intended for older children. Contains fantasy violence more combative than TVY7 programs.|
+|**TV-G**|General Audience|Intended for all ages. Contains little or no violence, no strong language and little or no sexual dialogue or situations.
+|**TV-PG**|Parental Guidance Suggested|Intended for younger children in the company of an adult. Possibly contains some suggestive dialogue, infrequent coarse language, some sexual situations or some moderate violence.|
+|**TV-14**|Parents Strongly Cautioned|Intended for children ages 14 and older in the company of an adult. Possibly contains intensely suggestive dialogue, strong coarse language, intense sexual situations or intense violence.|
+|**TV-MA**|Mature Audience Only|Intended for adults and may be unsuitable for children under 17. Possibly contains crude indecent language, explicit sexual activity or graphic violence.|
+
+## MPAA Film Ratings
+
+| Rating| Type| Description|
+|---|---|---|
+|**G**|General Audiences|All ages admitted. Nothing that would offend parents for viewing by children.|
+|**PG**|Parental Guidance Suggested|Some material may not be suitable for children. Parents urged to give "parental guidance". May contain some material parents might not like for their young children.|
+|**PG-13**|Parents Strongly Cautioned|Some material may be inappropriate for children under 13. Parents are urged to be cautious. Some material may be inappropriate for pre-teenagers.|
+|**R**|Restricted|Under 17 requires accompanying parent or adult guardian. Contains some adult material. Parents are urged to learn more about the film before taking their young children with them.|
+|**NC-17**|Adults Only|No One 17 and Under Admitted. Clearly adult. Young children will not be admitted to watch the film.|
+
+
 <p align="justify">
 Many of the MVPDs prefer to receive rating information for the scheduled programs as part of the metadata. These ratings vary as per the rating bodies in various countries. Hence the platforms may require ratings to be specified according to the country in which the stream is broadcast.
 
 This document captures the various specifications for the Ratings, including the allowed values for the various MVPDs to which these values are delivered.
 </p>
+
+## Content Ratings - MVPDs
+
+The following sections describes the ratings information required by MVPDs.
 
 ### Roku
 
