@@ -2,7 +2,7 @@
 title: Amagi CLOUDPORT
 description: Describes ingest mechanism for Amagi CLOUDPORT
 published: true
-date: 2021-01-17T16:34:01.956Z
+date: 2021-01-17T17:07:32.106Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-17T16:34:01.956Z
@@ -36,3 +36,4 @@ Amagi creates a unique <a href="https://aws.amazon.com/s3/">AWS S3</a> bucket fo
 
 ---
 
+Amagi EPG and VOD services will require additional metadata for delivering to MVPDs and Networks. The methods to ingest metadata is provided in this link - [ingest methods](../ingest). Also, the additional methods to ingest content and metadata are also provided in the link.
