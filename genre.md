@@ -2,7 +2,7 @@
 title: Genre
 description: Details on the genre metadata
 published: true
-date: 2021-01-16T18:31:05.123Z
+date: 2021-01-18T06:12:09.881Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-14T10:17:10.122Z
@@ -28,7 +28,7 @@ The list below captures all the genres accepted by Roku.
 <p aling="justify">
 The following table lists the available genres or categorizations for programs and groups. If
 more than one genre can be assigned for the original program or group, set the primary
-genre or category.
+genre or category. <br/><br/> When a new channel is onboarded, the content partner may choose a genre for the channel from this table below.
 </p>
 
 ID|Genre (en)|Genre (ko)
