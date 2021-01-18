@@ -2,7 +2,7 @@
 title: Amagi CLOUDPORT
 description: Describes ingest mechanism for Amagi CLOUDPORT
 published: true
-date: 2021-01-17T17:07:32.106Z
+date: 2021-01-18T05:53:57.243Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-17T16:34:01.956Z
@@ -15,7 +15,7 @@ Amagi creates a unique <a href="https://aws.amazon.com/s3/">AWS S3</a> bucket fo
  </p>
 
 <p align="justify">
-  PArtners can upload video in <a href='../metadata/contents'><b>formats</b></a> supported by Amagi CLOUDPORT platform. The video files are transcoded to MPEG-TS for as part of video processing by Amagi CLOUDPORT. Amagi CLOUDPORT supports playing <a href="https://en.wikipedia.org/wiki/Material_Exchange_Format"/>MXF</a> files natively and hence can avoid transcoding as part of the processing. The processed files are further analysed for quality issues with video using an automated QC process. The metadata  about the content can be ingested directly to S3 Bucket. These metadata contains information used for linear channel playout. This information is as follows:-
+  Partners can upload videos in <a href='../metadata/contents'><b>formats</b></a> supported by Amagi CLOUDPORT platform. The video files are transcoded to MPEG-TS for as part of video processing by Amagi CLOUDPORT. Amagi CLOUDPORT supports playing <a href="https://en.wikipedia.org/wiki/Material_Exchange_Format"/>MXF</a> files natively and hence can avoid transcoding as part of the processing. The processed files are further analysed for quality issues with video using an automated QC process. The metadata  about the content can be ingested directly to S3 Bucket. These metadata contains information used for linear channel playout. This information is as follows:-
  </p>
    
   * Title
