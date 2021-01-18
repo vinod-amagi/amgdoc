@@ -2,7 +2,7 @@
 title: Metadata
 description: 
 published: true
-date: 2021-01-16T14:09:59.506Z
+date: 2021-01-18T06:03:22.229Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-14T10:17:39.768Z
@@ -21,12 +21,12 @@ Metadata represents data that describes a media content, specifically video cont
 | Amagi Service | Service Description | Metadata | Remarks |
 |----------------|----------------|----------------|----------------|
 | CLOUDPORT | Linear Channel Playout | Title |  |
-|   |   | Segments | Segements |
+|   |   | Segments | Segments' start/end TC|
 |   |   | Media Type | Types - program, movie, promo |
 |   |   | V-Chip |  |
 |   |   | AFD | Active Field Descriptor |
 | EPG | Electronic Programming Guide | Used for delivering EPG to MVPD platforms | As per EPG specification from MVPD  |
-| VoD | Video on Demand Delivery | Used for delivering VoD contents to MVPD platforms | As per requirements for VoD Delivery  |
+| VOD | Video on Demand Delivery | Used for delivering VOD contents to MVPD platforms | As per requirements for VOD Delivery  |
 | Analytics | Analytics | Title |  |
 |   |   | Content Id | External Content Id |
 
