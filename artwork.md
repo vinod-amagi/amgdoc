@@ -2,9 +2,10 @@
 title: Artwork
 description: Artwork requirements for all the MVPDs
 published: true
-date: 2021-01-13T05:37:02.969Z
+date: 2021-01-18T05:48:02.617Z
 tags: 
 editor: markdown
+dateCreated: 2021-01-14T10:17:05.177Z
 ---
 
 # Artwork
@@ -89,3 +90,4 @@ Although Gracenote does not enforce image deliveries in the EPG from Amagi, if t
 |**Transparent Title Treatment**||
 |Horizontal|9x5|1800x1000
 
+Please refer to the official image style guide from Gracenote here: [Gracenote Image Style Guide](https://d3bd0tgyk368z1.cloudfront.net/feeds/media_ingest/images/gracenote/Gracenote_ImageGuide.pdf)
