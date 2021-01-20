@@ -1,0 +1,9 @@
+- label: 'Introduction'
+  link: '/'
+- label: Docs
+  items:
+    - label: 'Configure a workflow'
+      link: '/configure'
+    - label: 'New'
+      link: '/new'
+    

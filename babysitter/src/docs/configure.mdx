@@ -1,0 +1,61 @@
+# Configuration
+
+A workflow can be configured using the following definition
+
+```yml
+workflow:
+  name: "Sample workflow"
+  type: "lambda"
+  inputs:
+    - version:
+      type: "string"
+      description: "Version number of workflow"
+      max_length: 100
+    - stage:
+      type: "string"
+      default: "workflow-dev"
+      description: "Stage for deployment"
+      max_length: 100
+      min_length: 3
+    - bucket:
+      type: "string"
+      description: "S3 bucket"
+  tasks:
+    - deployment: 
+      steps:
+        - "git clone https://github.com/amagimedia/sampleworkflow.git"
+        - "git checkout tags/${version} -b ${version}"
+        - "serverless deploy --stage=${stage} --bucket=${bucket} --prefix=${prefix} --suffix=${suffix}"
+    - retry:
+      steps:
+        - type: "lambda"
+        - requires:
+          - bucket
+          - key
+    - trigger:
+      steps:
+        - type: "lambda"
+        - requires:
+          - bucket
+          - key
+  recorder:
+    key: "if len(${log}) > 0 && ${log}.starts_with('Key') {return ${log}.split('Key ')[1]}"
+    started: "if len(${log}) > 0 && ${log}.starts_with('BEGIN') {return true}"
+    completed: "if len(${log}) > 0 && ${log}.starts_with('END') {return true}"
+    panic: "if len(${log}) > 0 && ${log}.starts_with('PANIC') {return true}"
+    failed: "if len(${log}) > 0 && ${log}.starts_with('FAILED') {return true}"
+```
+## Details
+### Name
+Name of the workflow
+### Type
+Type of the workflow, it can be one of the following
+- Lambda 
+- Argos
+- Custom
+### Inputs
+Values read from via the UI to configure this lambda to deploy, retrigger and analyse the logs.
+### Tasks
+Different tasks that can be ran using the workflow and steps needs to be run for each task.
+### Recorder
+Recorder will be reading the logs and identifying each status defined.
