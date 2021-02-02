@@ -2,7 +2,7 @@
 title: Getting Started
 description: Summarise the provisioning process
 published: true
-date: 2021-02-02T06:30:38.605Z
+date: 2021-02-02T06:35:59.798Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-14T10:17:12.679Z
@@ -42,31 +42,31 @@ Media Ingest Service requests are facilitated through a partner account. The par
 
 * A helpdesk service is used for managing accounts and operations.
 
-* When a new account is created, additional information will be sent as an email.
+* When a new account is created, additional information and instructions will be sent as an email.
 
 ------
 
 ## Set up *Ingest Flow*
 
-* A new *Ingest Flow* is required to setup workflow for ingesting content using Media Ingest Service
+* A new ***Ingest Flow*** is required to be set up for ingesting content using Media Ingest Service
 
-* Partner can raise a ticket to add a new "*Ingest Flow*" using the account
+* Partner can raise a ticket to add a new "*Ingest Flow*" using the partner account
 
 * While requesting, an existing ingest method can be selected from the supported list of methods. The list of methods are described in detail as part of this guide.
 
-* Based on the ingest method and the metadata formats selected, Media Service Team will provide timelines for setup of *Ingest Flow*.
+* Based on the ingest method and the metadata formats selected, Media Service Team will provide timelines for setup of ***Ingest Flow***.
 
-* Regular updates will be provided on the progress of "*Ingest Flow*" setup to the partner through the ticket.
+* Regular updates will be provided on the progress of ***Ingest Flow*** setup to the partner through the ticket.
   
-* Request to setup "*Ingest Flow*" can be created using email also. The email will automatically create a ticket and updates will be communicated through emails.
+* Request to setup ***Ingest Flow*** can be created using email also. The email will automatically create a ticket and updates will be communicated through emails.
 
 ------
 
 ## Change Request
 
-* Changes to the "*Ingest Flow*" can be initiated through the helpdesk service.
+* Changes to the ***Ingest Flow*** can be initiated through the helpdesk service ticket.
 
-* Progress of the change and updates on change will be tracked and communicated using the helpdesk service.
+* Progress of the change and updates on change will be communicated using the helpdesk service.
 
 ------
 
@@ -78,6 +78,6 @@ Media Ingest Service requests are facilitated through a partner account. The par
 
 * Periodical reports on the ingested content is provided over email.
 
-* In case of issues, Amagi Operations will provide necessary guidance.
+* In case of issues, Amagi Operations will provide necessary support.
 
 ------
