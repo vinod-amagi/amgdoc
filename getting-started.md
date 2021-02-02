@@ -2,7 +2,7 @@
 title: Getting Started
 description: Summarise the provisioning process
 published: true
-date: 2021-02-02T06:35:59.798Z
+date: 2021-02-02T06:36:23.742Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-14T10:17:12.679Z
@@ -78,6 +78,6 @@ Media Ingest Service requests are facilitated through a partner account. The par
 
 * Periodical reports on the ingested content is provided over email.
 
-* In case of issues, Amagi Operations will provide necessary support.
+* In case of issues with content ingest, Amagi Operations will provide necessary support.
 
 ------
