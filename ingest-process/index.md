@@ -2,9 +2,10 @@
 title: Ingest Process
 description: 
 published: true
-date: 2021-01-08T19:04:40.658Z
+date: 2021-01-14T10:17:39.118Z
 tags: 
 editor: undefined
+dateCreated: 2021-01-14T10:17:37.544Z
 ---
 
 ## How is content ingested?

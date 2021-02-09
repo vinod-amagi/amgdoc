@@ -2,9 +2,9 @@
 title: Program Ratings
 description: Detailed information on the accepted values for ratings
 published: true
-date: 2021-01-17T17:43:16.673Z
+date: 2021-01-17T17:43:18.542Z
 tags: 
-editor: markdown
+editor: undefined
 dateCreated: 2021-01-14T10:17:25.832Z
 ---
 

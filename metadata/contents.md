@@ -2,9 +2,9 @@
 title: Contents
 description: Describes contents and various formats
 published: true
-date: 2021-01-16T13:40:08.829Z
+date: 2021-01-16T13:40:10.654Z
 tags: 
-editor: markdown
+editor: undefined
 dateCreated: 2021-01-16T12:32:04.354Z
 ---
 

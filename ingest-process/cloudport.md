@@ -2,9 +2,9 @@
 title: Amagi CLOUDPORT
 description: Describes ingest mechanism for Amagi CLOUDPORT
 published: true
-date: 2021-01-18T05:53:57.243Z
+date: 2021-01-18T05:53:58.903Z
 tags: 
-editor: markdown
+editor: undefined
 dateCreated: 2021-01-17T16:34:01.956Z
 ---
 

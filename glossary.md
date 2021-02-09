@@ -2,9 +2,9 @@
 title: Glossary
 description: Vocabulary used in this documentation
 published: true
-date: 2021-01-18T06:09:02.350Z
+date: 2021-01-18T06:09:04.008Z
 tags: 
-editor: markdown
+editor: undefined
 dateCreated: 2021-01-14T10:17:14.994Z
 ---
 

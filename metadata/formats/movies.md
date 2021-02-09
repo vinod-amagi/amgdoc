@@ -2,9 +2,9 @@
 title: Movies
 description: 
 published: true
-date: 2021-01-16T18:16:41.965Z
+date: 2021-01-16T18:16:43.606Z
 tags: 
-editor: markdown
+editor: undefined
 dateCreated: 2021-01-14T10:17:51.807Z
 ---
 
