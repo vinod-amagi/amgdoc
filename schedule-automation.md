@@ -2,7 +2,7 @@
 title: Scheduling Automation
 description: Automated scheduling
 published: true
-date: 2021-02-11T13:17:56.897Z
+date: 2021-02-11T13:31:08.630Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-11T13:17:56.897Z
@@ -29,3 +29,7 @@ CLOUDPORT allows to copy the schedule used in a channel to be copied to another 
 * Copy schedule and replace commercials for a specific geography or market
 
 * Copy schedule and remove specific contents that have licensing limitations
+
+## Scheduled Rescue
+
+Autmatically fill **holes** in the schedule with the rescue contents available in the media library. A **hole** is a portion of the schedule where no content is scheduled. A **rescue** asset is a content that is identified to play in case of an emergency. Amagi CLOUDPORT provides mechanism to define specific types of contents as *filler* and *wheeler* contents.
