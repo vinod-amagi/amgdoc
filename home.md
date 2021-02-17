@@ -2,7 +2,7 @@
 title: Amagi Documentation
 description: A home page for all Amagi documentations
 published: true
-date: 2021-02-17T11:20:34.331Z
+date: 2021-02-17T11:27:06.726Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-17T11:17:24.824Z
@@ -12,7 +12,7 @@ dateCreated: 2021-02-17T11:17:24.824Z
 
 This page serves an index to the documentation for various Amagi services.
 
-> - [AMDB]([home](/home)) 
+> - [AMDB]([AMDB](/en/amdb)) 
 > - Cloudport
 > - EPG
 {.is-info}
