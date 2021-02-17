@@ -2,13 +2,25 @@
 title: Artwork
 description: Artwork requirements for all the MVPDs
 published: true
-date: 2021-02-17T15:58:48.953Z
+date: 2021-02-17T16:10:19.632Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-14T10:17:05.177Z
 ---
 
 # Artwork
+
+## TCL
+
+Level|Mandatory|Aspect Ratio|Minimum Dimension|Preferred Dimension
+|-|-|-|-|-|-|
+Program|Yes|16x9|1920x1080|1920x1080
+
+**Channel Logos**
+Name|Mandatory|Aspect Ratio|Minimum Dimension|Preferred Dimension|Size
+|-|-|-|-|-|-|
+Horizontal|Yes|16x9|1280x720|1280x720|< 1MB
+Poster|Yes|1x1|525x525|525x525|
 
 ## Roku
 
