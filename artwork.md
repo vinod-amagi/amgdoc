@@ -2,7 +2,7 @@
 title: Artwork
 description: Artwork requirements for all the MVPDs
 published: true
-date: 2021-02-17T15:57:47.846Z
+date: 2021-02-17T15:58:48.953Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-14T10:17:05.177Z
@@ -51,13 +51,13 @@ Default^*^|**Yes**|16x9|1280x720|1920x1080|Yes
 
 The following channel logos are to be provided as a one-time delivery during onboarding into Samsung. 
 
-|Image|Aspect Ratio|Minimum<br/>Dimension|Preferred Dimension|Format|Application
-|--|--|--|--|--|
-|Square|1x1|476x476px|1000x1000px|PNG/JPEG|Recent channels row on Overlay and Home screen
-|Circle|1x1|476x476px|1000x1000px|PNG/JPEG|Channel tiles on Home screen and Channel page|
-|Rectangle|16x9|1920x1080px||PNG/JPEG|Replacing program images when they are not available|
-|Wide|332x120|332x120px||PNG/JPEG|Guide|
-|Portrait|140x180|140x180px||PNG/JPEG||
+Image|Aspect Ratio|Minimum<br/>Dimension|Preferred Dimension|Format|Application
+--|--|--|--|--|--|
+Square|1x1|476x476px|1000x1000px|PNG/JPEG|Recent channels row on Overlay and Home screen
+Circle|1x1|476x476px|1000x1000px|PNG/JPEG|Channel tiles on Home screen and Channel page
+Rectangle|16x9|1920x1080px||PNG/JPEG|Replacing program images when they are not available
+Wide|332x120|332x120px||PNG/JPEG|Guide
+Portrait|140x180|140x180px||PNG/JPEG|
 
 ## Sling
 
