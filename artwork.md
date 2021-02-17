@@ -2,7 +2,7 @@
 title: Artwork
 description: Artwork requirements for all the MVPDs
 published: true
-date: 2021-02-17T16:10:19.632Z
+date: 2021-02-17T16:18:33.707Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-14T10:17:05.177Z
@@ -12,9 +12,13 @@ dateCreated: 2021-01-14T10:17:05.177Z
 
 ## TCL
 
-Level|Mandatory|Aspect Ratio|Minimum Dimension|Preferred Dimension
+Name|Mandatory|Aspect Ratio|Minimum Dimension|Preferred Dimension
 |-|-|-|-|-|-|
-Program|Yes|16x9|1920x1080|1920x1080
+Horizontal<br/>Poster|Yes|16x9|934x525|934x525
+Horizontal<br/>Poster|No|4x3|700x525|700x525
+Horizontal<br/>Poster|No|3x2|525x350|525x350
+Vertical<br/>Poster|No|2x3|350x525|350x525
+Square<br/>Poster|No|1x1|525x525|525x525
 
 **Channel Logos**
 Name|Mandatory|Aspect Ratio|Minimum Dimension|Preferred Dimension|Size
