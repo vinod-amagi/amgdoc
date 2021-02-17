@@ -2,7 +2,7 @@
 title: Artwork
 description: Artwork requirements for all the MVPDs
 published: true
-date: 2021-02-17T16:51:45.491Z
+date: 2021-02-17T16:52:24.912Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-14T10:17:05.177Z
@@ -17,7 +17,7 @@ dateCreated: 2021-01-14T10:17:05.177Z
 Name|Mandatory|Aspect Ratio|Minimum<br/>Dimension|Preferred<br/>Dimension|Titled|Format|Size
 |-|-|-|-|-|-|-|-|
 Artwork|Yes|16x9|320x180|1920x1080|Yes|JPEG/PNG|< 5MB
-Snapshot|No|4x3|1920x1080|1920x1080||JPEG/PNG|< 5MB
+Snapshot|No|16x9|1920x1080|1920x1080||JPEG/PNG|< 5MB
 
 ## TCL
 
