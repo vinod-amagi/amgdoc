@@ -2,9 +2,9 @@
 title: Artwork
 description: Artwork requirements for all the MVPDs
 published: true
-date: 2021-01-18T05:50:29.577Z
+date: 2021-02-17T15:45:05.495Z
 tags: 
-editor: undefined
+editor: markdown
 dateCreated: 2021-01-14T10:17:05.177Z
 ---
 
@@ -21,6 +21,20 @@ Episode|No|2x3|532x800|532x800|No
 Default^*^|**Yes**|16x9|800x450|1920x1080|Yes
 
 ^*^ A fall-back image to be used to deliver for all the programs that are missing program-specific images, usually representing the channel
+
+### Channel Logos
+#### EPG 
+- A logo for white background
+- A logo for black background (can be one image that reads well on both backgrounds) 
+- Logos need to be transparent PNGs 
+- 80 pixels wide x 60 pixels tall 
+- Center aligned on the horizontal & vertical axis 
+- 3 pixel top and bottom border 
+#### Info HUD 
+- Logos need to be transparent PNGs 
+- Logos need to be monochromatic hex #efefef  
+- 260 pixels wide x 147 pixels tall 
+- Align logo to the top edge
 
 ## Samsung
 
