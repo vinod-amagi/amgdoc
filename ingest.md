@@ -2,7 +2,7 @@
 title: Ingest Methods
 description: 
 published: true
-date: 2021-01-17T16:00:01.420Z
+date: 2021-02-18T05:33:36.269Z
 tags: 
 editor: undefined
 dateCreated: 2021-01-14T10:17:18.867Z

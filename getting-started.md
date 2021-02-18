@@ -2,7 +2,7 @@
 title: Getting Started
 description: Summarise the provisioning process
 published: true
-date: 2021-02-02T06:36:25.492Z
+date: 2021-02-18T05:33:31.185Z
 tags: 
 editor: undefined
 dateCreated: 2021-01-14T10:17:12.679Z

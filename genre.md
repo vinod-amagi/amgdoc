@@ -2,7 +2,7 @@
 title: Genre
 description: Details on the genre metadata
 published: true
-date: 2021-01-18T06:12:11.866Z
+date: 2021-02-18T05:33:29.476Z
 tags: 
 editor: undefined
 dateCreated: 2021-01-14T10:17:10.122Z

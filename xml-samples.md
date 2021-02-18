@@ -2,7 +2,7 @@
 title: XML Formats
 description: Supported metadata XML formats
 published: true
-date: 2021-01-14T10:17:34.586Z
+date: 2021-02-18T05:33:46.682Z
 tags: 
 editor: undefined
 dateCreated: 2021-01-14T10:17:32.860Z

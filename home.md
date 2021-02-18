@@ -2,7 +2,7 @@
 title: Amagi Documentation
 description: A home page for all Amagi documentations
 published: true
-date: 2021-02-17T16:58:33.400Z
+date: 2021-02-18T05:33:34.496Z
 tags: 
 editor: undefined
 dateCreated: 2021-02-17T11:17:24.824Z
