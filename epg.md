@@ -2,7 +2,7 @@
 title: EPG
 description: EPG Service Documentation Home Page
 published: true
-date: 2021-02-18T16:32:46.850Z
+date: 2021-02-18T16:39:22.614Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-18T06:12:47.294Z
@@ -13,17 +13,26 @@ dateCreated: 2021-02-18T06:12:47.294Z
 - Delivered to MVPDs, O&O platforms and/or metadata partners along with the stream to enable display of the same to viewers
 
 EPG typically includes
-> Details about channel
-> Details about individual programmes 
-> Schedule, title, description, episode/season numbers, credits etc.,
-> Additional media such as thumbnail images, box-art etc.,
+> - Details about channel
+> - Details about individual programs 
+> - Schedule, title, description, genre, rating, episode/season numbers, release date, credits etc.,
+> - Additional media such as artwork, thumbnail images, channel logos etc.,
 {.links-list}
 
-### EPG delivery
-**Platforms dictate**
-- Format
-- Frequency
-- Mechanism
-- EPG may delivered to:
-	* Directly to platform
-	* Platform’s partners e.g. Gracenote, Tivo etc.,
+> EPG is delivered to various MVPDs and O&O platforms in format, frequency and protocols dictated by the receiving platforms. EPG may delivered directly to the platform or to platform’s partners e.g. Gracenote, Tivo etc.,
+{.is-info}
+
+Amagi currently delivers EPG to the following platforms
+
+> - Samsung TV+
+> - Roku TRC 
+> - Sling
+> - Vizio
+> - Tcl
+> - Plex
+> - Local Now
+> - Stirr
+> - Pluto
+> - Gracenote
+> - Tivo
+{.links-list}
