@@ -2,15 +2,15 @@
 title: Amagi Documentation
 description: A home page for all Amagi documentations
 published: true
-date: 2021-02-18T16:00:50.541Z
+date: 2021-02-18T16:03:06.615Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-18T06:12:56.708Z
 ---
 
-The links below refer to the documentation on respective services.
+This documentation briefly describes about the following services.
 
-> - [CLOUDPORT](/cloudport)
+> - [Amagi CLOUDPORT](/cloudport)
 > - [AMDB - Amagi Media DataBase](/amdb) 
-> - [EPG](/epg)
+> - [Amagi - EPG](/epg)
 {.links-list}
