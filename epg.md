@@ -2,7 +2,7 @@
 title: EPG
 description: EPG Service Documentation Home Page
 published: true
-date: 2021-02-18T16:39:22.614Z
+date: 2021-02-18T16:40:23.340Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-18T06:12:47.294Z
@@ -19,7 +19,7 @@ EPG typically includes
 > - Additional media such as artwork, thumbnail images, channel logos etc.,
 {.links-list}
 
-> EPG is delivered to various MVPDs and O&O platforms in format, frequency and protocols dictated by the receiving platforms. EPG may delivered directly to the platform or to platform’s partners e.g. Gracenote, Tivo etc.,
+> EPG is delivered to various MVPDs and O&O platforms in format, frequency and protocols dictated by the receiving platforms. EPG may be delivered directly to the platform or to platform’s partners e.g. Gracenote, Tivo etc.,
 {.is-info}
 
 Amagi currently delivers EPG to the following platforms
