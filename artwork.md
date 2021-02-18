@@ -2,10 +2,10 @@
 title: Artwork
 description: Artwork requirements for all the MVPDs
 published: true
-date: 2021-02-17T16:52:26.842Z
+date: 2021-02-18T15:28:16.210Z
 tags: 
-editor: undefined
-dateCreated: 2021-01-14T10:17:05.177Z
+editor: markdown
+dateCreated: 2021-02-18T06:12:42.279Z
 ---
 
 # Artwork
@@ -112,6 +112,14 @@ Level|Mandatory|Aspect Ratio|Minimum Dimension|Preferred Dimension|Titled
 |-|-|-|-|-|-|
 Series/Program|**Yes**|2x3|NA|2000x3000|Yes
 Episode|**No**|16x9|1920x1080|1920x1080|No
+
+**Channel Images**
+
+Image|Aspect Ratio|Minimum<br/>Dimension|Preferred Dimension|Format|Remarks
+--|--|--|--|--|--|
+Discover<br/>Image|7x4|378x216|378x216|PNG/JPEG|Clearly state channel name and cannot have a logo or text on the bottom right corner
+Hero<br/>Image||1560x370|1560x370|PNG/JPEG|Clearly state channel name and cannot have a logo or text on the bottom right corner
+Simple<br/>White Logo||68x28|68x28|.ai/.svg/.eps|Logo to render over program level images
 
 ## Plex
 
