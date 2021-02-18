@@ -2,7 +2,7 @@
 title: Artwork
 description: Artwork requirements for all the MVPDs
 published: true
-date: 2021-02-18T15:28:30.652Z
+date: 2021-02-18T15:50:07.610Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-18T06:12:42.279Z
@@ -119,7 +119,7 @@ Image|Aspect Ratio|Minimum<br/>Dimension|Preferred Dimension|Format|Remarks
 --|--|--|--|--|--|
 Discover<br/>Image|7x4|378x216|378x216|PNG/JPEG|Clearly state channel name and cannot have a logo or text on the bottom right corner
 Hero<br/>Image||1560x370|1560x370|PNG/JPEG|Clearly state channel name and cannot have a logo or text on the bottom right corner
-Simple<br/>White Logo||68x28|68x28|ai/svg/eps|Logo to render over program level images
+Simple<br/>White Logo||68x28|68x28|ai/svg/eps|Vector Logo (no raster based images or raster images placed in a vector file i.e. .png, .jpg, .gif, etc); 1 Color, White
 
 ## Plex
 
