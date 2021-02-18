@@ -2,7 +2,7 @@
 title: Amagi Native Format
 description: Native format of Amagi CLOUDPORT
 published: true
-date: 2021-02-18T16:07:35.733Z
+date: 2021-02-18T16:08:32.906Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-18T06:33:59.705Z
@@ -37,7 +37,7 @@ dateCreated: 2021-02-18T06:33:59.705Z
 |TITLE|Optional||Title of the program||
 |COMMENTS|Optional||Additional commands|Described below|
 |RECONCILE ID|Optional||Reconcile Id for commercials||
-|START TIME TYE|Optional|Normal|<kbd>Fixed</kbd> or <kbd>Normal</kbd>||
+|START TIME TYE|Optional|Normal| |<kbd>Fixed</kbd> or <kbd>Normal</kbd>||
   
  ## COMMENTS
   
