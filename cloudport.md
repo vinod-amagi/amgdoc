@@ -2,10 +2,10 @@
 title: CLOUDPORT
 description: Amagi CLOUDPORT Platform
 published: true
-date: 2021-01-25T14:51:23.519Z
+date: 2021-02-18T16:04:26.063Z
 tags: 
-editor: undefined
-dateCreated: 2021-01-25T10:44:55.878Z
+editor: markdown
+dateCreated: 2021-02-18T06:34:05.741Z
 ---
 
 # CLOUDPORT
@@ -13,7 +13,7 @@ dateCreated: 2021-01-25T10:44:55.878Z
 Amagi CLOUDPORT platform consists of :
 
 - `Automation` in the cloud to manage contents and schedules
-- `Playout` in the cloud
+- `Playout` in the cloud and the edge
 - Integrations
 	- To ingest contents and schedules to `cloud automation`
   - To deliver playout output from `playout`
