@@ -2,10 +2,10 @@
 title: Ingest Methods
 description: 
 published: true
-date: 2021-01-17T16:00:01.420Z
+date: 2021-02-18T13:33:33.896Z
 tags: 
-editor: undefined
-dateCreated: 2021-01-14T10:17:18.867Z
+editor: markdown
+dateCreated: 2021-02-18T06:12:58.968Z
 ---
 
 # Ingest Methods
@@ -30,10 +30,8 @@ These methods are:
 
 4. **Simple Web page supporting multiple metadata**
 
-<p align="justify">
-<strong>Note:</strong>
-In cases where the media assets' locations are delivered as part of the metadata, the Media Ingest Service will download the files into Amagi S3 for further processing, consumption and delivery. 
-</p>
+> <p align="justify">In cases where the media assets' locations are delivered as part of the metadata, the Media Ingest Service will download the files into Amagi S3 for further processing, consumption and delivery. </p>
+{.is-info}
 
 ### S3 Upload
 
