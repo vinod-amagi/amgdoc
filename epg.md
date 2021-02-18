@@ -2,7 +2,7 @@
 title: EPG
 description: EPG Service Documentation Home Page
 published: true
-date: 2021-02-18T16:54:38.783Z
+date: 2021-02-18T16:57:05.220Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-18T06:12:47.294Z
@@ -24,8 +24,8 @@ EPG typically includes
 
 Amagi currently delivers EPG to the following platforms
 
-> - Samsung TV+
-> - Roku TRC 
+> - Samsung TV+ (US, MX, BR, UK, DACH, AU, and IN)
+> - Roku TRC (US and CA)
 > - Redbox
 > - Gracenote
 > - Sling
