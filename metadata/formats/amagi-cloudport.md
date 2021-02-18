@@ -2,9 +2,9 @@
 title: CLOUDPORT Segments
 description: 
 published: true
-date: 2021-02-10T06:25:28.284Z
+date: 2021-02-10T06:25:29.931Z
 tags: 
-editor: markdown
+editor: undefined
 dateCreated: 2021-02-02T19:24:25.108Z
 ---
 
