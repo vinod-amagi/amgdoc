@@ -2,9 +2,9 @@
 title: Graphics Automation
 description: Automation of graphics scheduling
 published: true
-date: 2021-02-11T13:02:46.158Z
+date: 2021-02-11T13:02:48.081Z
 tags: 
-editor: markdown
+editor: undefined
 dateCreated: 2021-02-11T13:01:36.253Z
 ---
 

@@ -2,9 +2,9 @@
 title: Amagi Native Format
 description: Native format of Amagi CLOUDPORT
 published: true
-date: 2021-02-11T13:25:51.558Z
+date: 2021-02-11T13:25:53.587Z
 tags: 
-editor: markdown
+editor: undefined
 dateCreated: 2021-02-04T04:59:00.503Z
 ---
 
