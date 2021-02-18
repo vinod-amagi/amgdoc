@@ -2,7 +2,7 @@
 title: EPG
 description: EPG Service Documentation Home Page
 published: true
-date: 2021-02-18T16:57:12.039Z
+date: 2021-02-18T16:57:22.827Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-18T06:12:47.294Z
@@ -21,36 +21,3 @@ EPG typically includes
 
 > EPG is delivered to various MVPDs and O&O platforms in format, frequency and protocols dictated by the receiving platforms. EPG may be delivered directly to the platform or to platform’s partners e.g. Gracenote, Tivo etc.,
 {.is-info}
-
-Amagi currently delivers EPG to the following platforms:
-
-> - Samsung TV+ (US, MX, BR, UK, DACH, AU, and IN)
-> - Roku TRC (US and CA)
-> - Redbox
-> - Gracenote
-> - Sling
-> - Vizio
-> - Rakuten
-> - Tcl
-> - Tivo
-> - Plex
-> - Brightcove
-> - Local Now
-> - Stirr
-> - SelectTv
-> - 7Plus
-> - SimpleStream
-> - SportsTribal
-> - DistroTV
-> - Tikilive
-> - Netgem
-> - Screehits
-> - Freecast
-> - Huawei
-> - STV
-> - Pluto
-> - One Hub Vision
-> - NDTV
-> - Multichoice South Africa
-> - O&O 
-{.links-list}
