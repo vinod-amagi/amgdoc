@@ -2,10 +2,10 @@
 title: Amagi Native Format
 description: Native format of Amagi CLOUDPORT
 published: true
-date: 2021-02-11T13:25:53.587Z
+date: 2021-02-18T16:07:35.733Z
 tags: 
-editor: undefined
-dateCreated: 2021-02-04T04:59:00.503Z
+editor: markdown
+dateCreated: 2021-02-18T06:33:59.705Z
 ---
 
 # Amagi Native Schedule Format
@@ -27,17 +27,17 @@ dateCreated: 2021-02-04T04:59:00.503Z
   
 |Fields| Required|Default|Description|Format|Remarks|
 |---|---|---|---|---|---|
-|HOUR|Optional|Previous item's end time|Start time of asset| YYYY-MM-DD HH:MM:SS:FF|
-|DURATION|Optional|Duration of segment|Duration to play|HH:MM:SS:FF|
-|OFFSET|Optional|Offset of segment|Offset from first timecode|HH:MM:SS:FF|
+|HOUR|Optional|Previous item's end time|Start time of asset| <kbd>YYYY-MM-DD HH:MM:SS:FF</kbd>|
+|DURATION|Optional|Duration of segment|Duration to play|<kbd>HH:MM:SS:FF</kbd>|
+|OFFSET|Optional|Offset of segment|Offset from first timecode|<kbd>HH:MM:SS:FF</kbd>|
 |SEGMENT ID|Optional|1|Segment id of content|Numeric|
 |ASSET ID|Mandatory|NA|Asset Id in CLOUDPORT||
 |TYPE|Optional||Media Type|e.g. program, promo, film, commercial|
-|MEDIA TYPE|Optional||Type of element|Primary or secondary|
+|MEDIA TYPE|Optional||Type of element|<kbd>Primary</kbd> or <kbd>Secondary</kbd>|
 |TITLE|Optional||Title of the program||
 |COMMENTS|Optional||Additional commands|Described below|
 |RECONCILE ID|Optional||Reconcile Id for commercials||
-|START TIME TYE|Optional|Normal|Fixed or Normal||
+|START TIME TYE|Optional|Normal|<kbd>Fixed</kbd> or <kbd>Normal</kbd>||
   
  ## COMMENTS
   
