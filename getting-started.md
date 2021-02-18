@@ -2,10 +2,10 @@
 title: Getting Started
 description: Summarise the provisioning process
 published: true
-date: 2021-02-02T06:36:25.492Z
+date: 2021-02-18T13:30:38.790Z
 tags: 
-editor: undefined
-dateCreated: 2021-01-14T10:17:12.679Z
+editor: markdown
+dateCreated: 2021-02-18T06:12:52.155Z
 ---
 
 # Getting Started
@@ -14,12 +14,12 @@ This article provides an overview of the Amagi Media Ingest Service and how to g
 
 The Media Ingest Service enables content partners to ingest contents to the following Amagi platforms or services:-
 
-> 
-> CLOUDPORT
-> EPG
-> VOD
-> Analytics
-{.is-info}
+- CLOUDPORT
+- EPG
+- VOD
+- Analytics
+- CP Planner
+{.links-list}
 
 
 ## Overview
