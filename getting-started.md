@@ -2,8 +2,8 @@
 title: Getting Started
 description: Summarise the provisioning process
 published: true
-date: 2021-02-18T13:30:38.790Z
-tags: 
+date: 2021-02-18T13:36:15.995Z
+tags: amdb
 editor: markdown
 dateCreated: 2021-02-18T06:12:52.155Z
 ---
