@@ -2,7 +2,7 @@
 title: Amagi Excel Grid EPG Source Format
 description: Details the excel format in which EPG can be supplied to Amagi
 published: true
-date: 2021-02-19T08:31:32.586Z
+date: 2021-02-19T08:39:28.623Z
 tags: epg
 editor: markdown
 dateCreated: 2021-02-19T08:02:35.461Z
@@ -18,7 +18,7 @@ The Amagi excel EPG may be used when a channel for which the EPG is to be delive
 
 The excel file should have at least two sheets:
 > Schedule<br/>
-There may be one or more Schedule sheets, each containing the schedule for one or more dates. All sheet names should start with “Schedule”.
+There may be one or more Schedule sheets, each containing the schedule for one or more dates. The sheet names should **not** contain the word “EPG”.
 
 > EPG<br/>
 There should be only one “EPG” sheet. 
@@ -129,5 +129,6 @@ In cases where image file names match the unique id / series id, the association
 {.is-warning}
   
 ## Samples
-[Fixed Duration Grid](https://drive.google.com/open?id=1agrh_jNOV3IuCwoSggB92GOQXX6ZHVbL)
-
+[Fixed Duration Grid](/excel_epg.xlsx)
+  
+[Variable Duration Grid](/epg_15022021_21022021.xlsx)
