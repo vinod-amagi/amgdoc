@@ -2,7 +2,7 @@
 title: Artwork
 description: Artwork requirements for all the MVPDs
 published: true
-date: 2021-02-18T15:53:10.246Z
+date: 2021-02-19T05:55:54.835Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-18T06:12:42.279Z
@@ -90,9 +90,23 @@ Portrait|140x180|140x180||PNG/JPEG|
 
 Level|Mandatory|Aspect Ratio|Minimum Dimension|Preferred Dimension|Titled
 |-|-|-|-|-|-|
-Series/Program|**Yes**|16x9|1920x1080|1920x1080|Yes
-Episode|**No**|16x9|1920x1080|1920x1080|Yes
-Default^*^|**Yes**|16x9|1920x1080|1920x1080|Yes
+Series/Program|**Yes**|16x9|1920x1080|1920x1080|**Yes**
+Series/Program|**Yes**|16x9|||**No**
+Series/Program|**Yes**|4x3|||**Yes**
+Series/Program|**Yes**|4x3|||**No**
+Series/Program|**Yes**|2x1|||**Yes**
+Series/Program|**Yes**|2x1|||**No**
+Series/Program|**Yes**|3x4|||**Yes**
+Series/Program|**Yes**|3x4|||**No**
+Episode|**No**|16x9|||**Yes**
+Episode|**No**|16x9|||**No**
+Episode|**No**|4x3|||**Yes**
+Episode|**No**|4x3|||**No**
+Episode|**No**|2x1|||**Yes**
+Episode|**No**|2x1|||**No**
+Episode|**No**|3x4|||**Yes**
+Episode|**No**|3x4|||**No**
+Default^*^|**Yes**|16x9|1920x1080|1920x1080|**Yes**
 
 ^*^ Fall-back to be used to deliver for programs without images, usually representing the channel
 
