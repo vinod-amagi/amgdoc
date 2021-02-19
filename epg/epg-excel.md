@@ -2,7 +2,7 @@
 title: Amagi Excel Grid EPG Source Format
 description: Details the excel format in which EPG can be supplied to Amagi
 published: true
-date: 2021-02-19T08:50:31.127Z
+date: 2021-02-19T08:54:09.354Z
 tags: epg
 editor: markdown
 dateCreated: 2021-02-19T08:02:35.461Z
@@ -51,14 +51,22 @@ Day n|Broadcast day / date|Day-wise: DDD<br/>Date-wise: DDD MM/DD|Day-wise: Wed<
 
 **Fixed Duration Grid**
 Each cell in this sheet represents a fixed duration, usually 30 minutes, but can be brought-down to 1 minute per grid. This may be agreed with the content provider/partner during onboarding. 
+<div align="center">
 
+  ![excel_epg_fixed_duration.png](/excel_epg_fixed_duration.png)
 
+</div>
 
 Multiple cells of a given column may be merged together to create a larger block duration. For example, if a cell represents a 30 minute block, a 2 hour block may be created by merging 4 cells of a column.
 
 **Variable Duration Grid**
 The duration represented by a cell is determined from the start times of the current and next cells in the column.
-![excel_epg_variable_duration_grid.png](/excel_epg_variable_duration_grid.png)!
+<div align="center">
+  
+  ![excel_epg_variable_duration_grid.png](/excel_epg_variable_duration_grid.png)!
+  
+</div>
+
 In cases where the start time of programs do not match day-wise, multiple schedule sheets may be added in the excel, with each sheet representing one day's schedule. 
 
 ## EPG sheet
