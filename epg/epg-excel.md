@@ -2,7 +2,7 @@
 title: Amagi Excel Grid EPG Source Format
 description: Details the excel format in which EPG can be supplied to Amagi
 published: true
-date: 2021-02-19T08:27:46.384Z
+date: 2021-02-19T08:31:32.586Z
 tags: epg
 editor: markdown
 dateCreated: 2021-02-19T08:02:35.461Z
@@ -129,5 +129,5 @@ In cases where image file names match the unique id / series id, the association
 {.is-warning}
   
 ## Samples
-[Samples](https://drive.google.com/open?id=1agrh_jNOV3IuCwoSggB92GOQXX6ZHVbL)
+[Fixed Duration Grid](https://drive.google.com/open?id=1agrh_jNOV3IuCwoSggB92GOQXX6ZHVbL)
 
