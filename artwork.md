@@ -2,7 +2,7 @@
 title: Artwork
 description: Artwork requirements for all the MVPDs
 published: true
-date: 2021-02-19T06:13:22.899Z
+date: 2021-02-19T06:14:21.688Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-18T06:12:42.279Z
@@ -47,7 +47,7 @@ Episode|**Yes**|16x9|800x450|1920x1080|Yes
 Episode|No|2x3|532x800|532x800|No
 Default^*^|**Yes**|16x9|800x450|1920x1080|Yes
 
-> ^*^ A fall-back image usually representing the channel will be used to deliver for all the programs that are missing program-specific images.
+> ^*^ A fall-back image usually representing the channel will be used to deliver for all the programs that are missing specific images.
 {.is-info}
 
 **Channel Logos**
@@ -72,7 +72,7 @@ Series/Program^**^|**Yes**|16x9|1280x720|1920x1080|Yes
 Episode^**^|**Yes**|16x9|1280x720|1920x1080|No
 Default^*^|**Yes**|16x9|1280x720|1920x1080|Yes
 
-> ^*^ Fall-back to be used to deliver for programs without images, usually representing the channel
+> ^*^ A fall-back image usually representing the channel will be used to deliver for all the programs that are missing specific images.
 > ^*^^*^ At least one of either series/program level or episode level is mandatory
 {.is-info}
 
