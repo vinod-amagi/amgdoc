@@ -2,7 +2,7 @@
 title: Artwork
 description: Artwork requirements for all the MVPDs
 published: true
-date: 2021-02-19T05:55:54.835Z
+date: 2021-02-19T06:13:22.899Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-18T06:12:42.279Z
@@ -47,7 +47,8 @@ Episode|**Yes**|16x9|800x450|1920x1080|Yes
 Episode|No|2x3|532x800|532x800|No
 Default^*^|**Yes**|16x9|800x450|1920x1080|Yes
 
-^*^ A fall-back image to be used to deliver for all the programs that are missing program-specific images, usually representing the channel
+> ^*^ A fall-back image usually representing the channel will be used to deliver for all the programs that are missing program-specific images.
+{.is-info}
 
 **Channel Logos**
 ##### EPG 
@@ -71,8 +72,9 @@ Series/Program^**^|**Yes**|16x9|1280x720|1920x1080|Yes
 Episode^**^|**Yes**|16x9|1280x720|1920x1080|No
 Default^*^|**Yes**|16x9|1280x720|1920x1080|Yes
 
-^*^ Fall-back to be used to deliver for programs without images, usually representing the channel
-^**^ At least one of either series/program level or episode level is mandatory
+> ^*^ Fall-back to be used to deliver for programs without images, usually representing the channel
+> ^*^^*^ At least one of either series/program level or episode level is mandatory
+{.is-info}
 
 **Channel Logos**
 
@@ -108,7 +110,8 @@ Episode|**No**|3x4|||**Yes**
 Episode|**No**|3x4|||**No**
 Default^*^|**Yes**|16x9|1920x1080|1920x1080|**Yes**
 
-^*^ Fall-back to be used to deliver for programs without images, usually representing the channel
+> ^*^ A fall-back image representing the channel will be used for programs without specific images.
+{.is-info}
 
 ## Tivo
 
@@ -118,7 +121,8 @@ Series/Program|**Yes**|16x9|1920x1080|1920x1080|Yes
 Episode|**No**|16x9|1920x1080|1920x1080|No
 Default^*^|**Yes**|16x9|1920x1080|1920x1080|Yes
 
-^*^ Fall-back to be used to deliver for programs without images, usually representing the channel
+> ^*^ A fall-back image representing the channel will be used for programs without specific images.
+{.is-info}
 
 ## Vizio
 
@@ -136,7 +140,7 @@ Hero<br/>Image||1560x370|1560x370|PNG/JPEG|Clearly state channel name and cannot
 Simple<br/>White Logo||68x28|68x28|ai/svg/eps|To render over program images; 1 Color, White 
 
 > Simple white logo must be a vector logo (no raster based images or raster images placed in a vector file i.e. .png, .jpg, .gif, etc)
-{.is-info}
+{.is-warning}
 
 ## Plex
 
