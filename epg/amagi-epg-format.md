@@ -2,7 +2,7 @@
 title: Amagi EPG Format
 description: Details the default Amagi EPG format
 published: true
-date: 2021-02-19T07:14:29.310Z
+date: 2021-02-19T07:31:20.429Z
 tags: epg
 editor: markdown
 dateCreated: 2021-02-19T07:14:29.310Z
@@ -15,7 +15,7 @@ Amagi delivers EPG in standard [XMLTV](http://wiki.xmltv.org/index.php/XMLTVForm
 ### Available fields
 
 |Field|Description|Mandatory|Remarks|
-|--|--|--|
+|--|--|--|--|
 programme start|Program start time|Yes|Default format 2020-12-06T06:00:00.000-0500<br/>Channel time zone by default 
 programme stop|Program end time|Yes|Default format 2020-12-06T06:00:00.000-0500<br/>Channel time zone by default 
 title|Title of the program / series|Yes
