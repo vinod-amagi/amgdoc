@@ -2,7 +2,7 @@
 title: Amagi EPG Format
 description: Details the default Amagi EPG format
 published: true
-date: 2021-02-19T07:31:20.429Z
+date: 2021-02-19T08:55:56.810Z
 tags: epg
 editor: markdown
 dateCreated: 2021-02-19T07:14:29.310Z
@@ -24,7 +24,7 @@ icon|Program / episode level Images|No|Subject to content partner providing the 
 desc|Description of the episode||
 category|Genre, sub-genre etc.,||
 language|Language of the program||Default: English
-date|Original air date|No|
+date|Original air date|No|YYYYMMDD format
 length|Duration of the program|No|In minutes and/or seconds<br/>e.g.```<length units="minutes">30</length>```<br/>```<length units="seconds">1800</length>```
 episode-num|Episode number|No|Only for episodic contents<br/>Supported in xmltv_ns and onscreen formats:<br/>```<episode-num system="xmltv_ns">0.0.0</episode-num><episode-num system="onscreen">1</episode-num>```
 Asset id|Id of the video asset|Yes|```<episode-num system="assetID">0b8c78ee-one-for-the-road</episode-num>```
