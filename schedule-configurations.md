@@ -2,15 +2,15 @@
 title: Scheduling Configurations
 description: Configurations supported by scheduling
 published: true
-date: 2021-02-09T17:38:48.329Z
+date: 2021-02-23T19:59:20.763Z
 tags: 
-editor: undefined
-dateCreated: 2021-02-09T17:38:46.252Z
+editor: markdown
+dateCreated: 2021-02-18T06:34:34.017Z
 ---
 
 # Scheduling Configurations
 
-Amagi CLOUDPORT allows a set of configurations to support various behaviours during processing the schedules. These configurations are as follows:-
+Amagi CLOUDPORT allows a set of configurations to achieve various scheduling behaviours during processing the schedules. These configurations are as follows:-
 
 ## Pick Duration From Media Library
 
