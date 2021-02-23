@@ -2,7 +2,7 @@
 title: Amagi EPG Format
 description: Details the default Amagi EPG format
 published: true
-date: 2021-02-23T20:14:46.971Z
+date: 2021-02-23T20:18:35.833Z
 tags: epg
 editor: markdown
 dateCreated: 2021-02-19T07:14:29.310Z
@@ -16,15 +16,15 @@ Amagi may deliver EPG in standard [XMLTV](http://wiki.xmltv.org/index.php/XMLTVF
 
 |Field|Description|Mandatory|Remarks|
 |--|--|--|--|
-programme start|Program start time|Yes|Default format 2020-12-06T06:00:00.000-0500<br/>Channel time zone by default 
-programme stop|Program end time|Yes|Default format 2020-12-06T06:00:00.000-0500<br/>Channel time zone by default 
+programme start|Program start time|Yes|Default format: `YYYY-MM-DDTHH:MM:SS.fff+hhmm`<br/>Channel time zone by default 
+programme stop|Program end time|Yes|Default format: `YYYY-MM-DDTHH:MM:SS.fff+hhmm`<br/>Channel time zone by default 
 title|Title of the program / series|Yes
 sub-title|Title of the episode|No|Only for episodic contents
 icon|Program / episode level Images|No|Subject to content partner providing the images<br/>Specific aspect ratios can be included
 desc|Description of the episode||
 category|Genre, sub-genre etc.,||
 language|Language of the program||Default: English
-date|Original air date|No|YYYYMMDD format
+date|Original air date|No|Format: `YYYYMMDD`
 length|Duration of the program|No|In minutes and/or seconds<br/>e.g.```<length units="minutes">30</length>```<br/>```<length units="seconds">1800</length>```
 episode-num|Episode number|No|Only for episodic contents<br/>Supported in xmltv_ns and onscreen formats:<br/>```<episode-num system="xmltv_ns">0.0.0</episode-num><episode-num system="onscreen">1</episode-num>```
 Asset id|Id of the video asset|Yes|```<episode-num system="assetID">0b8c78ee-one-for-the-road</episode-num>```
@@ -40,16 +40,16 @@ An output file includes EPG of only one channel, for one or more broadcast days 
 
 In case of day-wise output, the output file name includes the date of the EPG. In case of multiple days, the output file name stays the same but an updated file is delivered every day.
 
-e.g. For a channel XYZ, the day-wise output is XYZ2020-11-27.xml and consolidated output is XYZ.xml. 
+e.g. For a channel `XYZ`, the day-wise output is `XYZ2020-11-27.xml` and consolidated output is `XYZ.xml`. 
 </p>
 
 ### Delivery Window
 
-EPG is delivered for (current day - 1 day) to (current day + 7 days) by default. This can be extended to 30 days, subject to schedule availability from the content partners.
+EPG is delivered for `(current day - 1 day)` to `(current day + 7 days)` by default. This can be extended to 30 days, subject to schedule availability from the content partners.
 
 
 ### Delivery Frequency
-EPG is delivered at a maximum frequency of every 6 hours. As a bare minimum, at least once a day the EPG will be updated (to accommodate the current + n days sliding window).
+EPG is delivered at a maximum frequency of `every 6 hours`. As a bare minimum, at least once a day the EPG will be updated (to accommodate the current + n days sliding window).
 
 
 ### Delivery Mechanism
