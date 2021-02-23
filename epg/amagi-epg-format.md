@@ -2,7 +2,7 @@
 title: Amagi EPG Format
 description: Details the default Amagi EPG format
 published: true
-date: 2021-02-19T08:55:56.810Z
+date: 2021-02-23T20:14:46.971Z
 tags: epg
 editor: markdown
 dateCreated: 2021-02-19T07:14:29.310Z
@@ -10,7 +10,7 @@ dateCreated: 2021-02-19T07:14:29.310Z
 
 # Amagi EPG
 
-Amagi delivers EPG in standard [XMLTV](http://wiki.xmltv.org/index.php/XMLTVFormat) format.
+Amagi may deliver EPG in standard [XMLTV](http://wiki.xmltv.org/index.php/XMLTVFormat) format when the receiving platform does not have a defined specification.
 
 ### Available fields
 
