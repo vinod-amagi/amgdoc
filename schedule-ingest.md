@@ -2,10 +2,10 @@
 title: Schedules Ingest
 description: Describes the method to ingest schedule to Amagi CLOUDPORT
 published: true
-date: 2021-02-03T05:30:50.097Z
+date: 2021-02-23T19:57:38.362Z
 tags: 
-editor: undefined
-dateCreated: 2021-01-27T08:06:23.691Z
+editor: markdown
+dateCreated: 2021-02-18T06:34:36.303Z
 ---
 
 # Schedules Ingest
@@ -26,21 +26,19 @@ Amagi CLOUDPORT allows various methods to ingest schedules. The different method
 
 ## Web UI
 <p align="justify">
-Amagi CLOUDPORT allows scheduler upload playlist/schedule using Web UI. The Web UI uses Amagi CLOUDPORT's REST API to submit schedule to 
-> the CLOUDPORT automation. The uploaded schedule is processed by CLOUDPORT automation and automation rules are applied. The errors and warnings are displayed on the Web UI after processing the schedule.
-
+Amagi CLOUDPORT allows schedulers to upload playlist/schedule using Web UI. The Web UI uses Amagi CLOUDPORT's REST API to submit schedule to the CLOUDPORT automation. The uploaded schedule is processed by CLOUDPORT automation and automation rules are applied. The errors and warnings are displayed on the Web UI after processing the schedule.
 </p>
 
 ## Amagi CP-Planner
 <p align="justify">
 Amagi CP-PLANNER is a simple content planning and scheduling platform that is a lightweight alternative to a full-fledged traffic system. CP-PLANNER makes content planning and scheduling for both broadcast TV and streaming TV easy and efficient.
 
- The CP-Planner displays the media with the program hierarchy to help the Scheduler select the media to schedule in the calendar view. Program schedule and EPG is created across multiple days along with scheduling patterns like daily, only weekends or any specific custom pattern. The complete schedule is created through automation using custom rules defined by the channel. A complete daily schedule is uploaded to Amagi CLOUDPORT playout platform using HTTP Post method.
+ The CP-Planner displays the media with the program hierarchy to help the scheduler select the media to schedule in the calendar view. Program schedule and EPG is created across multiple days along with scheduling patterns like daily, only weekends or any specific custom pattern. The complete schedule is created through automation using custom rules defined by the channel. A complete daily schedule is uploaded to Amagi CLOUDPORT playout platform using HTTP Post method.
 </p>
 
 ## Channel workflow integration
 <p align="justify">
-Amagi CLOUDPORT allows integration with partner's workflow systems using loosely coupled system. There are different methods through which schedule can be ingested to Amagi CLOUDPORT platform. The methods are listed as below:- 
+Amagi CLOUDPORT allows integration with partners' workflow systems using loosely coupled m. There are different methods through which schedule can be ingested to Amagi CLOUDPORT platform. The methods are listed as below:- 
 </p>
 
 - **HTTP Post**
@@ -54,7 +52,7 @@ The playlist schedule can be uploaded to AWS S3 Bucket, and this copying trigger
 {.is-info}
 
 - **SFTP Upload**
-Similar to S3 upload, Amagi CLOUDPORT also provides SFTP mechanism to upload playlist schedule. The upload files are processed using the procedure described for S3 upload.
+Similar to S3 upload, Amagi CLOUDPORT also provides an SFTP mechanism to upload playlist schedule. The upload files are processed using the procedure described for S3 upload.
 
 # Amagi workflows
 <p align="justify">
