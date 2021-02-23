@@ -2,7 +2,7 @@
 title: CLOUDPORT
 description: Amagi CLOUDPORT Platform
 published: true
-date: 2021-02-18T16:04:26.063Z
+date: 2021-02-23T19:47:38.190Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-18T06:34:05.741Z
@@ -29,7 +29,7 @@ The media content from content store is ingested to Amagi CLOUDPORT using variou
 
 ### Media Ingest Service
 
-Amagi's media ingest service integrates contents and metadata delivery methods for different Amagi services like CLOUDPORT, EPG, VOD and Analytics. The ingest service offers different methods to choose for ingesting contents and metadata to Amagi Media DataBase (AMDB). The service is continously integrating different methods based on new requirements from content partners, channels and networks. More details about ingest using Amagi Media Ingest Service is available here - [Amagi Media DataBase](https://docs.amagi.tv/en/ingest).
+Amagi's media ingest service integrates contents and metadata delivery methods for different Amagi services like CLOUDPORT, EPG, VOD and Analytics. The ingest service offers different methods to choose for ingesting contents and metadata to Amagi Media DataBase (AMDB). The service is continously integrating different methods based on new requirements from content partners, channels and networks. More details about ingest using Amagi Media Ingest Service is available here - [Amagi Media DataBase](https://docs.amagi.tv/en/amdb).
 
 <br>
 
@@ -47,5 +47,5 @@ Amagi's media ingest service integrates contents and metadata delivery methods f
 
 ## Schedules Acquisition
 
-Amagi CLOUDPORT platform is adding support for a growing list of playlist/schedule formats and outputs from various scheduling systems. These formats and elements of schedules are describes [here](scheduling).
+Amagi CLOUDPORT platform is adding support for a growing list of playlist/schedule formats and outputs from various scheduling systems. These formats and elements of schedules are described [here](scheduling).
 
