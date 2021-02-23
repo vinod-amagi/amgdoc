@@ -2,10 +2,10 @@
 title: Scheduling
 description: Describes Amagi CLOUDPORT scheduling
 published: true
-date: 2021-01-25T15:59:47.137Z
+date: 2021-02-23T19:51:43.794Z
 tags: 
-editor: undefined
-dateCreated: 2021-01-25T15:20:03.584Z
+editor: markdown
+dateCreated: 2021-02-18T06:34:38.651Z
 ---
 
 # Schedules
@@ -13,6 +13,8 @@ dateCreated: 2021-01-25T15:20:03.584Z
 Amagi CLOUDPORT uses 24-hr schedule for playing out channels. 
 
 > **Scheduling systems**
+ >
+ > - WideOrbit
  >
  > - Broadview
  >
@@ -26,10 +28,13 @@ Amagi CLOUDPORT uses 24-hr schedule for playing out channels.
 
 
 > **Playlist Formats**
->
-> - XML
-> - OSC
+> 
+> - BXF
 > - PTS
+> - BTS
+> - OSC
+> - SCD
+> - XML
 > - VIC TLB
 > - TXT
 > - CSV
@@ -41,11 +46,11 @@ Amagi CLOUDPORT uses 24-hr schedule for playing out channels.
 #### Primary
 
 >
-		> - Video - Programs, Movies, Commercials, Promos etc.
+		> - Video - Programs, Movies, Commercials, Promos, Fillers, Idents, Wheelers etc.
     >
-    > - <kbd>Fixed</kbd> Primary Item – Begins at the specific time
+    > - <kbd>Fixed</kbd> Primary Item – Begins at a specific time 
     >
-    > - <kbd>Normal</kbd> Primary Item – Begins after end of thee previous `Primary` item
+    > - <kbd>Normal</kbd> Primary Item – Begins after end of the previous `Primary` item
 
 The primary items are video segments that are scheduled chronologically. The video segment provides the start (Start of Message - SOM) and end (End of Message - EOM) of an airable segment within the video file.
 
@@ -64,7 +69,7 @@ The secondary items represent the graphics, logo, voice-over and triggers that a
 >
   >  - Static Graphics (TGA, MOV)
   >
-  >  - Dynamic Graphics (Adobe After Effect Projects)
+  >  - Dynamic Graphics (Adobe After Effects Projects)
   >
   >  - Amagi Native Graphics (HTML5 based graphics)
   >
