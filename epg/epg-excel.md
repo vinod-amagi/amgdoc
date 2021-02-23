@@ -2,7 +2,7 @@
 title: Amagi Excel Grid EPG Source Format
 description: Details the excel format in which EPG can be supplied to Amagi
 published: true
-date: 2021-02-19T08:54:09.354Z
+date: 2021-02-23T20:12:21.456Z
 tags: epg
 editor: markdown
 dateCreated: 2021-02-19T08:02:35.461Z
@@ -12,7 +12,7 @@ dateCreated: 2021-02-19T08:02:35.461Z
 The objective of this document is to detail the Amagi Excel EPG specification using which a content partner may provide EPG to Amagi for deliveries to the destination platforms.
 
 ## When to use
-The Amagi excel EPG may be used when a channel for which the EPG is to be delivered is not Amagi Cloudport-operated or when the Cloudport schedule is not fit for EPG purposes (e.g. when the scheduled content consists of short duration videos). 
+The Amagi Excel EPG format may be used when a channel for which the EPG is to be delivered is not Amagi Cloudport-operated or when the Cloudport schedule is not fit for EPG purposes (e.g. when the scheduled content consists of short duration videos). 
 
 ## Specification
 
@@ -71,19 +71,19 @@ In cases where the start time of programs do not match day-wise, multiple schedu
 
 ## EPG sheet
 The EPG sheet may contain the following fields:
-Field|Description|Mandatory|Format|
+Field|Description|Mandatory|Remarks|
 |--|--|--|--|
 Unique ID||Yes|Needs to be unique in this sheet
-Title|Title of the program / series|Yes if content is episodic|
+Title|Title of the program / series|Yes||
 Type|Type of program e.g. episode, movie, special etc.,|No|
-EpisodeTitle|Title of the episode|Yes if content is episodic|
+EpisodeTitle|Title of the episode|Yes|Mandatory if content is episodic|
 Short Description|Short description (110 chars)|Yes|
 Rating|Program rating|Yes||
-Original Air Date|Release date / TV air date of the program|MM/DD/YYYY
+Original Air Date|Release date / TV air date of the program|No|Format: `MM/DD/YYYY`
 Genre|Program genre|No|
 Long Description|Detailed description of the program|No|
-SeasonNumber|Season number|Yes if content is episodic||
-EpisodeNo|Episode number|Yes if content is episodic||
+SeasonNumber|Season number|No|Mandatory if content is episodic||
+EpisodeNo|Episode number|No|Mandatory if content is episodic||
 SeriesId|Unique id of a series|Yes|Generated from series title if not provided
 
 ## Ingest methods
