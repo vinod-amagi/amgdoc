@@ -2,7 +2,7 @@
 title: Supported Platforms
 description: Details on the platforms to which Amagi delivers EPG
 published: true
-date: 2021-02-18T16:58:26.623Z
+date: 2021-03-02T12:10:13.534Z
 tags: epg
 editor: markdown
 dateCreated: 2021-02-18T16:58:26.623Z
@@ -32,6 +32,7 @@ dateCreated: 2021-02-18T16:58:26.623Z
 > - Netgem
 > - Screehits
 > - Freecast
+> - KlowdTV
 > - Huawei
 > - STV
 > - Pluto
