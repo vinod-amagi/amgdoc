@@ -2,13 +2,16 @@
 title: Media RSS Samples
 description: All supported media RSS samples
 published: true
-date: 2021-01-16T18:07:21.644Z
+date: 2021-03-02T16:55:44.477Z
 tags: 
-editor: undefined
-dateCreated: 2021-01-14T10:17:23.505Z
+editor: markdown
+dateCreated: 2021-02-18T06:13:03.687Z
 ---
 
 # Media RSS Version 1.0
+
+A sample mrss is available [here](https://d3bd0tgyk368z1.cloudfront.net/feeds/Metadata/amagi-mrss-sample.xml), the content of which is captured below for easier reference. 
+
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
