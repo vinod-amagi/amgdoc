@@ -2,10 +2,10 @@
 title: Program Ratings
 description: Detailed information on the accepted values for ratings
 published: true
-date: 2021-01-17T17:43:18.542Z
+date: 2021-03-04T04:49:47.031Z
 tags: 
-editor: undefined
-dateCreated: 2021-01-14T10:17:25.832Z
+editor: markdown
+dateCreated: 2021-02-18T06:13:06.030Z
 ---
 
 # Ratings
@@ -65,6 +65,9 @@ The list below captures the allowed rating values that can be delivered to Roku.
 12|12A|14+|14A|15|18|18+|18A|A|AA|
 C|C8|E|G|NC17|NR|PG|PG13|R|R18|
 TV14|TVG|TVMA|TVPG|TVY|TVY14|TVY7|U|Uc|UNRATED
+
+> Program level ratings are mandatory for kids directed channels. A channel level rating also needs to be provided.
+{.is-info}
 
 ## Samsung
 
