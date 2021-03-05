@@ -2,7 +2,7 @@
 title: Production Setup
 description: 
 published: true
-date: 2021-03-03T15:27:43.877Z
+date: 2021-03-05T17:50:48.318Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-24T07:27:54.147Z
@@ -237,7 +237,7 @@ spec:
 EoF
 ```
 
-6. Apply `elasticsearch_svc` into Cluster :
+6. Apply `elasticsearch_svc.yaml` into Cluster :
 ```bash
 kubectl apply -f elasticsearch_svc.yaml  
 ```
@@ -291,7 +291,7 @@ spec:
 EoF
 ```
 
-8. Apply `kibana` into Cluster :
+8. Apply `kibana.yaml` into Cluster :
 ```bash
 kubectl apply -f kibana.yaml
 ```
@@ -317,7 +317,7 @@ metadata:
 EoF
 ```
 
-10. Apply `fb-sa` into Cluster :
+10. Apply `fb-sa.yaml` into Cluster :
 ```bash
 kubectl apply -f fb-sa.yaml
 ```
@@ -354,7 +354,7 @@ subjects:
 EoF
 ```
 
-12. Apply `fb-rolebinding` into Cluster :
+12. Apply `fb-rolebinding.yaml` into Cluster :
 ```bash
 kubectl create -f fb-rolebinding.yml 
 ```
@@ -574,7 +574,7 @@ data:
 EoF
 ```
 
-14. Apply `fb-configmap` into Cluster :
+14. Apply `fb-configmap.yaml` into Cluster :
 ```bash
 kubectl create -f fb-configmap.yml 
 ```
@@ -712,7 +712,7 @@ spec:
 EoF
 ```
 
-16. Apply `fb-ds` into Cluster :
+16. Apply `fb-ds.yaml` into Cluster :
 ```bash
 kubectl create -f fb-ds.yml 
 ```
