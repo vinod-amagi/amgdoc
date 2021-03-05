@@ -2,11 +2,772 @@
 title: Dev Deployment
 description: 
 published: true
-date: 2021-03-05T17:51:57.808Z
+date: 2021-03-05T18:00:56.010Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-05T17:51:57.808Z
 ---
 
-# Header
-Your content here
+# Dev Setup
+
+###  Cluster:
+
+0. Create key-pair in EC2 console to access worker node(optional)
+
+1. Create a EC2 machine (t2.nano) to launch the cluster in AWS
+
+2. Install kubectl and eksctl
+
+3. Save this yaml file and apply it.
+```bash
+cat <<EoF > cluster.yaml
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: eks-cluster-customization-dev
+  region: us-east-1
+
+nodeGroups:
+  - name: media-ingest-dev
+    minSize: 1
+    maxSize: 2
+    instancesDistribution:
+      maxPrice: 0.0250
+      instanceTypes: ["t3.medium"]
+      onDemandBaseCapacity: 0
+      onDemandPercentageAboveBaseCapacity: 50
+      spotAllocationStrategy: "lowest-price"
+    iam:
+      withAddonPolicies:
+        ebs: true
+        cloudWatch: true
+        autoScaler: true
+        albIngress: true
+    ssh:
+      publicKeyName: customization_dev_onb
+
+cloudWatch:
+  clusterLogging:
+    enableTypes: ["*"]
+EoF
+```
+
+4. Import Cluster to Rancher (https://dvarapala.amagi.tv/)  use other cluster option
+
+<br />
+
+### Argo : 
+
+1. Apply Latest Argo into cluster under `media-ingest` namespace 
+```bash
+kubectl apply -n media-ingest -f https://raw.githubusercontent.com/argoproj/argo/stable/manifests/namespace-install.yaml
+```
+
+2. Apply loadbalancer for Argo Server
+```bash
+kubectl patch svc argo-server -n media-ingest -p '{"spec": {"type": "LoadBalancer"}}` 
+```
+{Exposing Argo server to outside}
+
+3. Provide workflow-role (access definition for argo server)
+```bash
+cat <<EoF > workflow-role.yml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: workflow-role
+  namespace: media-ingest
+rules:
+# pod get/watch is used to identify the container IDs of the current pod
+# pod patch is used to annotate the step's outputs back to controller (e.g. artifact location)
+- apiGroups:
+  - ""
+  resources:
+  - pods
+  verbs:
+  - get
+  - watch
+  - patch
+# logs get/watch are used to get the pods logs for script outputs, and for log archival
+- apiGroups:
+  - ""
+  resources:
+  - pods/log
+  verbs:
+  - get
+  - watch
+---
+apiVersion: rbac.authorization.k8s.io/v1beta1
+kind: RoleBinding
+metadata:
+  name: workflow-role-binding
+  namespace: media-ingest
+subjects:
+- kind: ServiceAccount
+  name: default
+  namespace: media-ingest
+roleRef:
+  kind: Role
+  name: workflow-role
+  apiGroup: rbac.authorization.k8s.io
+EoF
+```
+
+4. Apply `workflow-role.yaml` into Cluster
+```bash
+kubectl apply -f workflow-role.yaml
+```
+<br />
+
+### Kubernetes Secret (For DockerHub + ONB AWS Access) :
+
+1. Store `secrets.yml` 
+```bash
+cat <<EoF > secrets.yml
+apiVersion: v1
+data:
+  aws_details: eyJhY2Nlc3Nfa2V5IjoiQUtJQTZLUTNRWFZJVkdPQUtWUFYiLCAic2VjcmV0X2tleSI6IkpIczBkZWFrOVVPL0JkSUc5YlY3ZzQrMHppa3ErVWZJRlpCTHhsMGciLCAicmVnaW9uX25hbWUiOiJ1cy1lYXN0LTEifQo=
+kind: Secret
+metadata:
+  name: garage
+  namespace: media-ingest
+type: Opaque
+
+apiVersion: v1
+data:
+  .dockerconfigjson: ewoJImF1dGhzIjogewoJCSJodHRwczovL2luZGV4LmRvY2tlci5pby92MS8iOiB7CgkJCSJhdXRoIjogIllXMWhaMmxrWlhadmNITTZZbVZsWm1Wa01ERXdPQT09IgoJCX0KCX0sCgkiSHR0cEhlYWRlcnMiOiB7CgkJIlVzZXItQWdlbnQiOiAiRG9ja2VyLUNsaWVudC8xOS4wMy42IChsaW51eCkiCgl9Cn0=
+kind: Secret
+metadata:
+  name: regcred
+  namespace: media-ingest
+type: kubernetes.io/dockerconfigjson
+EoF
+```
+2. Apply `secrets.yaml` into Cluster
+```bash
+kubectl apply -n media-ingest -f secrets.yaml
+```
+
+<br />
+
+### EFK Cluster :
+
+EFK on EKS Cluster Steps  (xref: https://www.digitalocean.com/community/tutorials/how-to-set-up-an-elasticsearch-fluentd-and-kibana-efk-logging-stack-on-kubernetes):
+
+1. Create namespace to host the EFK pods:
+```bash
+cat <<EoF > efk_namespace.yml
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: efk
+EoF
+```
+
+2. Apply `efk_namespace.yaml` into Cluster
+```bash
+kubectl apply -f efk_namespace.yaml
+```
+
+3. Create an elasticsarch statefulset to run HA pods of elasticsearch db cluster :
+```bash
+cat <<EoF > elasticsearch_stateful.yaml
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: es-cluster
+  namespace: efk
+spec:
+  serviceName: elasticsearch
+  replicas: 3
+  selector:
+    matchLabels:
+      app: elasticsearch
+  template:
+    metadata:
+      labels:
+        app: elasticsearch
+    spec:
+      containers:
+        - name: elasticsearch
+          image: docker.elastic.co/elasticsearch/elasticsearch:7.2.0
+          resources:
+            limits:
+              cpu: 1000m
+            requests:
+              cpu: 100m
+          ports:
+            - containerPort: 9200
+              name: rest
+              protocol: TCP
+            - containerPort: 9300
+              name: inter-node
+              protocol: TCP
+          volumeMounts:
+            - name: es-cluster-data
+              mountPath: /usr/share/elasticsearch/data
+          env:
+            - name: cluster.name
+              value: k8s-logs
+            - name: node.name
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
+            - name: discovery.seed_hosts
+              value: "es-cluster-0.elasticsearch,es-cluster-1.elasticsearch,es-cluster-2.elasticsearch"
+            - name: cluster.initial_master_nodes
+              value: "es-cluster-0,es-cluster-1,es-cluster-2"
+            - name: ES_JAVA_OPTS
+              value: "-Xms512m -Xmx512m"
+      initContainers:
+        - name: fix-permissions
+          image: busybox
+          command: [ "sh", "-c", "chown -R 1000:1000 /usr/share/elasticsearch/data" ]
+          securityContext:
+            privileged: true
+          volumeMounts:
+            - name: es-cluster-data
+              mountPath: /usr/share/elasticsearch/data
+        - name: increase-vm-max-map
+          image: busybox
+          command: [ "sysctl", "-w", "vm.max_map_count=262144" ]
+          securityContext:
+            privileged: true
+        - name: increase-fd-ulimit
+          image: busybox
+          command: [ "sh", "-c", "ulimit -n 65536" ]
+          securityContext:
+            privileged: true
+  volumeClaimTemplates:
+    - metadata:
+        name: es-cluster-data
+        labels:
+          app: elasticsearch
+      spec:
+        accessModes: [ "ReadWriteOnce" ]
+        storageClassName: elastic-data
+        resources:
+          requests:
+            storage: 30Gi
+EoF
+```
+
+4. Apply `elasticsearch_stateful.yaml` into Cluster
+```bash
+kubectl apply -f elasticsearch_stateful.yaml
+```
+
+5. Expose elasticsearch as a headless service for kibana to reach  : 
+```bash
+cat <<EoF > elasticsearch_svc.yml
+kind: Service
+apiVersion: v1
+metadata:
+  name: elasticsearch
+  namespace: efk
+  labels:
+    app: elasticsearch
+spec:
+  selector:
+    app: elasticsearch
+  clusterIP: None
+  ports:
+    - port: 9200
+      name: rest
+    - port: 9300
+      name: inter-node
+EoF
+```
+
+6. Apply `elasticsearch_svc.yaml` into Cluster :
+```bash
+kubectl apply -f elasticsearch_svc.yaml  
+```
+
+7. Deploy kibana pods :
+```bash
+cat <<EoF > kibana.yml
+apiVersion: v1
+kind: Service
+metadata:
+  name: kibana
+  namespace: efk
+  labels:
+    app: kibana
+spec:
+  ports:
+    - port: 5601
+  selector:
+    app: kibana
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kibana
+  namespace: efk
+  labels:
+    app: kibana
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kibana
+  template:
+    metadata:
+      labels:
+        app: kibana
+    spec:
+      containers:
+        - name: kibana
+          image: docker.elastic.co/kibana/kibana:7.2.0
+          resources:
+            limits:
+              cpu: 1000m
+            requests:
+              cpu: 100m
+          env:
+            - name: ELASTICSEARCH_URL
+              value: http://elasticsearch:9200
+          ports:
+            - containerPort: 5601
+EoF
+```
+
+8. Apply `kibana.yaml` into Cluster :
+```bash
+kubectl apply -f kibana.yaml
+```
+
+9. Create serviceaccount for FluentBit :
+```bash
+cat <<EoF > fb-sa.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: fluent-bit
+  namespace: efk
+  labels:
+    app: fluent-bit
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: fluent-bit
+  namespace: media-ingest
+  labels:
+    app: fluent-bit
+EoF
+```
+
+10. Apply `fb-sa.yaml` into Cluster :
+```bash
+kubectl apply -f fb-sa.yaml
+```
+
+11. Create rolebinding for FluentBit :
+
+```bash
+cat <<EoF > fb-rolebinding.yaml
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: fluent-bit
+roleRef:
+  kind: ClusterRole
+  name: fluent-bit
+  apiGroup: rbac.authorization.k8s.io
+subjects:
+  - kind: ServiceAccount
+    name: fluent-bit
+    namespace: efk
+---
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: fluent-bit
+roleRef:
+  kind: ClusterRole
+  name: fluent-bit
+  apiGroup: rbac.authorization.k8s.io
+subjects:
+  - kind: ServiceAccount
+    name: fluent-bit
+    namespace: media-ingest
+EoF
+```
+
+12. Apply `fb-rolebinding.yaml` into Cluster :
+```bash
+kubectl create -f fb-rolebinding.yml 
+```
+
+13. Create FluentBit configuration  : 
+```bash
+cat <<EoF > fb-configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: fluent-bit-config
+  namespace: efk
+  labels:
+    k8s-app: fluent-bit
+data:
+  # Configuration files: server, input, filters and output
+  # ======================================================
+  fluent-bit.conf: |
+    [SERVICE]
+        Flush         1
+        Log_Level     info
+        Daemon        off
+        Parsers_File  parsers.conf
+        HTTP_Server   On
+        HTTP_Listen   0.0.0.0
+        HTTP_Port     2020
+
+    @INCLUDE input-kubernetes.conf
+    @INCLUDE filter-kubernetes.conf
+    @INCLUDE output-elasticsearch.conf
+
+  input-kubernetes.conf: |
+    [INPUT]
+        Name              tail
+        Tag               kube.*
+        Path              /var/log/containers/*.log
+        Parser            docker
+        DB                /var/log/flb_kube.db
+        Mem_Buf_Limit     5MB
+        Skip_Long_Lines   On
+        Refresh_Interval  10
+
+  filter-kubernetes.conf: |
+    [FILTER]
+        Name                kubernetes
+        Match               kube.*
+        Kube_URL            https://kubernetes.default.svc:443
+        Kube_CA_File        /var/run/secrets/kubernetes.io/serviceaccount/ca.crt
+        Kube_Token_File     /var/run/secrets/kubernetes.io/serviceaccount/token
+        Kube_Tag_Prefix     kube.var.log.containers.
+        Merge_Log           On
+        Merge_Log_Key       log_processed
+        K8S-Logging.Parser  On
+        K8S-Logging.Exclude Off
+
+  output-elasticsearch.conf: |
+    [OUTPUT]
+        Name            es
+        Match           *
+        Host            ${FLUENT_ELASTICSEARCH_HOST}
+        Port            ${FLUENT_ELASTICSEARCH_PORT}
+        Logstash_Format On
+        Replace_Dots    On
+        Retry_Limit     False
+
+  parsers.conf: |
+    [PARSER]
+        Name   apache
+        Format regex
+        Regex  ^(?<host>[^ ]*) [^ ]* (?<user>[^ ]*) \[(?<time>[^\]]*)\] "(?<method>\S+)(?: +(?<path>[^\"]*?)(?: +\S*)?)?" (?<code>[^ ]*) (?<size>[^ ]*)(?: "(?<referer>[^\"]*)" "(?<agent>[^\"]*)")?$
+        Time_Key time
+        Time_Format %d/%b/%Y:%H:%M:%S %z
+
+    [PARSER]
+        Name   apache2
+        Format regex
+        Regex  ^(?<host>[^ ]*) [^ ]* (?<user>[^ ]*) \[(?<time>[^\]]*)\] "(?<method>\S+)(?: +(?<path>[^ ]*) +\S*)?" (?<code>[^ ]*) (?<size>[^ ]*)(?: "(?<referer>[^\"]*)" "(?<agent>[^\"]*)")?$
+        Time_Key time
+        Time_Format %d/%b/%Y:%H:%M:%S %z
+
+    [PARSER]
+        Name   apache_error
+        Format regex
+        Regex  ^\[[^ ]* (?<time>[^\]]*)\] \[(?<level>[^\]]*)\](?: \[pid (?<pid>[^\]]*)\])?( \[client (?<client>[^\]]*)\])? (?<message>.*)$
+
+    [PARSER]
+        Name   nginx
+        Format regex
+        Regex ^(?<remote>[^ ]*) (?<host>[^ ]*) (?<user>[^ ]*) \[(?<time>[^\]]*)\] "(?<method>\S+)(?: +(?<path>[^\"]*?)(?: +\S*)?)?" (?<code>[^ ]*) (?<size>[^ ]*)(?: "(?<referer>[^\"]*)" "(?<agent>[^\"]*)")?$
+        Time_Key time
+        Time_Format %d/%b/%Y:%H:%M:%S %z
+
+    [PARSER]
+        Name   json
+        Format json
+        Time_Key time
+        Time_Format %d/%b/%Y:%H:%M:%S %z
+
+    [PARSER]
+        Name        docker
+        Format      json
+        Time_Key    time
+        Time_Format %Y-%m-%dT%H:%M:%S.%L
+        Time_Keep   On
+
+    [PARSER]
+        Name        syslog
+        Format      regex
+        Regex       ^\<(?<pri>[0-9]+)\>(?<time>[^ ]* {1,2}[^ ]* [^ ]*) (?<host>[^ ]*) (?<ident>[a-zA-Z0-9_\/\.\-]*)(?:\[(?<pid>[0-9]+)\])?(?:[^\:]*\:)? *(?<message>.*)$
+        Time_Key    time
+        Time_Format %b %d %H:%M:%S
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: fluent-bit-config
+  namespace: media-ingest
+  labels:
+    k8s-app: fluent-bit
+data:
+  # Configuration files: server, input, filters and output
+  # ======================================================
+  fluent-bit.conf: |
+    [SERVICE]
+        Flush         1
+        Log_Level     info
+        Daemon        off
+        Parsers_File  parsers.conf
+        HTTP_Server   On
+        HTTP_Listen   0.0.0.0
+        HTTP_Port     2020
+
+    @INCLUDE input-kubernetes.conf
+    @INCLUDE filter-kubernetes.conf
+    @INCLUDE output-elasticsearch.conf
+
+  input-kubernetes.conf: |
+    [INPUT]
+        Name              tail
+        Tag               kube.*
+        Path              /var/log/containers/*.log
+        Parser            docker
+        DB                /var/log/flb_kube.db
+        Mem_Buf_Limit     5MB
+        Skip_Long_Lines   On
+        Refresh_Interval  10
+
+  filter-kubernetes.conf: |
+    [FILTER]
+        Name                kubernetes
+        Match               kube.*
+        Kube_URL            https://kubernetes.default.svc:443
+        Kube_CA_File        /var/run/secrets/kubernetes.io/serviceaccount/ca.crt
+        Kube_Token_File     /var/run/secrets/kubernetes.io/serviceaccount/token
+        Kube_Tag_Prefix     kube.var.log.containers.
+        Merge_Log           On
+        Merge_Log_Key       log_processed
+        K8S-Logging.Parser  On
+        K8S-Logging.Exclude Off
+
+  output-elasticsearch.conf: |
+    [OUTPUT]
+        Name            es
+        Match           *
+        Host            ${FLUENT_ELASTICSEARCH_HOST}
+        Port            ${FLUENT_ELASTICSEARCH_PORT}
+        Logstash_Format On
+        Replace_Dots    On
+        Retry_Limit     False
+
+  parsers.conf: |
+    [PARSER]
+        Name   apache
+        Format regex
+        Regex  ^(?<host>[^ ]*) [^ ]* (?<user>[^ ]*) \[(?<time>[^\]]*)\] "(?<method>\S+)(?: +(?<path>[^\"]*?)(?: +\S*)?)?" (?<code>[^ ]*) (?<size>[^ ]*)(?: "(?<referer>[^\"]*)" "(?<agent>[^\"]*)")?$
+        Time_Key time
+        Time_Format %d/%b/%Y:%H:%M:%S %z
+
+    [PARSER]
+        Name   apache2
+        Format regex
+        Regex  ^(?<host>[^ ]*) [^ ]* (?<user>[^ ]*) \[(?<time>[^\]]*)\] "(?<method>\S+)(?: +(?<path>[^ ]*) +\S*)?" (?<code>[^ ]*) (?<size>[^ ]*)(?: "(?<referer>[^\"]*)" "(?<agent>[^\"]*)")?$
+        Time_Key time
+        Time_Format %d/%b/%Y:%H:%M:%S %z
+
+    [PARSER]
+        Name   apache_error
+        Format regex
+        Regex  ^\[[^ ]* (?<time>[^\]]*)\] \[(?<level>[^\]]*)\](?: \[pid (?<pid>[^\]]*)\])?( \[client (?<client>[^\]]*)\])? (?<message>.*)$
+
+    [PARSER]
+        Name   nginx
+        Format regex
+        Regex ^(?<remote>[^ ]*) (?<host>[^ ]*) (?<user>[^ ]*) \[(?<time>[^\]]*)\] "(?<method>\S+)(?: +(?<path>[^\"]*?)(?: +\S*)?)?" (?<code>[^ ]*) (?<size>[^ ]*)(?: "(?<referer>[^\"]*)" "(?<agent>[^\"]*)")?$
+        Time_Key time
+        Time_Format %d/%b/%Y:%H:%M:%S %z
+
+    [PARSER]
+        Name   json
+        Format json
+        Time_Key time
+        Time_Format %d/%b/%Y:%H:%M:%S %z
+
+    [PARSER]
+        Name        docker
+        Format      json
+        Time_Key    time
+        Time_Format %Y-%m-%dT%H:%M:%S.%L
+        Time_Keep   On
+
+    [PARSER]
+        Name        syslog
+        Format      regex
+        Regex       ^\<(?<pri>[0-9]+)\>(?<time>[^ ]* {1,2}[^ ]* [^ ]*) (?<host>[^ ]*) (?<ident>[a-zA-Z0-9_\/\.\-]*)(?:\[(?<pid>[0-9]+)\])?(?:[^\:]*\:)? *(?<message>.*)$
+        Time_Key    time
+        Time_Format %b %d %H:%M:%S
+EoF
+```
+
+14. Apply `fb-configmap.yaml` into Cluster :
+```bash
+kubectl create -f fb-configmap.yml 
+```
+
+15. Create FluentBit daemonset  :
+```bash
+cat <<EoF > fb-ds.yml
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: fluent-bit
+  namespace: efk
+  labels:
+    app: fluent-bit-logging
+    version: v1
+    kubernetes.io/cluster-service: "true"
+spec:
+  selector:
+    matchLabels:
+      app: fluent-bit-logging
+  template:
+    metadata:
+      labels:
+        app: fluent-bit-logging
+        version: v1
+        kubernetes.io/cluster-service: "true"
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "2020"
+        prometheus.io/path: /api/v1/metrics/prometheus
+    spec:
+      containers:
+        - name: fluent-bit
+          image: fluent/fluent-bit:1.3.11
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 2020
+          env:
+            - name: FLUENT_ELASTICSEARCH_HOST
+              value: "elasticsearch"
+            - name: FLUENT_ELASTICSEARCH_PORT
+              value: "9200"
+          volumeMounts:
+            - name: varlog
+              mountPath: /var/log
+            - name: varlibdockercontainers
+              mountPath: /var/lib/docker/containers
+              readOnly: true
+            - name: fluent-bit-config
+              mountPath: /fluent-bit/etc/
+      terminationGracePeriodSeconds: 10
+      volumes:
+        - name: varlog
+          hostPath:
+            path: /var/log
+        - name: varlibdockercontainers
+          hostPath:
+            path: /var/lib/docker/containers
+        - name: fluent-bit-config
+          configMap:
+            name: fluent-bit-config
+      serviceAccountName: fluent-bit
+      tolerations:
+        - key: node-role.kubernetes.io/master
+          operator: Exists
+          effect: NoSchedule
+        - operator: "Exists"
+          effect: "NoExecute"
+        - operator: "Exists"
+          effect: "NoSchedule"
+---
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: fluent-bit
+  namespace: media-ingest
+  labels:
+    app: fluent-bit-media-ingest
+    version: v1
+    kubernetes.io/cluster-service: "true"
+spec:
+  selector:
+    matchLabels:
+      app: fluent-bit-media-ingest
+  template:
+    metadata:
+      labels:
+        app: fluent-bit-media-ingest
+        version: v1
+        kubernetes.io/cluster-service: "true"
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/port: "2020"
+        prometheus.io/path: /api/v1/metrics/prometheus
+    spec:
+      containers:
+        - name: fluent-bit
+          image: fluent/fluent-bit:1.3.11
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 2020
+          env:
+            - name: FLUENT_ELASTICSEARCH_HOST
+              value: "elasticsearch"
+            - name: FLUENT_ELASTICSEARCH_PORT
+              value: "9200"
+          volumeMounts:
+            - name: varlog
+              mountPath: /var/log
+            - name: varlibdockercontainers
+              mountPath: /var/lib/docker/containers
+              readOnly: true
+            - name: fluent-bit-config
+              mountPath: /fluent-bit/etc/
+      terminationGracePeriodSeconds: 10
+      volumes:
+        - name: varlog
+          hostPath:
+            path: /var/log
+        - name: varlibdockercontainers
+          hostPath:
+            path: /var/lib/docker/containers
+        - name: fluent-bit-config
+          configMap:
+            name: fluent-bit-config
+      serviceAccountName: fluent-bit
+      tolerations:
+        - key: node-role.kubernetes.io/master
+          operator: Exists
+          effect: NoSchedule
+        - operator: "Exists"
+          effect: "NoExecute"
+        - operator: "Exists"
+          effect: "NoSchedule"
+EoF
+```
+
+16. Apply `fb-ds.yaml` into Cluster :
+```bash
+kubectl create -f fb-ds.yml 
+```
+
+<br />
+
+### Extra :
+1. To Import kubeconfig locally , use the following command :aws eks --region us-east-1 update-kubeconfig --name eks-cluster-customization-dev 
+
+2. https://gist.github.com/malaniarpit/a94d47e540843ecacb6a41d6bbd78a07
+
+3. Cluster autoscaler : https://artifacthub.io/packages/helm/cluster-autoscaler/cluster-autoscaler (Don't forget to add cluster name while installing helm chart)
+	a. helm repo add cluster-autoscaler https://kubernetes.github.io/autoscaler
+	b. helm install my-release autoscaler/cluster-autoscaler --set 'autoDiscovery.clusterName'={{cluster_name}}
+
