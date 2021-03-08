@@ -2,7 +2,7 @@
 title: Errors
 description: 
 published: true
-date: 2021-03-08T16:07:49.944Z
+date: 2021-03-08T16:28:41.611Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-08T16:01:06.162Z
@@ -22,6 +22,8 @@ dateCreated: 2021-03-08T16:01:06.162Z
 ### Reason
 
 When subtitle is converted from one format to another (SRT to SCC, STL to PAC), the error will be shown. There is no fix for this issue, and the characters will need to be replaced in the source file.
+
+Option: Enable extended character set option EzConvert
 
 Note:
 **Message from EzTitles**
