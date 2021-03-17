@@ -2,7 +2,7 @@
 title: Dev Deployment
 description: 
 published: true
-date: 2021-03-17T20:05:00.802Z
+date: 2021-03-17T20:06:15.888Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-05T17:51:57.808Z
