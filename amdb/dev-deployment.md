@@ -2,7 +2,7 @@
 title: Dev Deployment
 description: 
 published: true
-date: 2021-03-17T19:53:07.279Z
+date: 2021-03-17T20:05:00.802Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-05T17:51:57.808Z
@@ -14,9 +14,9 @@ dateCreated: 2021-03-05T17:51:57.808Z
 
 0. Create key-pair in EC2 console to access worker node(optional)
 
-1. Create a EC2 machine (t2.nano) to launch the cluster in AWS
+1. Create a EC2 machine (t3.medium) to launch the cluster in AWS
 
-2. Install kubectl and eksctl
+2. Install kubectl and eksctl (https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html)
 
 3. Save this yaml file and apply it.
 ```bash
@@ -30,8 +30,8 @@ metadata:
 
 nodeGroups:
   - name: media-ingest-dev
-    minSize: 1
-    maxSize: 2
+    minSize: 2
+    maxSize: 3
     instancesDistribution:
       maxPrice: 0.0250
       instanceTypes: ["t3.medium"]
