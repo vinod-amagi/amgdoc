@@ -2,7 +2,7 @@
 title: Production Setup
 description: 
 published: true
-date: 2021-03-05T17:50:48.318Z
+date: 2021-03-17T19:33:34.568Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-24T07:27:54.147Z
@@ -71,9 +71,9 @@ roleRef:
 EoF
 ```
 
-4. Apply `workflow-role.yaml` into Cluster
+4. Apply `workflow-role.yml` into Cluster
 ```bash
-kubectl apply -f workflow-role.yaml
+kubectl apply -f workflow-role.yml
 ```
 <br />
 
@@ -101,9 +101,9 @@ metadata:
 type: kubernetes.io/dockerconfigjson
 EoF
 ```
-2. Apply `secrets.yaml` into Cluster
+2. Apply `secrets.yml` into Cluster
 ```bash
-kubectl apply -n media-ingest -f secrets.yaml
+kubectl apply -n media-ingest -f secrets.yml
 ```
 
 <br />
@@ -122,14 +122,14 @@ metadata:
 EoF
 ```
 
-2. Apply `efk_namespace.yaml` into Cluster
+2. Apply `efk_namespace.yml` into Cluster
 ```bash
-kubectl apply -f efk_namespace.yaml
+kubectl apply -f efk_namespace.yml
 ```
 
 3. Create an elasticsarch statefulset to run HA pods of elasticsearch db cluster :
 ```bash
-cat <<EoF > elasticsearch_stateful.yaml
+cat <<EoF > elasticsearch_stateful.yml
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
@@ -148,7 +148,7 @@ spec:
     spec:
       containers:
         - name: elasticsearch
-          image: docker.elastic.co/elasticsearch/elasticsearch:7.2.0
+          image: docker.elastic.co/elasticsearch/elasticsearch:7.11.1
           resources:
             limits:
               cpu: 1000m
@@ -203,16 +203,15 @@ spec:
           app: elasticsearch
       spec:
         accessModes: [ "ReadWriteOnce" ]
-        storageClassName: elastic-data
         resources:
           requests:
             storage: 30Gi
 EoF
 ```
 
-4. Apply `elasticsearch_stateful.yaml` into Cluster
+4. Apply `elasticsearch_stateful.yml` into Cluster
 ```bash
-kubectl apply -f elasticsearch_stateful.yaml
+kubectl apply -f elasticsearch_stateful.yml
 ```
 
 5. Expose elasticsearch as a headless service for kibana to reach  : 
@@ -237,9 +236,9 @@ spec:
 EoF
 ```
 
-6. Apply `elasticsearch_svc.yaml` into Cluster :
+6. Apply `elasticsearch_svc.yml` into Cluster :
 ```bash
-kubectl apply -f elasticsearch_svc.yaml  
+kubectl apply -f elasticsearch_svc.yml  
 ```
 
 7. Deploy kibana pods :
@@ -277,7 +276,7 @@ spec:
     spec:
       containers:
         - name: kibana
-          image: docker.elastic.co/kibana/kibana:7.2.0
+          image: docker.elastic.co/kibana/kibana:7.11.1
           resources:
             limits:
               cpu: 1000m
@@ -291,14 +290,14 @@ spec:
 EoF
 ```
 
-8. Apply `kibana.yaml` into Cluster :
+8. Apply `kibana.yml` into Cluster :
 ```bash
-kubectl apply -f kibana.yaml
+kubectl apply -f kibana.yml
 ```
 
 9. Create serviceaccount for FluentBit :
 ```bash
-cat <<EoF > fb-sa.yaml
+cat <<EoF > fb-sa.yml
 apiVersion: v1
 kind: ServiceAccount
 metadata:
@@ -317,15 +316,15 @@ metadata:
 EoF
 ```
 
-10. Apply `fb-sa.yaml` into Cluster :
+10. Apply `fb-sa.yml` into Cluster :
 ```bash
-kubectl apply -f fb-sa.yaml
+kubectl apply -f fb-sa.yml
 ```
 
 11. Create rolebinding for FluentBit :
 
 ```bash
-cat <<EoF > fb-rolebinding.yaml
+cat <<EoF > fb-rolebinding.yml
 kind: ClusterRoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
@@ -354,14 +353,14 @@ subjects:
 EoF
 ```
 
-12. Apply `fb-rolebinding.yaml` into Cluster :
+12. Apply `fb-rolebinding.yml` into Cluster :
 ```bash
 kubectl create -f fb-rolebinding.yml 
 ```
 
 13. Create FluentBit configuration  : 
 ```bash
-cat <<EoF > fb-configmap.yaml
+cat <<EoF > fb-configmap.yml
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -574,7 +573,7 @@ data:
 EoF
 ```
 
-14. Apply `fb-configmap.yaml` into Cluster :
+14. Apply `fb-configmap.yml` into Cluster :
 ```bash
 kubectl create -f fb-configmap.yml 
 ```
@@ -712,7 +711,7 @@ spec:
 EoF
 ```
 
-16. Apply `fb-ds.yaml` into Cluster :
+16. Apply `fb-ds.yml` into Cluster :
 ```bash
 kubectl create -f fb-ds.yml 
 ```
