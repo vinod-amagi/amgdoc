@@ -2,7 +2,7 @@
 title: Dev Deployment
 description: 
 published: true
-date: 2021-03-18T18:03:59.894Z
+date: 2021-03-18T18:26:12.815Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-05T17:51:57.808Z
@@ -67,7 +67,7 @@ kubectl apply -n media-ingest -f https://raw.githubusercontent.com/argoproj/argo
 
 2. Apply loadbalancer for Argo Server
 ```bash
-kubectl patch svc argo-server -n media-ingest -p '{"spec": {"type": "LoadBalancer"}}` 
+kubectl patch svc argo-server -n media-ingest -p '{"spec": {"type": "LoadBalancer"}}' 
 ```
 {Exposing Argo server to outside}
 
