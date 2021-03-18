@@ -2,7 +2,7 @@
 title: Dev Deployment
 description: 
 published: true
-date: 2021-03-17T20:06:15.888Z
+date: 2021-03-18T18:03:59.894Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-05T17:51:57.808Z
@@ -134,7 +134,7 @@ metadata:
   name: garage
   namespace: media-ingest
 type: Opaque
-
+---
 apiVersion: v1
 data:
   .dockerconfigjson: ewoJImF1dGhzIjogewoJCSJodHRwczovL2luZGV4LmRvY2tlci5pby92MS8iOiB7CgkJCSJhdXRoIjogIllXMWhaMmxrWlhadmNITTZZbVZsWm1Wa01ERXdPQT09IgoJCX0KCX0sCgkiSHR0cEhlYWRlcnMiOiB7CgkJIlVzZXItQWdlbnQiOiAiRG9ja2VyLUNsaWVudC8xOS4wMy42IChsaW51eCkiCgl9Cn0=
