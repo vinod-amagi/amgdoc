@@ -2,7 +2,7 @@
 title: Samsung EPG Configuration
 description: 
 published: true
-date: 2021-03-23T14:15:32.195Z
+date: 2021-03-23T14:17:24.318Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-23T13:26:44.538Z
@@ -15,7 +15,8 @@ dateCreated: 2021-03-23T13:26:44.538Z
 - Service ID
 - Stream URL
 - Channel Genre (https://docs.amagi.tv/en/genre)
-- Country Code
+- Country (ISO A2 Code)
+- TBA Image URL
 
 #### Default / Conventions
 
@@ -33,8 +34,7 @@ Timezone|UTC
 Delivery On|NORMAL
 Send After|0
 API Domain|[here](#samsung-api-end-points)
-Country Code|ISO A2 Country Code
-Station ID|Samsung allocated service id for a channel
+Genre|Entertainment
 
 #### Dos
 Configure a tba image at all times
