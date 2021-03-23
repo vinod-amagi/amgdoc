@@ -149,8 +149,8 @@ Program Image Aspectratio|16x9
 Timeformat|
 S3 bucket|amagicloud-vod
 S3 region|us-east-1
-S3 access code|AKIAJWJYSCD5ETSP7UVQ
-S3 secret code|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
+S3 access code|
+S3 secret code|
 Enable Send After|`false`
 Enable Partial Delivery|`false`
 Cancel Delivery On Error|`false`
