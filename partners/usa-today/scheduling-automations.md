@@ -2,7 +2,7 @@
 title: USA Today Programmatic Scheduling
 description: 
 published: true
-date: 2021-03-23T11:02:21.595Z
+date: 2021-03-23T11:08:18.636Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-22T13:40:42.376Z
@@ -31,7 +31,10 @@ In summary, the workflow steps are as follows:
 - At the start of every hour, the schedule of the next hour will be filled.
 - The next hour schedule may be a 60-minute block or multiple 15/30 minute blocks put together.
 - 8 minutes of break will be scheduled per hour. The maximum duration of a given break will be 2 minutes.
-- 
+- Depending on the block name, an asset selection rule will be applied. An xlsx file in the USA Today S3 bucket will contain the possible block names and their asset selection rules.
+- In addition to the block name, the xlsx file will also have category and keyword values to which an asset must belong to for it to be selected to fill a block.
+
+
 
 Figure below has an example of the programing rules excel sheet:
 
