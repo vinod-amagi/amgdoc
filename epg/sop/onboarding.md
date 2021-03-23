@@ -2,7 +2,7 @@
 title: Samsung EPG Configuration
 description: 
 published: true
-date: 2021-03-23T14:17:24.318Z
+date: 2021-03-23T14:17:58.121Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-23T13:26:44.538Z
@@ -25,7 +25,7 @@ Field|Value
 Type|Samsung
 Platform Name|Samsung
 Delivery Type|NA
-File Prefix|``Channel Code``
+File Prefix|``Channel code as configured in the UI``
 Upload Location|``empty``
 Min No. of Days|0
 Max No. of Days|7
