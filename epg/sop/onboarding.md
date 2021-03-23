@@ -2,14 +2,11 @@
 title: EPG Delivery Configuration
 description: 
 published: true
-date: 2021-03-23T16:20:07.418Z
+date: 2021-03-23T16:43:52.477Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-23T13:26:44.538Z
 ---
-
-
-
 
 # Samsung EPG Delivery Configuration
 
@@ -45,7 +42,11 @@ Cancel Delivery On Error|`false`
 Paid Channel|`false`
 Enable Validation Alert|`true`
 Send Only On Weekdays|`false`
-Use Episodic Title|`false`<br/><p align="justify">`Though most channels use series title as the program title, some channels do prefer to use the episode title as the program title. In such cases, this option may be enabled in the platform configuration.`</p>
+Use Episodic Title|`false`
+
+> **Use Episodic Title**
+Though most channels use series title as the program title, some channels do prefer to use the episode title as the program title. In such cases, this option may be enabled in the platform configuration. 
+{.is-info}
 
 #### Dos
 - Configure a tba image at all times
@@ -86,3 +87,41 @@ PT|https://vcapi-eu.samsungcloudsolution.com
 
 # Roku EPG Delivery Configuration
 
+#### Pre-requisites
+
+- Feed json
+- Information on whether CC is available
+- Stream URL
+
+#### Default / Conventions
+
+Field|Value
+--|--
+Type|Roku
+Platform Name|Roku
+Delivery Type|NA
+File Prefix|`Channel code as configured in the UI`
+Upload Location|`empty`
+Min No. of Days|-2
+Max No. of Days|7
+Email ids|`empty`
+Timezone|UTC
+Delivery On|NORMAL
+Send After|0
+Enable Send After|`false`
+Enable Partial Delivery|`false`
+Cancel Delivery On Error|`false`
+Paid Channel|`false`
+Enable Validation Alert|`true`
+Send Only On Weekdays|`false`
+Show Rating|`false`<br/>The UI option is not working at the moment. A code fix is needed. Please ask the dev team to set up this config in backend if required.
+Show CC|`false`<br/>The UI option is not working at the moment. A code fix is needed. Please ask the dev team to set up this config in backend if required.
+Add Alternative Title|`false`
+
+> **Add Alternative Title** 
+Some channels e.g. Olympusat Horrorfy prefer to use an alternative title just for Roku. In such cases, this option may be enabled in the platform configuration. This is usually due to Roku not accepting series titles being present in program titles of episodic contents.
+{.is-info}
+
+#### Additional Deployment Steps
+
+The feed json file needs to be uploaded into the AMGEPG server under /home/ubuntu/apps/src/github.com/amagimedia/epg/templates/roku/ folder with name epg.`<channel code>`.json
