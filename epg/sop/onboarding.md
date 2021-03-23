@@ -2,11 +2,14 @@
 title: Samsung EPG Configuration
 description: 
 published: true
-date: 2021-03-23T15:22:09.104Z
+date: 2021-03-23T16:10:21.438Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-23T13:26:44.538Z
 ---
+
+
+
 
 # Samsung EPG Delivery Configuration
 
@@ -18,8 +21,6 @@ dateCreated: 2021-03-23T13:26:44.538Z
 - Country (ISO A2 Code)
 - Channel's default / TBA image URL (1920x1080) 
 - Confirmation on whether to use series title or episode title as program title
-
-
 
 #### Default / Conventions
 
@@ -53,7 +54,7 @@ Use Episodic Title|`false`<br/><p align="justify">`Though most channels use seri
 - Do not configure more than one Samsung delivery (even to different regions) for any channel in the UI 
 - Do not enable "Send After"
 
-#### Samsung API End-points
+#### Samsung API Domain
 Country|End-point
 --|--
 **Staging**|
@@ -82,4 +83,6 @@ CH|https://vcapi-eu.samsungcloudsolution.com
 BE|https://vcapi-eu.samsungcloudsolution.com
 LU|https://vcapi-eu.samsungcloudsolution.com
 PT|https://vcapi-eu.samsungcloudsolution.com
+
+# Roku EPG Delivery Configuration
 
