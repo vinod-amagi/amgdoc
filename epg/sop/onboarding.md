@@ -2,7 +2,7 @@
 title: EPG Delivery Configuration
 description: 
 published: true
-date: 2021-03-23T16:43:52.477Z
+date: 2021-03-23T16:44:43.315Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-23T13:26:44.538Z
@@ -124,4 +124,5 @@ Some channels e.g. Olympusat Horrorfy prefer to use an alternative title just fo
 
 #### Additional Deployment Steps
 
-The feed json file needs to be uploaded into the AMGEPG server under /home/ubuntu/apps/src/github.com/amagimedia/epg/templates/roku/ folder with name epg.`<channel code>`.json
+> The feed json file needs to be uploaded into the AMGEPG server under /home/ubuntu/apps/src/github.com/amagimedia/epg/templates/roku/ folder with name epg.`<channel code>`.json
+{.is-warning}
