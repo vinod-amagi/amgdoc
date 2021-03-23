@@ -1,8 +1,8 @@
 ---
-title: Samsung EPG Configuration
+title: EPG Delivery Configuration
 description: 
 published: true
-date: 2021-03-23T16:10:21.438Z
+date: 2021-03-23T16:20:07.418Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-23T13:26:44.538Z
