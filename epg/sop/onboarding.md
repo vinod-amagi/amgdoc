@@ -2,7 +2,7 @@
 title: Samsung EPG Configuration
 description: 
 published: true
-date: 2021-03-23T14:17:58.121Z
+date: 2021-03-23T14:22:50.220Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-23T13:26:44.538Z
@@ -17,6 +17,10 @@ dateCreated: 2021-03-23T13:26:44.538Z
 - Channel Genre (https://docs.amagi.tv/en/genre)
 - Country (ISO A2 Code)
 - TBA Image URL
+- Confirmation on whether to use series title or episode title as program title
+
+> Though most channels use series title as the program title, some channels do prefer to use the episode title as the program title. In such cases, this option may be enabled in the platform configuration.
+{.is-info}
 
 #### Default / Conventions
 
@@ -25,16 +29,23 @@ Field|Value
 Type|Samsung
 Platform Name|Samsung
 Delivery Type|NA
-File Prefix|``Channel code as configured in the UI``
-Upload Location|``empty``
+File Prefix|`Channel code as configured in the UI`
+Upload Location|`empty`
 Min No. of Days|0
 Max No. of Days|7
-Email ids|``empty``
+Email ids|`empty`
 Timezone|UTC
 Delivery On|NORMAL
 Send After|0
 API Domain|[here](#samsung-api-end-points)
 Genre|Entertainment
+Enable Send After|`false`
+Enable Partial Delivery|`false`
+Cancel Delivery On Error|`false`
+Paid Channel|`false`
+Enable Validation Alert|`true`
+Send Only On Weekdays|`false`
+Use Episodic Title|`false`
 
 #### Dos
 Configure a tba image at all times
