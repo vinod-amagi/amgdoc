@@ -2,7 +2,7 @@
 title: USA Today Programmatic Scheduling
 description: 
 published: true
-date: 2021-03-23T08:06:34.425Z
+date: 2021-03-23T11:02:21.595Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-22T13:40:42.376Z
@@ -27,6 +27,11 @@ In summary, the workflow steps are as follows:
 {.is-numbered-list}
 
 ## Programming Rules
+
+- At the start of every hour, the schedule of the next hour will be filled.
+- The next hour schedule may be a 60-minute block or multiple 15/30 minute blocks put together.
+- 8 minutes of break will be scheduled per hour. The maximum duration of a given break will be 2 minutes.
+- 
 
 Figure below has an example of the programing rules excel sheet:
 
