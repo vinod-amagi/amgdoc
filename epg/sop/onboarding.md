@@ -2,7 +2,7 @@
 title: EPG Delivery Configuration
 description: 
 published: true
-date: 2021-03-23T16:44:43.315Z
+date: 2021-03-23T17:18:51.028Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-23T13:26:44.538Z
@@ -126,3 +126,37 @@ Some channels e.g. Olympusat Horrorfy prefer to use an alternative title just fo
 
 > The feed json file needs to be uploaded into the AMGEPG server under /home/ubuntu/apps/src/github.com/amagimedia/epg/templates/roku/ folder with name epg.`<channel code>`.json
 {.is-warning}
+
+# Plex EPG Delivery
+
+#### Default / Conventions
+
+Field|Value
+--|--
+Type|Plex
+Platform Name|Plex
+Delivery Type|S3
+File Prefix|`Channel code as configured in the UI`
+Upload Location|static/feeds/`<Channel code>`_plex/ 
+Min No. of Days|-1
+Max No. of Days|7
+Email ids|`empty`
+Timezone|`Channel's broadcast timezone`
+Delivery On|NORMAL
+Send After|0
+Series Image Aspectratio|2x3
+Program Image Aspectratio|16x9
+Timeformat|
+S3 bucket|amagicloud-vod
+S3 region|us-east-1
+S3 access code|AKIAJWJYSCD5ETSP7UVQ
+S3 secret code|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
+Enable Send After|`false`
+Enable Partial Delivery|`false`
+Cancel Delivery On Error|`false`
+Paid Channel|`false`
+Enable Validation Alert|`true`
+Send Only On Weekdays|`false`
+Use Series Title|`false`
+Single File|`false`
+
