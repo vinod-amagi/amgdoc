@@ -2,7 +2,7 @@
 title: EPG Delivery Configuration
 description: 
 published: true
-date: 2021-03-23T17:18:51.028Z
+date: 2021-03-23T18:17:23.630Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-23T13:26:44.538Z
