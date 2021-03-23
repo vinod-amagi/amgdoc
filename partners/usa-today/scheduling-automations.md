@@ -2,7 +2,7 @@
 title: USA Today Programmatic Scheduling
 description: 
 published: true
-date: 2021-03-23T06:02:40.294Z
+date: 2021-03-23T08:06:34.425Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-22T13:40:42.376Z
@@ -25,3 +25,21 @@ In summary, the workflow steps are as follows:
 6. The auto-scheduler will also upload the playlist with the next hour filled with actual assets into Cloudport.
 7. The media ingest service will ingest these assets into Cloudport S3.
 {.is-numbered-list}
+
+## Programming Rules
+
+Figure below has an example of the programing rules excel sheet:
+
+![usa_today_programmingrules.png](/usa_today_programmingrules.png)
+
+Column|Description|Example
+--|--|--
+Block Name|Type of Block you will receive from CP Planner|News
+Category|Category to be searched in MRSS feed based on the Block Name|nation 
+Keyword|Keyword to be searched in MRSS feed based on Block Name|entertainment
+Time rules (most recent or random)|Whether to take the latest or random from MRSS feed
+
+Figure below has an excerpt from the mrss:
+![usa_today_mrss.png](/usa_today_mrss.png)
+
+
