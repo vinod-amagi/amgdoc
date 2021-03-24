@@ -2,7 +2,7 @@
 title: EPG Delivery Configuration
 description: 
 published: true
-date: 2021-03-23T18:17:23.630Z
+date: 2021-03-24T04:24:27.350Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-23T13:26:44.538Z
@@ -12,7 +12,7 @@ dateCreated: 2021-03-23T13:26:44.538Z
 
 #### Pre-requisites
 
-- Service ID
+- Service ID ([Samsung deliveries](https://docs.google.com/spreadsheets/d/1ZCMmznq-ZlctwQUqVTep9Skv9yONTjMFPtlgAUU-mI8/edit#gid=0))
 - Stream URL
 - Channel Genre (https://docs.amagi.tv/en/genre)
 - Country (ISO A2 Code)
