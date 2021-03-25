@@ -2,7 +2,7 @@
 title: EPG Delivery Configuration
 description: 
 published: true
-date: 2021-03-24T04:24:27.350Z
+date: 2021-03-25T18:53:39.750Z
 tags: 
 editor: markdown
 dateCreated: 2021-03-23T13:26:44.538Z
@@ -54,6 +54,13 @@ Though most channels use series title as the program title, some channels do pre
 #### Don'ts
 - Do not configure more than one Samsung delivery (even to different regions) for any channel in the UI 
 - Do not enable "Send After"
+
+> In case an EPG is delivered to a wrong end-point, then follow the steps below to recover:
+Update the end-point in platform configuration
+Delete available schedules in the EPG UI from "SCHEDULE" tab
+Force Update schedule
+Force Deliver schedule
+{.is-warning}
 
 #### Samsung API Domain
 Country|End-point
@@ -125,6 +132,11 @@ Some channels e.g. Olympusat Horrorfy prefer to use an alternative title just fo
 #### Additional Deployment Steps
 
 > The feed json file needs to be uploaded into the AMGEPG server under /home/ubuntu/apps/src/github.com/amagimedia/epg/templates/roku/ folder with name epg.`<channel code>`.json
+{.is-warning}
+
+# Vizio Delivery
+
+> After enabling Vizio delivery for a channel, always ensure that the [Vizio API end-point](https://amgepg.amagi.tv/v1/vizio/epg?token=1ggCWIBYuCdyI326h6tFJMmR6AH)  is loading succesfully.
 {.is-warning}
 
 # Plex EPG Delivery
