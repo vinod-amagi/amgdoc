@@ -2,7 +2,7 @@
 title: Artwork
 description: Artwork requirements for all the MVPDs
 published: true
-date: 2021-04-05T14:20:20.394Z
+date: 2021-04-05T14:20:43.726Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-18T06:12:42.279Z
@@ -18,12 +18,12 @@ In cases where the content provider/partner can provide image URLs accessible ov
 ##### Images available, but not as URLs accessible over internet
 <p align="justify">In cases where images are not available as publicly accessible URLs, the content provider / partner may upload the images into an Amagi-hosted S3 bucket.</p>
   
-**Files matching with Unique ID / SeriesId**
+**Files matching with Asset ID / SeriesId**
 <p align="justify">
-In cases where image file names match the unique id / series id, the association may be done automatically by the EPG system. In this case, the ids should not have special characters including white-spaces.</p>
+In cases where image file names match the asset id / series id, the association may be done automatically by the EPG system. In this case, the ids should not have special characters including white-spaces.</p>
 
-**Files not matching with Unique ID / SeriesId**
-<p align="justify"> In cases where image file names do not match the unique id / series id, the content provider / partner must provide the file names in the metadata. </p>
+**Files not matching with Asset ID / SeriesId**
+<p align="justify"> In cases where image file names do not match the asset id / series id, the content provider / partner must provide the file names in the metadata. </p>
   
   
 ###### Images unavailable
