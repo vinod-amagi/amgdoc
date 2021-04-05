@@ -2,7 +2,7 @@
 title: Amagi Excel Grid EPG Source Format
 description: Details the excel format in which EPG can be supplied to Amagi
 published: true
-date: 2021-02-23T20:12:21.456Z
+date: 2021-04-05T14:17:12.329Z
 tags: epg
 editor: markdown
 dateCreated: 2021-02-19T08:02:35.461Z
@@ -107,29 +107,10 @@ There is no pre-defined frequency for EPG excel delivery. However, the schedules
   
 ## Images
   
-##### Image URLs accessible over internet
-In cases where the content provider/partner can provide image URLs accessible over internet, such URLs can be populated in the following fields:
-
-- Series Image
-- Program Image
-- Artwork
+Please refer [artwork](/artwork) for ingest methods and specifications.
   
-##### Images available, but not as URLs accessible over internet
-<p align="justify">In cases where images are not available as publicly accessible URLs, the content provider / partner may upload the images into an Amagi-hosted S3 bucket.</p>
   
-**Files matching with Unique ID / SeriesId**
-<p align="justify">
-In cases where image file names match the unique id / series id, the association may be done automatically by the EPG system. In this case, the ids should not have special characters including white-spaces.</p>
-
-**Files not matching with Unique ID / SeriesId**
-<p align="justify"> In cases where image file names do not match the unique id / series id, the content provider / partner must provide the file names in the EPG sheet in one or more of the following fields: </p>
-  
-- Series Image
-- Program Image
-- Artwork
-  
-###### Images unavailable
-<p align="justify">In cases where images are unavailable, a default image may be used. However, this approach is not preferred (or allowed only temporarily) as most of the platforms require artwork to be delivered for all the programs.</p>
+## Points to Note
 
 > In the Schedule sheet, only supported date formats should be used. The entire file will be rejected even if any one date’s format is incorrect.<br/>
 > EPG for a given broadcast date should be provided only in one excel sheet. For example, if EPG needs to be updated for an already submitted date, the previously uploaded file should be updated and re-uploaded instead of uploading another file with the updated schedules.<br/>
