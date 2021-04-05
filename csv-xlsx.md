@@ -2,7 +2,7 @@
 title: CSV / XLSX Formats
 description: All supported CSV formats
 published: true
-date: 2021-04-05T15:55:29.408Z
+date: 2021-04-05T15:58:50.193Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-18T06:12:44.799Z
@@ -17,11 +17,11 @@ This template can be downloaded from [XLSX]([amagi_bulk_meta_template1.xlsx](/am
 |Metadata Field / Header|Field Description|Allowed Values|Example|
 |----|----|----|----|
 Asset ID|Globally unique ID for the content from the content provider|Alpha-Numeric with 128 character limit|AMAGI9999
-Title|Title of the episode or movie||Harry Potter
-Description|A short description of the episode or movie Limit of 110 characters*|A boy wizard
-Long Description|Full description of the episode or movie Limit of 110 characters*|A boy wizard
+Title|Title of the episode or movie in default language (or English)||Harry Potter
+Description|A short description of the episode or movie  in default language (or English)|Limit of 110 characters|A boy wizard
+Long Description|Full description of the episode or movie  in default language (or English)| Limit of 110 characters|A boy wizard
 Title-`SPA`|Title in a different language<br/>Replace SPA with any ISO-A3 language code<br/>Add as many columns as necessary if there are more languages||
-Description-`SPA`|Short description in a different language<br/>Replace SPA with any ISO-A3 language code<br/>Add as many columns as necessary if there are more languages||
+Description-`SPA`|Short description in a different language<br/>Replace SPA with any ISO-A3 language code<br/>Add as many columns as necessary if there are more languages|Limit of 110 characters|
 Long Description-`SPA`|Full description in a different language<br/>Replace SPA with any ISO-A3 language code<br/>Add as many columns as necessary if there are more languages||
 Tags|Tags that needs to be associated with the content|Keywords separated by ‘;’ (semi-colon)|wizard;magic
 Genre|Genre of the content|Genres separated by ‘;’ ( semi-colon)|drama;fantasy
@@ -39,9 +39,9 @@ Release Date|Release date of the episode or movie||
 License Start|License start date|Format: YYYY-MM-DD|
 License End|License end date|Format: YYYY-MM-DD|
 Series Title|Title of the series||
-Series Description|Description of the series||
+Series Description|Description of the series|Limit of 110 characters|
 Series Title-`SPA`|Title in a different language<br/>Replace SPA with any ISO-A3 language code<br/>Add as many columns as necessary if there are more languages||
-Series Description-`SPA`|Short description in a different language<br/>Replace SPA with any ISO-A3 language code<br/>Add as many columns as necessary if there are more languages||
+Series Description-`SPA`|Short description in a different language<br/>Replace SPA with any ISO-A3 language code<br/>Add as many columns as necessary if there are more languages|Limit of 110 characters|
 Series ID|Unique identifier for the series||
 Series TMS ID|Gracenote TMS ID of the series if available||
 Series Genre|Genre list||
@@ -61,7 +61,6 @@ Cue Points|Cue points in timecode format separated by ',' (comma)||"00:00:00:00,
 Language|Program default language||
 GUID|Globally unique ID for the content from the content provider|Alpha-Numeric with 128 character limit|AMAGI9999
 Original Air Date|Original air date of the program|
-
 
 ## Template 2
 
