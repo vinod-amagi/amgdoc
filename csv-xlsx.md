@@ -2,7 +2,7 @@
 title: CSV / XLSX Formats
 description: All supported CSV formats
 published: true
-date: 2021-04-05T13:45:51.154Z
+date: 2021-04-05T15:45:31.850Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-18T06:12:44.799Z
@@ -38,10 +38,8 @@ License Start|License start date|Format: YYYY-MM-DD|
 License End|License end date|Format: YYYY-MM-DD|
 Series Title|Title of the series||
 Series Description|Description of the series||
-Series Title-SPA|Title in a different language<br/>Replace SPA with any ISO-A3 language code<br/>Add as many columns as necessary if there are more languages||
-Series Description-SPA|Short description in a different language<br/>Replace SPA with any ISO-A3 language code<br/>Add as many columns as necessary if there are more languages||
-Series Title-POR|Title in a different language<br/>Replace SPA with any ISO-A3 language code<br/>Add as many columns as necessary if there are more languages||
-Series Description-POR|Short description in a different language<br/>Replace SPA with any ISO-A3 language code<br/>Add as many columns as necessary if there are more languages||
+Series Title-`SPA`|Title in a different language<br/>Replace SPA with any ISO-A3 language code<br/>Add as many columns as necessary if there are more languages||
+Series Description-`SPA`|Short description in a different language<br/>Replace SPA with any ISO-A3 language code<br/>Add as many columns as necessary if there are more languages||
 Series ID|Unique identifier for the series||
 Series TMS ID|Gracenote TMS ID of the series if available||
 Series Genre|Genre list||
@@ -61,7 +59,7 @@ Cue Points|Cue points in timecode format separated by comma||
 Language|Program default language||
 GUID|Globally unique ID for the content from the content provider|Alpha-Numeric with 128 character limit|AMAGI9999
 Original Air Date|Original air date of the program|
-Platforms|
+
 
 ## Template 2
 
