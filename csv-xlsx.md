@@ -2,7 +2,7 @@
 title: CSV / XLSX Formats
 description: All supported CSV formats
 published: true
-date: 2021-04-05T16:03:39.096Z
+date: 2021-04-05T16:05:35.506Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-18T06:12:44.799Z
@@ -19,7 +19,7 @@ This template can be downloaded from [XLSX](/amagi_bulk_meta_template1.xlsx) and
 Asset ID|Globally unique ID for the content from the content provider|Alpha-Numeric with 128 character limit|AMAGI9999
 Title|Title of the episode or movie in default language (or English)||Harry Potter
 Description|A short description of the episode or movie  in default language (or English)|Limit of 110 characters|A boy wizard
-Long Description|Full description of the episode or movie  in default language (or English)| Limit of 110 characters|A boy wizard
+Long Description|Full description of the episode or movie  in default language (or English)||A boy wizard
 Title-`SPA`|Title in a different language<br/>Replace SPA with any ISO-A3 language code<br/>Add as many columns as necessary if there are more languages||
 Description-`SPA`|Short description in a different language<br/>Replace SPA with any ISO-A3 language code<br/>Add as many columns as necessary if there are more languages|Limit of 110 characters|
 Long Description-`SPA`|Full description in a different language<br/>Replace SPA with any ISO-A3 language code<br/>Add as many columns as necessary if there are more languages||
