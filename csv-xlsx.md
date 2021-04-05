@@ -2,7 +2,7 @@
 title: CSV / XLSX Formats
 description: All supported CSV formats
 published: true
-date: 2021-04-05T15:49:25.676Z
+date: 2021-04-05T15:51:06.236Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-18T06:12:44.799Z
@@ -57,7 +57,7 @@ Series Landscape Poster URL|File name in Amagi S3 or HTTP URL of the landscape p
 Thumbnail URL|File name in Amagi S3 or HTTP URL of the thumbnail image for the program||
 Portrait Poster URL|File name in Amagi S3 or HTTP URL of the portrait poster image for the program||
 Landscape Poster URL|File name in Amagi S3 or HTTP URL of the landscape poster image for the program||
-Cue Points|Cue points in timecode format separated by comma||
+Cue Points|Cue points in timecode format separated by ',' (comma)||"00:00:00:00,00:07:00:00,00:15:00:00"
 Language|Program default language||
 GUID|Globally unique ID for the content from the content provider|Alpha-Numeric with 128 character limit|AMAGI9999
 Original Air Date|Original air date of the program|
