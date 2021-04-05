@@ -2,7 +2,7 @@
 title: CSV / XLSX Formats
 description: All supported CSV formats
 published: true
-date: 2021-04-05T15:51:06.236Z
+date: 2021-04-05T15:55:29.408Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-18T06:12:44.799Z
@@ -65,7 +65,7 @@ Original Air Date|Original air date of the program|
 
 ## Template 2
 
-The table below details the metadata fields to be populated in the CSV/XLSX. 
+This template can be downloaded in [XLSX](/amagi_vod_bulk_meta_template2.xlsx) and [CSV](/amagi_vod_bulk_meta_template2.csv) formats. The table below details the metadata fields to be populated in the CSV/XLSX. 
 
 |Metadata Field / Header|Field Description|Allowed Values|Example|
 |----|----|----|----|
