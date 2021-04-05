@@ -2,7 +2,7 @@
 title: Artwork
 description: Artwork requirements for all the MVPDs
 published: true
-date: 2021-02-24T17:52:36.136Z
+date: 2021-04-05T14:11:17.863Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-18T06:12:42.279Z
@@ -10,7 +10,42 @@ dateCreated: 2021-02-18T06:12:42.279Z
 
 # Artwork
 
-## Rakuten
+## Ingest
+  
+##### Image URLs accessible over internet
+In cases where the content provider/partner can provide image URLs accessible over internet, such URLs can be populated in the following fields:
+
+- Series Image
+- Program Image
+- Artwork
+  
+##### Images available, but not as URLs accessible over internet
+<p align="justify">In cases where images are not available as publicly accessible URLs, the content provider / partner may upload the images into an Amagi-hosted S3 bucket.</p>
+  
+**Files matching with Unique ID / SeriesId**
+<p align="justify">
+In cases where image file names match the unique id / series id, the association may be done automatically by the EPG system. In this case, the ids should not have special characters including white-spaces.</p>
+
+**Files not matching with Unique ID / SeriesId**
+<p align="justify"> In cases where image file names do not match the unique id / series id, the content provider / partner must provide the file names in the EPG sheet in one or more of the following fields: </p>
+  
+- Series Image
+- Program Image
+- Artwork
+  
+###### Images unavailable
+<p align="justify">In cases where images are unavailable, a default image may be used. However, this approach is not preferred (or allowed only temporarily) as most of the platforms require artwork to be delivered for all the programs.</p>
+
+> In the Schedule sheet, only supported date formats should be used. The entire file will be rejected even if any one date’s format is incorrect.<br/>
+> EPG for a given broadcast date should be provided only in one excel sheet. For example, if EPG needs to be updated for an already submitted date, the previously uploaded file should be updated and re-uploaded instead of uploading another file with the updated schedules.<br/>
+> The program values mentioned in the “Schedule” sheet should match with the Unique ID / EpisodeTitle values provided in the “EPG” sheet.<br/>
+> No additional rows/columns are allowed in the “Schedule” sheet. When provided, the entire file will be rejected.<br/>
+> The image URLs when provided should be publicly accessible over the internet. Google drive / Dropbox or such URLs that need a browser plugin to open are not supported. It is recommended that the image file names do not have special characters other than underscores as platforms such as Samsung do not support such special characters.
+{.is-warning}
+
+## Specifications
+
+### Rakuten
 
 **Program level Images**
 
@@ -19,7 +54,7 @@ Name|Mandatory|Aspect Ratio|Minimum<br/>Dimension|Preferred<br/>Dimension|Titled
 Artwork|Yes|16x9|320x180|1920x1080|Yes|JPEG/PNG|< 5MB
 Snapshot|No|16x9|1920x1080|1920x1080||JPEG/PNG|< 5MB
 
-## TCL
+### TCL
 
 **Program level Images**
 
@@ -37,7 +72,7 @@ Name|Mandatory|Aspect Ratio|Minimum Dimension|Preferred Dimension|Size
 Horizontal|Yes|16x9|1280x720|1280x720|< 1MB
 Poster|Yes|1x1|525x525|525x525|
 
-## Roku
+### Roku
 
 Level|Mandatory|Aspect Ratio|Minimum Dimension|Preferred Dimension|Titled
 |-|-|-|-|-|-|
@@ -64,7 +99,7 @@ Default^*^|**Yes**|16x9|800x450|1920x1080|Yes
 - 260 pixels wide x 147 pixels tall 
 - Align logo to the top edge
 
-## Samsung
+### Samsung
 
 Level|Mandatory|Aspect Ratio|Minimum Dimension|Preferred Dimension|Titled
 |-|-|-|-|-|-|
@@ -88,7 +123,7 @@ Rectangle|16x9|1920x1080||PNG/JPEG|Fallback image when program image is not avai
 Wide|332x120|332x120||PNG/JPEG|Guide
 Portrait|140x180|140x180||PNG/JPEG|
 
-## Sling
+### Sling
 
 Level|Mandatory|Aspect Ratio|Minimum Dimension|Preferred Dimension|Titled
 |-|-|-|-|-|-|
@@ -113,7 +148,7 @@ Default^*^|**Yes**|16x9|1920x1080|1920x1080|**Yes**
 > ^*^ A fall-back image representing the channel will be used for programs without specific images.
 {.is-info}
 
-## Tivo
+### Tivo
 
 Level|Mandatory|Aspect Ratio|Minimum Dimension|Preferred Dimension|Titled
 |-|-|-|-|-|-|
@@ -124,7 +159,7 @@ Default^*^|**Yes**|16x9|1920x1080|1920x1080|Yes
 > ^*^ A fall-back image representing the channel will be used for programs without specific images.
 {.is-info}
 
-## Vizio
+### Vizio
 
 Level|Mandatory|Aspect Ratio|Minimum Dimension|Preferred Dimension|Titled
 |-|-|-|-|-|-|
@@ -142,14 +177,14 @@ Simple<br/>White Logo||68x28|68x28|ai/svg/eps|To render over program images; 1 C
 > Simple white logo must be a vector logo (no raster based images or raster images placed in a vector file i.e. .png, .jpg, .gif, etc)
 {.is-warning}
 
-## Plex
+### Plex
 
 Level|Mandatory|Aspect Ratio|Minimum Dimension|Preferred Dimension|Titled
 |-|-|-|-|-|-|
 Series/Program|**Yes**|2x3|NA|NA|Yes
 Episode|**No**|16x9|NA|NA|No
 
-## Gracenote
+### Gracenote
 
 Although Gracenote does not enforce image deliveries in the EPG from Amagi, if the content partner needs to integrate with Gracenote, the following image specifications can be used.
 
