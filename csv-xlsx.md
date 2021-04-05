@@ -2,15 +2,70 @@
 title: CSV / XLSX Formats
 description: All supported CSV formats
 published: true
-date: 2021-01-14T10:17:09.453Z
+date: 2021-04-05T13:45:51.154Z
 tags: 
-editor: undefined
-dateCreated: 2021-01-14T10:17:07.666Z
+editor: markdown
+dateCreated: 2021-02-18T06:12:44.799Z
 ---
 
-# Supported CSV / XLSX / Delimited formats
+ Supported CSV / XLSX / Delimited formats
 
-The table below details the metadata fields to be populated in the CSV. 
+## Template 1
+
+|Metadata Field / Header|Field Description|Allowed Values|Example|
+|----|----|----|----|
+Asset ID|Globally unique ID for the content from the content provider|Alpha-Numeric with 128 character limit|AMAGI9999
+Title|Title of the episode or movie||Harry Potter
+Description|A short description of the episode or movie Limit of 110 characters*|A boy wizard
+Long Description|Full description of the episode or movie Limit of 110 characters*|A boy wizard
+Title-`SPA`|Title in a different language<br/>Replace SPA with any ISO-A3 language code<br/>Add as many columns as necessary if there are more languages||
+Description-`SPA`|Short description in a different language<br/>Replace SPA with any ISO-A3 language code<br/>Add as many columns as necessary if there are more languages||
+Long Description-`SPA`|Full description in a different language<br/>Replace SPA with any ISO-A3 language code<br/>Add as many columns as necessary if there are more languages||
+Tags|Tags that needs to be associated with the content|Keywords separated by ‘;’ (semi-colon)|wizard;magic
+Genre|Genre of the content|Genres separated by ‘;’ ( semi-colon)|drama;fantasy
+Cast|Actors' details|Actors names separated by ';' ( semi-colon)|
+Director|Directors' details|Directors names separated by ';' ( semi-colon)|
+Season|Season number||
+Episode|Episode Number||
+Episode Sequence|Episode Sequence Number||
+Rating|Rating value|| 
+Rating Body|Rating body from which the rating is obtained||USA PR, BBFC, MPAA etc.,
+TC IN|Timecode IN of the video||
+Duration|Duration of the video||
+TMS ID|Gracenote TMS ID if available||
+Release Date|Release date of the episode or movie||
+License Start|License start date|Format: YYYY-MM-DD|
+License End|License end date|Format: YYYY-MM-DD|
+Series Title|Title of the series||
+Series Description|Description of the series||
+Series Title-SPA|Title in a different language<br/>Replace SPA with any ISO-A3 language code<br/>Add as many columns as necessary if there are more languages||
+Series Description-SPA|Short description in a different language<br/>Replace SPA with any ISO-A3 language code<br/>Add as many columns as necessary if there are more languages||
+Series Title-POR|Title in a different language<br/>Replace SPA with any ISO-A3 language code<br/>Add as many columns as necessary if there are more languages||
+Series Description-POR|Short description in a different language<br/>Replace SPA with any ISO-A3 language code<br/>Add as many columns as necessary if there are more languages||
+Series ID|Unique identifier for the series||
+Series TMS ID|Gracenote TMS ID of the series if available||
+Series Genre|Genre list||
+Series Release Date|Release date of the series|Format: YYYY-MM-DD|
+Series Tags|Tags that needs to be associated with the content|Keywords separated by ‘;’ (semi-colon)|wizard;magic
+Type|Program type||
+Subtitles URL|HTTP URL of the subtitles file||
+Trailer URL|HTTP URL of the trailer video file||
+Video URL|HTTP URL of the video file||
+Series Thumbnail URL|File name in Amagi S3 or HTTP URL of the thumbnail image for the series||
+Series Portrait Poster URL|File name in Amagi S3 or HTTP URL of the portrait poster image for the series||
+Series Landscape Poster URL|File name in Amagi S3 or HTTP URL of the landscape poster image for the series||
+Thumbnail URL|File name in Amagi S3 or HTTP URL of the thumbnail image for the program||
+Portrait Poster URL|File name in Amagi S3 or HTTP URL of the portrait poster image for the program||
+Landscape Poster URL|File name in Amagi S3 or HTTP URL of the landscape poster image for the program||
+Cue Points|Cue points in timecode format separated by comma||
+Language|Program default language||
+GUID|Globally unique ID for the content from the content provider|Alpha-Numeric with 128 character limit|AMAGI9999
+Original Air Date|Original air date of the program|
+Platforms|
+
+## Template 2
+
+The table below details the metadata fields to be populated in the CSV/XLSX. 
 
 |Metadata Field / Header|Field Description|Allowed Values|Example|
 |----|----|----|----|
@@ -44,7 +99,4 @@ ImagePortraitPath|File path or location of portrait image file|Complete Path wit
 |Genre|Genre of the content|Genres separated by ‘;’ ( semi-colon)|drama;fantasy
 |Categories|Category that the content can be associated|Categories separated by ‘;’ (semi-colon)|fantasy
 |Platforms|Platforms to which the content needs to be delivered|Platforms separated by ‘;’ (semi-colon)|roku;apple;hulu
-
-
-
 
