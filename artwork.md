@@ -2,7 +2,7 @@
 title: Artwork
 description: Artwork requirements for all the MVPDs
 published: true
-date: 2021-04-05T14:15:08.269Z
+date: 2021-04-05T14:20:20.394Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-18T06:12:42.279Z
@@ -13,11 +13,7 @@ dateCreated: 2021-02-18T06:12:42.279Z
 ## Ingest
   
 ##### Image URLs accessible over internet
-In cases where the content provider/partner can provide image URLs accessible over internet, such URLs can be populated in the following fields:
-
-- Series Image
-- Program Image
-- Artwork
+In cases where the content provider/partner can provide image URLs accessible over internet, such URLs can be populated in the metadata.
   
 ##### Images available, but not as URLs accessible over internet
 <p align="justify">In cases where images are not available as publicly accessible URLs, the content provider / partner may upload the images into an Amagi-hosted S3 bucket.</p>
@@ -27,11 +23,8 @@ In cases where the content provider/partner can provide image URLs accessible ov
 In cases where image file names match the unique id / series id, the association may be done automatically by the EPG system. In this case, the ids should not have special characters including white-spaces.</p>
 
 **Files not matching with Unique ID / SeriesId**
-<p align="justify"> In cases where image file names do not match the unique id / series id, the content provider / partner must provide the file names in the EPG sheet in one or more of the following fields: </p>
+<p align="justify"> In cases where image file names do not match the unique id / series id, the content provider / partner must provide the file names in the metadata. </p>
   
-- Series Image
-- Program Image
-- Artwork
   
 ###### Images unavailable
 <p align="justify">In cases where images are unavailable, a default image may be used. However, this approach is not preferred (or allowed only temporarily) as most of the platforms require artwork to be delivered for all the programs.</p>
