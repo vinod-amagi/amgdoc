@@ -2,7 +2,7 @@
 title: CSV / XLSX Formats
 description: All supported CSV formats
 published: true
-date: 2021-04-05T15:45:31.850Z
+date: 2021-04-05T15:49:25.676Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-18T06:12:44.799Z
@@ -11,6 +11,8 @@ dateCreated: 2021-02-18T06:12:44.799Z
  Supported CSV / XLSX / Delimited formats
 
 ## Template 1
+
+This template can be downloaded from [XLSX]([amagi_bulk_meta_template1.xlsx](/amagi_bulk_meta_template1.xlsx)) and [CSV]([amagi_bulk_meta_template1.csv](/amagi_bulk_meta_template1.csv)) formats here. The table below captures the metadata fields:
 
 |Metadata Field / Header|Field Description|Allowed Values|Example|
 |----|----|----|----|
