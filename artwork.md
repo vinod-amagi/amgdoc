@@ -2,7 +2,7 @@
 title: Artwork
 description: Artwork requirements for all the MVPDs
 published: true
-date: 2021-04-05T14:11:17.863Z
+date: 2021-04-05T14:15:08.269Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-18T06:12:42.279Z
@@ -35,13 +35,6 @@ In cases where image file names match the unique id / series id, the association
   
 ###### Images unavailable
 <p align="justify">In cases where images are unavailable, a default image may be used. However, this approach is not preferred (or allowed only temporarily) as most of the platforms require artwork to be delivered for all the programs.</p>
-
-> In the Schedule sheet, only supported date formats should be used. The entire file will be rejected even if any one date’s format is incorrect.<br/>
-> EPG for a given broadcast date should be provided only in one excel sheet. For example, if EPG needs to be updated for an already submitted date, the previously uploaded file should be updated and re-uploaded instead of uploading another file with the updated schedules.<br/>
-> The program values mentioned in the “Schedule” sheet should match with the Unique ID / EpisodeTitle values provided in the “EPG” sheet.<br/>
-> No additional rows/columns are allowed in the “Schedule” sheet. When provided, the entire file will be rejected.<br/>
-> The image URLs when provided should be publicly accessible over the internet. Google drive / Dropbox or such URLs that need a browser plugin to open are not supported. It is recommended that the image file names do not have special characters other than underscores as platforms such as Samsung do not support such special characters.
-{.is-warning}
 
 ## Specifications
 
