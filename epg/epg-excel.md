@@ -2,7 +2,7 @@
 title: Amagi Excel Grid EPG Source Format
 description: Details the excel format in which EPG can be supplied to Amagi
 published: true
-date: 2021-04-05T14:17:12.329Z
+date: 2021-04-05T14:17:22.183Z
 tags: epg
 editor: markdown
 dateCreated: 2021-02-19T08:02:35.461Z
@@ -108,7 +108,6 @@ There is no pre-defined frequency for EPG excel delivery. However, the schedules
 ## Images
   
 Please refer [artwork](/artwork) for ingest methods and specifications.
-  
   
 ## Points to Note
 
