@@ -2,7 +2,7 @@
 title: CSV / XLSX Formats
 description: All supported CSV formats
 published: true
-date: 2021-04-16T07:42:19.943Z
+date: 2021-04-16T07:42:51.223Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-18T06:12:44.799Z
@@ -10,7 +10,7 @@ dateCreated: 2021-02-18T06:12:44.799Z
 
  Supported CSV / XLSX / Delimited formats
 
-## Template 1 - For Linear Workflows
+## Template 1 - For Linear and VOD Workflows
 
 This template can be downloaded from [XLSX](/amagi_bulk_meta_template1.xlsx) and [CSV](/amagi_bulk_meta_template1.csv) formats here. The table below captures the metadata fields:
 
@@ -62,7 +62,7 @@ Language|Program default language||
 GUID|Globally unique ID for the content from the content provider|Alpha-Numeric with 128 character limit|AMAGI9999
 Original Air Date|Original air date of the program|
 
-## Template 2
+## Template 2 - For VOD only workflows
 
 This template can be downloaded in [XLSX](/amagi_vod_bulk_meta_template2.xlsx) and [CSV](/amagi_vod_bulk_meta_template2.csv) formats. The table below details the metadata fields to be populated in the CSV/XLSX. 
 
