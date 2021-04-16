@@ -2,7 +2,7 @@
 title: CSV / XLSX Formats
 description: All supported CSV formats
 published: true
-date: 2021-04-16T07:42:51.223Z
+date: 2021-04-16T07:44:33.587Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-18T06:12:44.799Z
@@ -12,7 +12,7 @@ dateCreated: 2021-02-18T06:12:44.799Z
 
 ## Template 1 - For Linear and VOD Workflows
 
-This template can be downloaded from [XLSX](/amagi_bulk_meta_template1.xlsx) and [CSV](/amagi_bulk_meta_template1.csv) formats here. The table below captures the metadata fields:
+This template can be found here: https://docs.google.com/document/d/1-ZbpT5a_FsNxb2IRoV-1zAsmulZsvfFp6rqN1tkXIME/edit?usp=sharing 
 
 |Metadata Field / Header|Field Description|Allowed Values|Example|
 |----|----|----|----|
