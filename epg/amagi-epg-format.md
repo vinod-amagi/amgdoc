@@ -2,7 +2,7 @@
 title: Amagi EPG Format
 description: Details the default Amagi EPG format
 published: true
-date: 2021-02-23T20:18:35.833Z
+date: 2021-04-21T12:27:29.518Z
 tags: epg
 editor: markdown
 dateCreated: 2021-02-19T07:14:29.310Z
@@ -53,6 +53,10 @@ EPG is delivered at a maximum frequency of `every 6 hours`. As a bare minimum, a
 
 
 ### Delivery Mechanism
+
+#### HTTPS
+
+EPG is delivered to an AWS S3 bucket, hosted by Amagi and shared as a HTTPS URL via Cloudfront. 
 
 #### S3
 
