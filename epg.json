@@ -1,0 +1,129 @@
+[
+    {
+        "startTime": "2019-12-12T15:00Z",
+        "endTime": "2019-12-12T16:00Z",
+        "program": {
+            "seriesId": "16718791",
+            "subType": "episode",
+            "title": "series title",
+            "programTitle": "program title",
+            "seasonNumber": 1,
+            "episodeNumber": 1,
+            "episodeSequenceNumber": 1,
+            "releaseYear": 2019,
+            "releaseDate": "2019-04-01",
+            "origAirDate": "2019-04-01",
+            "titleLang": "en",
+            "descriptionLang": "en",
+            "entityType": "Episode",
+            "genres": [
+                "Entertainment"
+            ],
+            "categories": [
+                "Entertainment"
+            ],
+            "seriesDescription": "short description of series",
+            "seriesLongDescription": "long description of series",
+            "longDescription": "long description of episode",
+            "shortDescription": "short description of episode",
+            "ratings": [
+                {
+                    "body": "USA Parental Rating",
+                    "code": "TVG"
+                },
+                {
+                    "body": "Régie du cinéma",
+                    "code": "G"
+                },
+                {
+                    "body": "Canadian Parental Rating",
+                    "code": "G"
+                }
+            ],
+            "seriesImages": [
+                {
+                    "width": "1920",
+                    "height": "1080",
+                    "uri": "https://test.com/assets/image.jpg",
+                    "type": "poster"
+                },
+                {
+                    "width": "1920",
+                    "height": "1080",
+                    "uri": "https://test.com/assets/image.jpg",
+                    "type": "scene"
+                }
+            ],
+            "programImages": [{
+                "width": "1920",
+                "height": "1080",
+                "uri": "https://test.com/assets/image.jpg",
+                "type": "poster"
+            }],
+            "isLive" : false
+        }
+    },
+    {
+        "startTime": "2019-12-12T16:00Z",
+        "endTime": "2019-12-12T16:30Z",
+        "program": {
+            "subType": "movie",
+            "title": "movie title",
+            "releaseYear": 2018,
+            "releaseDate": "2018-03-31",
+            "titleLang": "en",
+            "descriptionLang": "en",
+            "entityType": "Movie",
+            "genres": [
+                "Reality"
+            ],
+            "longDescription": "long description of movie",
+            "shortDescription": "short description of movie",
+            "ratings": [
+                {
+                    "body": "G",
+                    "code": "MPAA"
+                }
+            ],
+            "seriesImages": [{
+                "width": "1920",
+                "height": "1080",
+                "uri": "https://test.com/assets/image.jpg",
+                "type": "poster"
+            }],
+            "isLive" : false
+        }
+    },
+    {
+        "startTime": "2019-12-12T16:00Z",
+        "endTime": "2019-12-12T16:30Z",
+        "program": {
+            "subType": "sports-talk",
+            "title": "show title",
+            "releaseYear": 2018,
+            "releaseDate": "2018-03-31",
+            "origAirDate": "2019-04-01",
+            "titleLang": "en",
+            "descriptionLang": "en",
+            "entityType": "Sports",
+            "genres": [
+                "Reality"
+            ],
+            "longDescription": "long description of show",
+            "shortDescription": "short description of show",
+            "ratings": [
+                {
+                    "body": "TV-G",
+                    "code": "USA PR"
+                }
+            ],
+            "seriesImages": [{
+                "width": "1920",
+                "height": "1080",
+                "uri": "https://test.com/assets/image.jpg",
+                "type": "poster"
+            }],
+            "isLive" : false
+        }
+    }
+]
