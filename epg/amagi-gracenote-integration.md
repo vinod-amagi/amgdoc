@@ -2,7 +2,7 @@
 title: Amagi Gracenote Integration
 description: This document describes briefly the integrations between Amagi and Gracenote.
 published: true
-date: 2021-04-22T05:28:38.615Z
+date: 2021-04-22T06:13:37.843Z
 tags: 
 editor: markdown
 dateCreated: 2021-04-22T05:26:31.252Z
@@ -19,10 +19,25 @@ With deep data describing movies and TV shows, including episode and series desc
 
 Amagi integrates with Gracenote primarily for two purposes.
 
+![amagi_gracenote_integrations.png](/amagi_gracenote_integrations.png)
+
 #### Delivering Content Partners' Schedules into Gracenote
 
-For linear channels operated by Amagi, the schedules may be delivered into Gracenote when the content partner needs to publish their channel in Gracenote.
+For linear channels operated by Amagi, the schedules may be delivered into Gracenote when the content partner needs to publish their channel in Gracenote (typically when the channel is delivered to certain platforms such as Xumo, Amazon etc., who retrieve the EPG only from Gracenote).
 
-This
+Amagi EPG system generates the EPG based on the Cloudport playlists (or other schedules sources e.g. excel grids / APIs when not Cloudport-operated) and metadata sourced from the content partners and delivers to Gracenote in a pre-defined XML format into an FTP server hosted by Gracenote.
+
+> The content partner will need to get the FTP credentials from Gracenote and share with Amagi during the channel onboarding.
+{.is-info}
+
 
 #### Delivery Content Partners' Schedules from Gracenote to MVPDs
+
+In some cases, the content partner may already have their channels' schedules (say OTA channels) integrated into Gracenote. When the content partner wishes to run OTT channels by Amagi following the same schedules, it may be simpler for Amagi to source the schedules and metadata from Gracenote instead of the content partners spending effort in collecting the same. The generated EPG may be delivered to other platforms by Amagi after transforming to the necessary standards of the respective destination platforms.
+
+> This integration is done using Gracenote's OnConnect API. While onboarding, the content partner will need to get an API access token from Gracenote and share with Amagi using which . 
+{.is-info}
+
+# Commercials
+
+In both scenarios, the integration between Amagi and Gracenote are technical, no commercials involved. The channel partner will be responsible for establishing the commercial contract with Gracenote and share with Amagi the necessary technical details for the integration.
