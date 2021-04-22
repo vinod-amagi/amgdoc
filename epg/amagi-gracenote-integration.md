@@ -2,7 +2,7 @@
 title: Amagi Gracenote Integration
 description: This document describes briefly the integrations between Amagi and Gracenote.
 published: true
-date: 2021-04-22T06:21:31.528Z
+date: 2021-04-22T15:54:40.749Z
 tags: 
 editor: markdown
 dateCreated: 2021-04-22T05:26:31.252Z
@@ -30,8 +30,13 @@ For linear channels operated by Amagi, the schedules may be delivered into Grace
 
 Amagi EPG system generates the EPG based on the Cloudport playlists (or other supported schedules sources) and metadata sourced from the content partners and delivers to Gracenote in a pre-defined XML format into an FTP server hosted by Gracenote.
 
+Amagi EPG system scans the schedule sources for new/modified schedules periodically (approximately every 3 hours), generates EPG if necessary and delivers to the FTP. Gracenote will also setup processes to scan this FTP periodically (frequency to be agreed while onboarding) and ingest the data. 
+
 > The content partner will be responsible for getting the FTP credentials from Gracenote and share with Amagi during the channel onboarding.
 {.is-info}
+
+> Currently there is no feedback mechanism to acknowledge the success/failure of the ingest by Gracenote or the quality of the data.
+{.is-warning}
 
 
 #### Delivery EPG from Gracenote to MVPDs
