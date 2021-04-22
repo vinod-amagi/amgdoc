@@ -2,13 +2,13 @@
 title: Amagi Gracenote Integration
 description: This document describes briefly the integrations between Amagi and Gracenote.
 published: true
-date: 2021-04-22T19:22:56.027Z
+date: 2021-04-22T19:23:30.182Z
 tags: 
 editor: markdown
 dateCreated: 2021-04-22T05:26:31.252Z
 ---
 
-> Internal - DO NOT SHARE EXTERNALLY
+> Amagi Internal Only - DO NOT SHARE EXTERNALLY
 {.is-warning}
 
 # Gracenote Integration
