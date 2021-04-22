@@ -1,8 +1,8 @@
 ---
-title: Schedule Sources
+title: Amagi EPG Sources
 description: This page details the various schedule sources and formats supported by EPG. 
 published: true
-date: 2021-04-22T19:06:14.062Z
+date: 2021-04-22T19:08:44.652Z
 tags: 
 editor: markdown
 dateCreated: 2021-04-22T19:06:14.062Z
