@@ -2,7 +2,7 @@
 title: Amagi Gracenote Integration
 description: This document describes briefly the integrations between Amagi and Gracenote.
 published: true
-date: 2021-04-22T15:54:40.749Z
+date: 2021-04-22T16:20:50.562Z
 tags: 
 editor: markdown
 dateCreated: 2021-04-22T05:26:31.252Z
@@ -39,7 +39,7 @@ Amagi EPG system scans the schedule sources for new/modified schedules periodica
 {.is-warning}
 
 
-#### Delivery EPG from Gracenote to MVPDs
+#### Delivering EPG from Gracenote to MVPDs
 
 In some cases, the content partner may already have their channels' schedules (say OTA channels) integrated into Gracenote. When the content partner wishes to run OTT channels by Amagi following the same schedules, it may be simpler for Amagi to source the schedules and metadata from Gracenote instead of the content partners spending effort in collecting the same. The generated EPG may be delivered to other platforms by Amagi after transforming to the necessary standards of the respective destination platforms.
 
