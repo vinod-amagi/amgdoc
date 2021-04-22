@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<programs>
+    <program>
+        <channel>Name of the Channel</channel>
+        <series_title>Series title</series_title>
+        <episode_title>Episode title</episode_title>
+        <season>2</season>
+        <episode>7</episode>
+        <episode_sequence_number>10</episode_sequence_number>
+        <program_type>Movie</program_type>
+        <program_subtype>movie</program_subtype>
+        <genre>Entertainment</genre>
+        <category>Entertainment</category>
+        <air_date>28-04-2020</air_date>
+        <day_of_the_week>Tuesday</day_of_the_week>
+        <announced_time>06:00:00</announced_time>
+        <duration>01:00:00</duration>
+        <series_description>short description of the series</series_description>
+        <series_long_description>long description of the series</series_long_description>
+        <episode_description>short description of the episode</episode_description>
+        <episode_long_description>long description of the episode</episode_long_description>
+        <asset_id>270d0232-82bf-41c9-b309-bdf3fcb40018</asset_id>
+        <production_year>2017</production_year>
+        <parental_rating>NR</parental_rating>
+        <original_air_date>20-03-2019</original_air_date>
+        <series-images>
+        	<image>
+        		<url>public URL or image file name in Amagi S3</url>
+        		<width>1280</width>
+        		<height>720</height>
+        		<type>poster</type>
+        	</image>
+			<image>
+        		<url>public URL or image file name in Amagi S3</url>
+        		<width>1280</width>
+        		<height>720</height>
+        		<type>scene</type>
+        	</image>
+        </series-images>
+        <program-images>
+        	<image>
+        		<url>public URL or image file name in Amagi S3</url>
+        		<width>1280</width>
+        		<height>720</height>
+        		<type>poster</type>
+        	</image>
+			<image>
+        		<url>public URL or image file name in Amagi S3</url>
+        		<width>1280</width>
+        		<height>720</height>
+        		<type>scene</type>
+        	</image>
+        </program-images>
+        <is_live>false</is_live>
+    </program>
+    <program>
+        <channel>Name of the Channel</channel>
+        <series_title>Series title</series_title>
+        <episode_title>Episode title</episode_title>
+        <season>2</season>
+        <episode>7</episode>
+        <episode_sequence_number>10</episode_sequence_number>
+        <program_type>Movie</program_type>
+        <program_subtype>movie</program_subtype>
+        <genre>Entertainment</genre>
+        <category>Entertainment</category>
+        <air_date>28-04-2020</air_date>
+        <day_of_the_week>Tuesday</day_of_the_week>
+        <announced_time>07:00:00</announced_time>
+        <duration>01:00:00</duration>
+        <series_description>short description of the series</series_description>
+        <series_long_description>long description of the series</series_long_description>
+        <episode_description>short description of the episode</episode_description>
+        <episode_long_description>long description of the episode</episode_long_description>
+        <asset_id>bdf3fcb4-82bf-41c9-b309-bdf3fcb40018</asset_id>
+        <production_year>2017</production_year>
+        <parental_rating>NR</parental_rating>
+        <original_air_date>20-03-2019</original_air_date>
+        <series-images>
+        	<image>
+        		<url>public URL or image file name in Amagi S3</url>
+        		<width>1280</width>
+        		<height>720</height>
+        		<type>poster</type>
+        	</image>
+			<image>
+        		<url>public URL or image file name in Amagi S3</url>
+        		<width>1280</width>
+        		<height>720</height>
+        		<type>scene</type>
+        	</image>
+        </series-images>
+        <program-images>
+        	<image>
+        		<url>public URL or image file name in Amagi S3</url>
+        		<width>1280</width>
+        		<height>720</height>
+        		<type>poster</type>
+        	</image>
+			<image>
+        		<url>public URL or image file name in Amagi S3</url>
+        		<width>1280</width>
+        		<height>720</height>
+        		<type>scene</type>
+        	</image>
+        </program-images>
+        <is_live>false</is_live>>
+    </program>
+</programs>
