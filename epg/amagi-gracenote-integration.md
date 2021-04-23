@@ -2,7 +2,7 @@
 title: Amagi Gracenote Integration
 description: This document describes briefly the integrations between Amagi and Gracenote.
 published: true
-date: 2021-04-23T14:13:25.596Z
+date: 2021-04-23T14:34:28.785Z
 tags: 
 editor: markdown
 dateCreated: 2021-04-22T05:26:31.252Z
@@ -26,9 +26,9 @@ Amagi integrates with Gracenote primarily for two purposes.
 
 #### Delivering EPG into Gracenote
 
-For linear channels operated by Amagi, the schedules can be delivered into Gracenote when the content partner needs to publish their channel in Gracenote. This happens typically when the channel is delivered to certain platforms such as Xumo, Amazon etc., who retrieve the EPG only from Gracenote.
+For linear channels operated by Amagi, the schedules can be delivered into Gracenote when the content partner needs to publish their channel in Gracenote. This is needed typically when the channel is delivered to certain platforms such as Xumo, Amazon etc., who retrieve the EPG only from Gracenote.
 
-Amagi EPG system generates the EPG based on schedules sourced from the Cloudport playlists (or other supported schedule sources) and metadata sourced from the content partners and delivers to Gracenote in a pre-defined XML format into an FTP server hosted by Gracenote.
+Amagi EPG system generates the EPG using schedules sourced from the Cloudport playlists (or other supported schedule sources) and metadata sourced from the content partners and delivers to Gracenote in a pre-defined XML format into an FTP server hosted by Gracenote.
 
 The schedule sources are scanned for new/modified schedules periodically (approximately every 3 hours). If found, the updated EPG is generated and delivered to the FTP. 
 
@@ -49,7 +49,7 @@ As part of the EPG delivery to Gracenote, images may also be included if they ar
 In some cases, the content partner may already have their channels' schedules integrated into Gracenote. 
 
 Some examples are:
-> - When only Amagi Thunderstorm is used (for DAI)
+> - When channel is not played out by Amagi, but Amagi Thunderstorm is used for DAI
 > - When the content partner already has a OTA channel
 
 If the Amagi operated (or DAI-ed) channels follow those schedules, it may be simpler for Amagi to source the schedules and metadata already available in Gracenote instead of the content partners spending effort in collecting & delivering the same to Amagi. 
