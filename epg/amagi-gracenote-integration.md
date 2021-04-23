@@ -2,7 +2,7 @@
 title: Amagi Gracenote Integration
 description: This document describes briefly the integrations between Amagi and Gracenote.
 published: true
-date: 2021-04-23T09:51:42.655Z
+date: 2021-04-23T14:12:43.165Z
 tags: 
 editor: markdown
 dateCreated: 2021-04-22T05:26:31.252Z
@@ -40,14 +40,21 @@ During onboarding, Gracenote sets up processes to scan this FTP periodically (fr
 > Currently there is no feedback mechanism to acknowledge the success/failure of the ingest by Gracenote or the quality of the data.
 {.is-warning}
 
+##### Delivering images to Gracenote
+
+As part of the EPG delivery to Gracenote, images may also be included if they are inline with the Gracenote image requirements. However, as there is no automatic feedback mechanism between Amagi and Gracenote, this approach is not recommended. Gracenote prefers that the images are shared by the content partner directly to Gracenote.
 
 #### Delivering EPG from Gracenote to MVPDs
 
-In some cases, the content partner may already have their channels' schedules (e.g. OTA channels) integrated into Gracenote. 
+In some cases, the content partner may already have their channels' schedules integrated into Gracenote. 
 
-When the content partner wishes to run OTT channels by Amagi following the same schedules, it may be simpler for Amagi to source the schedules and metadata from Gracenote instead of the content partners spending effort in collecting the same. 
+Some examples are:
+> - When only Amagi Thunderstorm is used (for DAI)
+> - When the content partner already has a OTA channel
 
-Amagi EPG supports the Gracenote OnConnect API as an EPG source. It downloads the schedules and metadata available in Gracenote and generate EPG that can be delivered to other platforms after transforming to the necessary standards of the respective destination platforms.
+If the Amagi operated (or DAI-ed) channels follow those schedules, it may be simpler for Amagi to source the schedules and metadata already available in Gracenote instead of the content partners spending effort in collecting & delivering the same to Amagi. 
+
+For such cases, Amagi EPG supports the Gracenote OnConnect API as an EPG source. The schedules and metadata available in Gracenote are pulled, transformed and delivered to other platforms.
 
 > While onboarding, the content partner will need to get the API access token from Gracenote and share with Amagi. 
 {.is-info}
