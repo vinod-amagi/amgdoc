@@ -2,7 +2,7 @@
 title: Amagi Gracenote Integration
 description: This document describes briefly the integrations between Amagi and Gracenote.
 published: true
-date: 2021-04-23T09:03:42.424Z
+date: 2021-04-23T09:51:42.655Z
 tags: 
 editor: markdown
 dateCreated: 2021-04-22T05:26:31.252Z
@@ -19,7 +19,7 @@ With deep data describing movies and TV shows, including episode and series desc
 
 Amagi integrates with Gracenote primarily for two purposes.
 
-- Delivering EPG into Gracenote 
+- Delivering EPG to Gracenote 
 - Delivering EPG from Gracenote to MVPDs
 
 ![amagi_gracenote_integrations.png](/amagi_gracenote_integrations.png)
