@@ -2,7 +2,7 @@
 title: Amagi Gracenote Integration
 description: This document describes briefly the integrations between Amagi and Gracenote.
 published: true
-date: 2021-04-23T14:12:43.165Z
+date: 2021-04-23T14:13:25.596Z
 tags: 
 editor: markdown
 dateCreated: 2021-04-22T05:26:31.252Z
@@ -42,7 +42,7 @@ During onboarding, Gracenote sets up processes to scan this FTP periodically (fr
 
 ##### Delivering images to Gracenote
 
-As part of the EPG delivery to Gracenote, images may also be included if they are inline with the Gracenote image requirements. However, as there is no automatic feedback mechanism between Amagi and Gracenote, this approach is not recommended. Gracenote prefers that the images are shared by the content partner directly to Gracenote.
+As part of the EPG delivery to Gracenote, images may also be included if they are inline with the Gracenote image requirements. However, this approach is not recommended as Gracenote prefers that the images are shared by the content partner directly to Gracenote.
 
 #### Delivering EPG from Gracenote to MVPDs
 
