@@ -2,7 +2,7 @@
 title: Supported Platforms
 description: Details on the platforms to which Amagi delivers EPG
 published: true
-date: 2021-04-15T17:30:51.281Z
+date: 2021-04-26T14:11:42.377Z
 tags: epg
 editor: markdown
 dateCreated: 2021-02-18T16:58:26.623Z
@@ -40,5 +40,10 @@ dateCreated: 2021-02-18T16:58:26.623Z
 > - One Hub Vision
 > - NDTV
 > - Multichoice South Africa
+> - StarHub
 > - O&O 
+		- CWSeed
+    - Gunpowder
+    - 4kuniverse
+    
 {.links-list}
