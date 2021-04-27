@@ -2,10 +2,10 @@
 title: Contents
 description: Describes contents and various formats
 published: true
-date: 2021-01-16T13:40:10.654Z
+date: 2021-04-27T16:30:32.573Z
 tags: 
-editor: undefined
-dateCreated: 2021-01-16T12:32:04.354Z
+editor: markdown
+dateCreated: 2021-02-18T06:13:24.742Z
 ---
 
 # Contents
@@ -21,30 +21,19 @@ The contents used by Amagi CLOUDPORT are as listed below:-
 
 ## Video
 
+Amagi Cloudport supports native playout (i.e. without transcoding needed) of Transport Stream (TS) files, and for high bitrate playout requirements for traditional broadcast customers, XDCAM 50 and AVCINTRA 100 MXF.
 
-### Playout Output Formats
+In addition to native playout of Transport Stream (TS) files, Amagi supports a variety of other format through a tightly integrated transcoding workflow.
 
-|Parameters|Supported|
-|---|---|
-|Aspect Ratio|	<li>16:9<li>4:3|
-|Video resolution|	<li>1080i50<li>1080i60<li>1080p29.97<li>720p<li>SD-PAL<li>SD-NTSC|
-|Video Format|	<li>H.264<li>MPEG-2|
-|Audio format|	<li>MPEG-1 Layer 2<li>AAC<li>AC3|
-|Audio Tracks|	No of tracks, Stereo
-|Subtitles output|	<li>Burn-in<li>DVB Teletext<li>Closed Caption<li>Tele-Text|
-|Additional Info|	<li>AFD<li>Aspect Ratio<li>VChip<li>EIT<li>AIT|
-|Playout Output|<li>TSoIP<li>ASI<li>SDI|
-
-  
-### Input Formats - Video
+### Transport Stream File Specifications
  
 The following table describes the input formats for Video content.
   
 |Video|SD PAL|SD NTSC|720P|HD [1080i50]|HD [1080i60]|HD [1080p25]|
 |--|--|--|--|--|--|--|
 |Standard|PAL|NTSC|NTSC|PAL|NTSC|PAL|
-|Format|MPEG TS/MXF/MP4/MOV|MPEG TS/MXF/MP4/MOV|MPEG TS/MXF/MP4/MOV|MPEG TS/MXF/MP4/MOV|MPEG TS/MXF/MP4/MOV|MPEG TS/MXF/MP4/MOV|
-|File Extension|ts/mxf/mp4/mov|ts/mxf/mp4/mov|ts/mxf/mp4/mov|ts/mxf/mp4/mov|ts/mxf/mp4/mov|ts/mxf/mp4/mov|
+|Format|MPEG TS|MPEG TS|MPEG TS|MPEG TS|MPEG TS|MPEG TS|
+|File Extension|ts|ts|ts|ts|ts|ts|
 |Video Pid|2064 (0x810)|2064 (0x810)|2064 (0x810)|2064 (0x810)|2064 (0x810)|2064 (0x810)|
 |Video Format|AVC|AVC|AVC|AVC|AVC|AVC|
 |Video Resolution|720x576|720x480|1280x720|1920x1080|1920x1080|1920x1080|
@@ -61,6 +50,21 @@ The following table describes the input formats for Video content.
 |GOP|M=2; N=25|M=2; N=33|M=2; N=33|M=2; N=25|M=2; N=33|M=2; N=33|
 |Scan Type|Progressive<br>Interlaced <br> - Interleaved Fields<br> Separated Fields|Progressive<br>Interlaced <br> - Interleaved Fields<br> Separated Fields|Progressive|Progressive<br>Interlaced <br> - Interleaved Fields<br> Separated Fields|Progressive<br>Interlaced <br> - Interleaved Fields<br> Separated Fields|Progressive<br>Interlaced <br> - Interleaved Fields<br> Separated Fields|
 |Field Order|Top Field First (for interlaced video)|Top Field First (for interlaced video)|NA|Top Field First (for interlaced video)|Top Field First (for interlaced video)|Top Field First (for interlaced video)|
+
+
+
+### Playout Output Formats
+
+|Parameters|Supported|
+|---|---|
+|Aspect Ratio|	<li>16:9<li>4:3|
+|Video resolution|	<li>1080i50<li>1080i60<li>1080p29.97<li>720p<li>SD-PAL<li>SD-NTSC|
+|Video Format|	<li>H.264<li>MPEG-2|
+|Audio format|	<li>MPEG-1 Layer 2<li>AAC<li>AC3|
+|Audio Tracks|	No of tracks, Stereo
+|Subtitles output|	<li>Burn-in<li>DVB Teletext<li>Closed Caption<li>Tele-Text|
+|Additional Info|	<li>AFD<li>Aspect Ratio<li>VChip<li>EIT<li>AIT|
+|Playout Output|<li>TSoIP<li>ASI<li>SDI|
 
 ## Audio
 
