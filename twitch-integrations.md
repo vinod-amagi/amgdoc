@@ -2,7 +2,7 @@
 title: Amagi Twitch Integrations
 description: Details the various Twitch integrations implemented in Amagi
 published: true
-date: 2021-05-03T10:23:25.992Z
+date: 2021-05-03T10:23:54.459Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-18T06:34:42.729Z
@@ -13,7 +13,7 @@ This page captures the steps followed in build phase for the Twitch integration.
 #### Pre-requisites
 - Access to a production Twitch account from [Twitch](https://www.twitch.tv/). Instructions on how to create one is captured here.
 - Access to a production Twitch developer account from [Developer Console](https://dev.twitch.tv/). Twitch account may be re-used.
-- PUBSUB keys configured in the player
+- PUBSUB keys configured in the Amagi Cloudport player
 - Definition of the criteria based on which the commercial is to be triggered (e.g. an asset id pattern, a given media type etc.,)
 
 #### Twitch Account Creation
