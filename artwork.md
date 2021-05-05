@@ -2,7 +2,7 @@
 title: Artwork
 description: Artwork requirements for all the MVPDs
 published: true
-date: 2021-04-05T14:20:43.726Z
+date: 2021-05-05T13:10:44.888Z
 tags: 
 editor: markdown
 dateCreated: 2021-02-18T06:12:42.279Z
@@ -72,7 +72,14 @@ Default^*^|**Yes**|16x9|800x450|1920x1080|Yes
 {.is-info}
 
 **Channel Logos**
-##### EPG 
+Level|Mandatory|Aspect Ratio|Minimum Dimension|Preferred Dimension|Titled|Purpose
+|-|-|-|-|-|-|-|
+Thumbnail|**Yes**|16x9|800x450|1920x1080|Yes|Displayed in search results
+BrandedThumbnail|**Yes**|16x9|800x450|1920x1080|Yes|Backup image for thumbnail, when thumbnail is not available/inaccessible
+EPG logo|**Yes**|80x60|80x60|80x60||
+Info HUD|**Yes**|260x147|260x147|260x147||
+
+##### EPG logo
 - A logo for white background
 - A logo for black background (can be one image that reads well on both backgrounds) 
 - Logos need to be transparent PNGs 
