@@ -2,7 +2,7 @@
 title: Metastore
 description: Amagi Metastore
 published: true
-date: 2021-05-12T11:25:10.378Z
+date: 2021-05-12T14:55:00.718Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-12T11:21:49.050Z
@@ -14,4 +14,10 @@ Amagi manages metadata of content using a multi-tenanted service known as CP-Met
 
 ![metadata-er-diagram.png](/metadata/metadata-er-diagram.png)
 
+| Content| Description| Remarks|
+|---|---|---|
+| Series|  | | 
+| Season| | |
+| Episode| | |
+| Standalone| Movie, Documentary etc.| |
 
