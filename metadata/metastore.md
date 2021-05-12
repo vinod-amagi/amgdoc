@@ -2,7 +2,7 @@
 title: Metastore
 description: Amagi Metastore
 published: true
-date: 2021-05-12T15:10:25.521Z
+date: 2021-05-12T16:16:36.745Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-12T11:21:49.050Z
@@ -21,7 +21,6 @@ Amagi manages metadata of content using a multi-tenanted service known as CP-Met
 |Series Name|string|Series name|
 |Created At| datetime| Created time. Format hh:mm:ss.mmm. This attribute is automatically generated when content was ingested.|
 |Updated At|datetime| Updated time. Format hh:mm:ss.mmm. This attribute is automatically updated when content or metadata is updated.|
-
 | **Season**| | |
 |ID|Number| An internal identifier of the season. This attribute is automatically generated.|
 |Name|String| Name of the season|
