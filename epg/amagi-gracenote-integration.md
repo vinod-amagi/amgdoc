@@ -2,7 +2,7 @@
 title: Amagi Gracenote Integration
 description: This document describes briefly the integrations between Amagi and Gracenote.
 published: true
-date: 2021-04-23T14:34:28.785Z
+date: 2021-05-20T06:46:14.718Z
 tags: 
 editor: markdown
 dateCreated: 2021-04-22T05:26:31.252Z
@@ -40,6 +40,8 @@ During onboarding, Gracenote sets up processes to scan this FTP periodically (fr
 > Currently there is no feedback mechanism to acknowledge the success/failure of the ingest by Gracenote or the quality of the data.
 {.is-warning}
 
+A sample EPG XML delivered to Gracenote is available [here](/gracenote_epg.xml).
+
 ##### Delivering images to Gracenote
 
 As part of the EPG delivery to Gracenote, images may also be included if they are inline with the Gracenote image requirements. However, this approach is not recommended as Gracenote prefers that the images are shared by the content partner directly to Gracenote.
@@ -58,6 +60,8 @@ For such cases, Amagi EPG supports the Gracenote OnConnect API as an EPG source.
 
 > While onboarding, the content partner will need to get the API access token from Gracenote and share with Amagi. 
 {.is-info}
+
+OnConnect API documentation is available from Gracenote [here](https://developer.tmsapi.com/docs)
 
 # Commercial Contracts
 
