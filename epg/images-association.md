@@ -2,7 +2,7 @@
 title: EPG Artwork Association
 description: This page captures how artworks are provided by content partners and how those associated to the respective assets.
 published: true
-date: 2021-05-25T06:27:45.507Z
+date: 2021-05-25T11:32:19.361Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-25T06:26:49.983Z
@@ -21,3 +21,10 @@ Level|Value(URL/Name)|Location|Meta tag|Remarks
 -|-|-|-|-
 Series|Name|Images/S3/series|Asset ID|Image names starting with asset id are considered matching
 Program|Name|Images/S3/thumbnail|Asset ID|Image names starting with asset id are considered matching
+
+### Lionsgate  
+
+Level|Value(URL/Name)|Location|Meta tag|Remarks
+-|-|-|-|-
+Series|None|None|None|Series images are not ingested
+Program|Name|Images/S3/|landscape-poster-url|
