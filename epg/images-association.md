@@ -2,13 +2,11 @@
 title: EPG Artwork Association
 description: This page captures how artworks are provided by content partners and how those associated to the respective assets.
 published: true
-date: 2021-05-25T06:27:28.454Z
+date: 2021-05-25T06:27:45.507Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-25T06:26:49.983Z
 ---
-
-# EPG Artwork Association
 
 ### LDS
 
