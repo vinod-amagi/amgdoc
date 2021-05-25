@@ -2,7 +2,7 @@
 title: EPG Artwork Association
 description: This page captures how artworks are provided by content partners and how those associated to the respective assets.
 published: true
-date: 2021-05-25T06:26:49.983Z
+date: 2021-05-25T06:27:08.167Z
 tags: 
 editor: markdown
 dateCreated: 2021-05-25T06:26:49.983Z
@@ -13,7 +13,7 @@ dateCreated: 2021-05-25T06:26:49.983Z
 ### LDS
 
 Level|Value(URL/Name)|Location|Meta tag|Remarks
--|-|-|-
+-|-|-|-|-
 Series|Name|Images/S3/|SeriesArtworkFilename|Series images are appended with `_series` for LDS' convenience
 Program|Name|Images/S3/|Asset ID|Image names starting with asset id are considered matching
 
