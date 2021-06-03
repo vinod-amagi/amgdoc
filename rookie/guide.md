@@ -2,7 +2,7 @@
 title: Hitchhiker's guide to Amagi
 description: It is all in the name!!!
 published: true
-date: 2021-06-03T07:13:00.337Z
+date: 2021-06-03T07:23:08.577Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-03T07:10:10.956Z
@@ -13,13 +13,20 @@ dateCreated: 2021-06-03T07:10:10.956Z
 ## NOW
 
 ### OS Theory
+
+![operating_systems.png](/engg/operating_systems.png)
+
 https://www.edx.org/course/computer-hardware-and-operating-systems
 https://www.classcentral.com/course/udacity-introduction-to-operating-systems-3419
 
 #### Unix survival skills:
 
+![cautionary.png](/engg/cautionary.png)
+
 https://www.udemy.com/course/advance-unix-commands/
 https://www.udemy.com/course/advance-unix-file-processing/
+
+![incident.png](/engg/incident.png)
 
 ## NEXT
 
