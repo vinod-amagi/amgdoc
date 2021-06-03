@@ -2,7 +2,7 @@
 title: Hitchhiker's guide to Amagi
 description: It is all in the name!!!
 published: true
-date: 2021-06-03T10:19:25.184Z
+date: 2021-06-03T10:24:35.919Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-03T07:10:10.956Z
@@ -69,6 +69,10 @@ dateCreated: 2021-06-03T07:10:10.956Z
 
 ![isolation_2x.png](/engg/isolation_2x.png)
 
+# Books
+
+- Ruby : https://www.oreilly.com/library/view/the-ruby-programming/9780596516178/
+- Go: https://www.gopl.io/
 
 # Credits
 
