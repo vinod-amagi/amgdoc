@@ -2,7 +2,7 @@
 title: Hitchhiker's guide to Amagi
 description: It is all in the name!!!
 published: true
-date: 2021-06-03T10:18:07.370Z
+date: 2021-06-03T10:19:25.184Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-03T07:10:10.956Z
@@ -14,28 +14,24 @@ dateCreated: 2021-06-03T07:10:10.956Z
 
 ### OS Theory
 
-![operating_systems.png](/engg/operating_systems.png)
-
 > https://www.edx.org/course/computer-hardware-and-operating-systems
 > https://www.classcentral.com/course/udacity-introduction-to-operating-systems-3419
 > 
 {.is-info}
 
+![operating_systems.png](/engg/operating_systems.png)
 
 #### Unix survival skills:
-
-![cautionary.png](/engg/cautionary.png)
 
 > https://www.udemy.com/course/advance-unix-commands/
 > https://www.udemy.com/course/advance-unix-file-processing/
 {.is-info}
 
+![cautionary.png](/engg/cautionary.png)
 
 ![incident.png](/engg/incident.png)
 
 ## NEXT
-
-![containers.png](/engg/containers.png)
 
 > 1. How do containers work?:
 >  Once those OS & computer architecture concepts solidify in your mind, you will find this series on container internals useful:
@@ -48,14 +44,18 @@ dateCreated: 2021-06-03T07:10:10.956Z
 > https://www.classcentral.com/course/udacity-gt-refresher-advanced-os-4734
 > https://www.classcentral.com/course/udacity-advanced-operating-systems-1016 (Lesson#6 & #8 can be left if you can't follow them, as they're not immediately relevant for what we do).
 > 
-## LATER
 
-![query.png](/engg/query.png)
+![containers.png](/engg/containers.png)
+
+
+## LATER
 
 > 1. Some SQL play (when ActiveRecord generates mysterious SQL):
 > https://www.udemy.com/course/master-sql-for-data-science/
 >  2. Next level SQL (optional):
 > https://www.udemy.com/course/advanced-sql-mysql-for-analytics-business-intelligence/
+
+![query.png](/engg/query.png)
 
 ![tech_loops.png](/engg/tech_loops.png)
 
