@@ -2,7 +2,7 @@
 title: Hitchhiker's guide to Amagi
 description: It is all in the name!!!
 published: true
-date: 2021-06-03T10:07:13.970Z
+date: 2021-06-03T10:13:37.182Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-03T07:10:10.956Z
@@ -56,9 +56,12 @@ https://www.udemy.com/course/advanced-sql-mysql-for-analytics-business-intellige
 
 ## Welcome to Amagi
 
-![isolation_2x.png](/engg/isolation_2x.png)
+Thanks for enjoying these cartoons from https://xkcd.com/. We wish you have learned valuable lessons. Lastly, thanks for visiting this page.
 
 ![software_development.png](/engg/software_development.png)
+
+![isolation_2x.png](/engg/isolation_2x.png)
+
 
 # Credits
 
