@@ -2,7 +2,7 @@
 title: Hitchhiker's guide to Amagi
 description: It is all in the name!!!
 published: true
-date: 2021-06-03T07:26:25.901Z
+date: 2021-06-03T07:26:42.950Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-03T07:10:10.956Z
@@ -52,3 +52,4 @@ https://www.udemy.com/course/master-sql-for-data-science/
  2. Next level SQL (optional):
 https://www.udemy.com/course/advanced-sql-mysql-for-analytics-business-intelligence/
 
+![tech_loops.png](/engg/tech_loops.png)
