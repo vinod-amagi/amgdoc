@@ -2,7 +2,7 @@
 title: Hitchhiker's guide to Amagi
 description: It is all in the name!!!
 published: true
-date: 2021-06-03T07:23:08.577Z
+date: 2021-06-03T07:26:25.901Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-03T07:10:10.956Z
@@ -30,6 +30,8 @@ https://www.udemy.com/course/advance-unix-file-processing/
 
 ## NEXT
 
+![containers.png](/engg/containers.png)
+
 1. How do containers work?:
  Once those OS & computer architecture concepts solidify in your mind, you will find this series on container internals useful:
 https://medium.com/@saschagrunert/demystifying-containers-part-i-kernel-space-2c53d6979504
@@ -42,6 +44,8 @@ https://www.classcentral.com/course/udacity-gt-refresher-advanced-os-4734
 https://www.classcentral.com/course/udacity-advanced-operating-systems-1016 (Lesson#6 & #8 can be left if you can't follow them, as they're not immediately relevant for what we do).
 
 ## LATER
+
+![query.png](/engg/query.png)
 
 1. Some SQL play (when ActiveRecord generates mysterious SQL):
 https://www.udemy.com/course/master-sql-for-data-science/
