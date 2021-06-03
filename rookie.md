@@ -2,7 +2,7 @@
 title: Hitchhiker's guide to Amagi
 description: It is all in the name!!!
 published: true
-date: 2021-06-03T07:10:10.956Z
+date: 2021-06-03T07:13:00.337Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-03T07:10:10.956Z
