@@ -2,7 +2,7 @@
 title: mRSS V2.0
 description: 
 published: true
-date: 2021-06-09T18:18:36.127Z
+date: 2021-06-09T18:19:07.154Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-09T18:16:50.280Z
@@ -73,88 +73,88 @@ dateCreated: 2021-06-09T18:16:50.280Z
             </amagi:platform>
             <dcterms:valid>start=2016-07-13T09:42:31+00:00; end=2016-07-13T09:42:31+00:00; scheme=W3C-DTF</dcterms:valid>
             <seasons>
-              <item>
-                <guid>guid-of-the-episode</guid>
-                <amagi:externalId provider="gracenote" type="tms">tms-id-of-the-episode</amagi:externalId>
-                <title>
-                    <![CDATA[ Title of the season ]]>
-                </title>
-                <description>
-                    <![CDATA[ Description of the season ]]>
-                </description>
-                <short-description>
-                    <![CDATA[ Short description of the season ]]>
-                </short-description>
-                <long-description>
-                    <![CDATA[ Long description of the season ]]>
-                </long-description>
-                <seasonNumber>1</seasonNumber>
-                <media:group>
-                    <media:thumbnail url="url-of-image-media" width="2048" height="1536">
-                        <media:category>media-category-1</media:category>
-                    </media:thumbnail>
-                    <media:thumbnail url="url-of-image-media" width="1980" height="1080">
-                        <media:category>media-category-2</media:category>
-                    </media:thumbnail>
-                    <media:content url="url" type="mime-type-1" name="name-1" duration="1320" medium="video" adBreakPoints="00:10:10.100,00:16:19.340,00:22:00.560" fps="23.97" />
-                    <closedCaptions name="name-1">url-of-closed-caption</closedCaptions>
-                    <media:subTitle type="text/srt" name="name-1" lang="en-us" href="http://www.example.org/subtitle.srt" />
-                    <media:subTitle type="text/vtt" name="name-1" lang="en-us" href="http://www.example.org/subtitle.vtt" />
-                </media:group>
-                
-                <episodes>
-                    <item>
-                        <guid>guid-of-the-episode</guid>
-                        <amagi:externalId provider="gracenote" type="tms">tms-id-of-the-episode</amagi:externalId>
-                        <title>
-                            <![CDATA[ Title of the episode ]]>
-                        </title>
-                        <description>
-                            <![CDATA[ Description of the episode ]]>
-                        </description>
-                        <short-description>
-                            <![CDATA[ Short description of the episode ]]>
-                        </short-description>
-                        <long-description>
-                            <![CDATA[ Long description of the episode ]]>
-                        </long-description>
-                        <episodeNumber>1</episodeNumber>
-                        <media:thumbnail width="1920" height="1080" url="url" />
-                        <amagi:meta>
-                            <amagi:meta-value name="custom-meta-1" value="custom-meta-value-1" />
-                            <amagi:meta-value name="custom-meta-2" value="custom-meta-value-2" />
-                            <amagi:meta-list name="custom-meta-list">
-                                <amagi:meta-value value="custom-meta-list-item-1" />
-                                <amagi:meta-value value="custom-meta-list-item-2" />
-                            </amagi:meta-list>
-                        </amagi:meta>
-                        <amagi:platform name="platform-1">
+                <item>
+                    <guid>guid-of-the-episode</guid>
+                    <amagi:externalId provider="gracenote" type="tms">tms-id-of-the-episode</amagi:externalId>
+                    <title>
+                        <![CDATA[ Title of the season ]]>
+                    </title>
+                    <description>
+                        <![CDATA[ Description of the season ]]>
+                    </description>
+                    <short-description>
+                        <![CDATA[ Short description of the season ]]>
+                    </short-description>
+                    <long-description>
+                        <![CDATA[ Long description of the season ]]>
+                    </long-description>
+                    <seasonNumber>1</seasonNumber>
+                    <media:group>
+                        <media:thumbnail url="url-of-image-media" width="2048" height="1536">
+                            <media:category>media-category-1</media:category>
+                        </media:thumbnail>
+                        <media:thumbnail url="url-of-image-media" width="1980" height="1080">
+                            <media:category>media-category-2</media:category>
+                        </media:thumbnail>
+                        <media:content url="url" type="mime-type-1" name="name-1" duration="1320" medium="video" adBreakPoints="00:10:10.100,00:16:19.340,00:22:00.560" fps="23.97" />
+                        <closedCaptions name="name-1">url-of-closed-caption</closedCaptions>
+                        <media:subTitle type="text/srt" name="name-1" lang="en-us" href="http://www.example.org/subtitle.srt" />
+                        <media:subTitle type="text/vtt" name="name-1" lang="en-us" href="http://www.example.org/subtitle.vtt" />
+                    </media:group>
+
+                    <episodes>
+                        <item>
+                            <guid>guid-of-the-episode</guid>
+                            <amagi:externalId provider="gracenote" type="tms">tms-id-of-the-episode</amagi:externalId>
+                            <title>
+                                <![CDATA[ Title of the episode ]]>
+                            </title>
+                            <description>
+                                <![CDATA[ Description of the episode ]]>
+                            </description>
+                            <short-description>
+                                <![CDATA[ Short description of the episode ]]>
+                            </short-description>
+                            <long-description>
+                                <![CDATA[ Long description of the episode ]]>
+                            </long-description>
+                            <episodeNumber>1</episodeNumber>
+                            <media:thumbnail width="1920" height="1080" url="url" />
+                            <amagi:meta>
+                                <amagi:meta-value name="custom-meta-1" value="custom-meta-value-1" />
+                                <amagi:meta-value name="custom-meta-2" value="custom-meta-value-2" />
+                                <amagi:meta-list name="custom-meta-list">
+                                    <amagi:meta-value value="custom-meta-list-item-1" />
+                                    <amagi:meta-value value="custom-meta-list-item-2" />
+                                </amagi:meta-list>
+                            </amagi:meta>
+                            <amagi:platform name="platform-1">
+                                <dcterms:valid>start=2016-07-13T09:42:31+00:00; end=2016-07-13T09:42:31+00:00; scheme=W3C-DTF</dcterms:valid>
+                            </amagi:platform>
+                            <amagi:platform name="platform-2">
+                                <dcterms:valid>start=2016-07-13T09:42:31+00:00; end=2016-07-13T09:42:31+00:00; scheme=W3C-DTF</dcterms:valid>
+                            </amagi:platform>
                             <dcterms:valid>start=2016-07-13T09:42:31+00:00; end=2016-07-13T09:42:31+00:00; scheme=W3C-DTF</dcterms:valid>
-                        </amagi:platform>
-                        <amagi:platform name="platform-2">
-                            <dcterms:valid>start=2016-07-13T09:42:31+00:00; end=2016-07-13T09:42:31+00:00; scheme=W3C-DTF</dcterms:valid>
-                        </amagi:platform>
-                        <dcterms:valid>start=2016-07-13T09:42:31+00:00; end=2016-07-13T09:42:31+00:00; scheme=W3C-DTF</dcterms:valid>
-                        <media:group>
-                            <media:thumbnail url="url-of-image-media" width="2048" height="1536">
-                                <media:category>media-category-1</media:category>
-                            </media:thumbnail>
-                            <media:thumbnail url="url-of-image-media" width="1980" height="1080">
-                                <media:category>media-category-2</media:category>
-                            </media:thumbnail>
-                            <media:content url="url" type="mime-type-1" name="name-1" duration="1320" medium="video" adBreakPoints="00:10:10.100,00:16:19.340,00:22:00.560" fps="23.97" />
-                            <media:content url="url" type="mime-type-2" name="name-1" duration="1320" medium="video" adBreakPoints="00:10:10.100,00:16:19.340,00:22:00.560" fps="23.97" />
-                            <media:content url="url" type="mime-type-1" name="name-2" duration="1300" medium="video" adBreakPoints="00:10:10.100,00:16:19.340,00:22:00.560" fps="23.97" />
-                            <media:content url="url" type="mime-type-2" name="name-2" duration="1300" medium="video" adBreakPoints="00:10:10.100,00:16:19.340,00:22:00.560" fps="23.97" />
-                            <closedCaptions name="name-1">url-of-closed-caption</closedCaptions>
-                            <closedCaptions name="name-2">url-of-closed-caption</closedCaptions>
-                            <media:subTitle type="text/srt" name="name-1" lang="en-us" href="http://www.example.org/subtitle.srt" />
-                            <media:subTitle type="text/vtt" name="name-1" lang="en-us" href="http://www.example.org/subtitle.vtt" />
-                            <media:subTitle type="text/srt" name="name-2" lang="en-us" href="http://www.example.org/subtitle.srt" />
-                            <media:subTitle type="text/vtt" name="name-2" lang="en-us" href="http://www.example.org/subtitle.vtt" />
-                        </media:group>
-                    </item>
-                </episodes>
+                            <media:group>
+                                <media:thumbnail url="url-of-image-media" width="2048" height="1536">
+                                    <media:category>media-category-1</media:category>
+                                </media:thumbnail>
+                                <media:thumbnail url="url-of-image-media" width="1980" height="1080">
+                                    <media:category>media-category-2</media:category>
+                                </media:thumbnail>
+                                <media:content url="url" type="mime-type-1" name="name-1" duration="1320" medium="video" adBreakPoints="00:10:10.100,00:16:19.340,00:22:00.560" fps="23.97" />
+                                <media:content url="url" type="mime-type-2" name="name-1" duration="1320" medium="video" adBreakPoints="00:10:10.100,00:16:19.340,00:22:00.560" fps="23.97" />
+                                <media:content url="url" type="mime-type-1" name="name-2" duration="1300" medium="video" adBreakPoints="00:10:10.100,00:16:19.340,00:22:00.560" fps="23.97" />
+                                <media:content url="url" type="mime-type-2" name="name-2" duration="1300" medium="video" adBreakPoints="00:10:10.100,00:16:19.340,00:22:00.560" fps="23.97" />
+                                <closedCaptions name="name-1">url-of-closed-caption</closedCaptions>
+                                <closedCaptions name="name-2">url-of-closed-caption</closedCaptions>
+                                <media:subTitle type="text/srt" name="name-1" lang="en-us" href="http://www.example.org/subtitle.srt" />
+                                <media:subTitle type="text/vtt" name="name-1" lang="en-us" href="http://www.example.org/subtitle.vtt" />
+                                <media:subTitle type="text/srt" name="name-2" lang="en-us" href="http://www.example.org/subtitle.srt" />
+                                <media:subTitle type="text/vtt" name="name-2" lang="en-us" href="http://www.example.org/subtitle.vtt" />
+                            </media:group>
+                        </item>
+                    </episodes>
                 </item>
             </seasons>
         </item>
