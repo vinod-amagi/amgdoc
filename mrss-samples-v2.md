@@ -2,7 +2,7 @@
 title: mRSS V2.0
 description: 
 published: true
-date: 2021-06-09T18:16:50.280Z
+date: 2021-06-09T18:17:18.849Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-09T18:16:50.280Z
@@ -21,7 +21,7 @@ dateCreated: 2021-06-09T18:16:50.280Z
     <generator>Generator</generator>
     <lastBuildDate>2016-09-07T09:42:31+00:00</lastBuildDate>
     <language>en</language>
-    <version>1.0</version>
+    <version>2.0</version>
     <series>
         <item>
             <guid>guid-of-the-series</guid>
