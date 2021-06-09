@@ -2,7 +2,7 @@
 title: Hitchhiker's guide to Amagi
 description: It is all in the name!!!
 published: true
-date: 2021-06-03T10:31:04.009Z
+date: 2021-06-09T07:42:08.958Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-03T07:10:10.956Z
@@ -61,8 +61,16 @@ dateCreated: 2021-06-03T07:10:10.956Z
 
 # Books
 
-- Ruby : https://www.oreilly.com/library/view/the-ruby-programming/9780596516178/
-- Go: https://www.gopl.io/
+Programming
+
+> - Ruby : https://www.oreilly.com/library/view/the-ruby-programming/9780596516178/
+> - Go: https://www.gopl.io/
+> 
+
+Clean code is not written by following a set of rules. You don’t become a software craftsman by learning a list of heuristics. Professionalism and craftsmanship come from values that drive disciplines.” — Clean Code: A Handbook of Agile Software Craftsmanship
+
+ - Clean Code: https://www.goodreads.com/book/show/3735293-clean-code
+ - More on Clean Code: https://www.pullrequest.com/blog/3-clean-code-books/
 
 
 ## Welcome to Amagi
