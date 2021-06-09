@@ -2,7 +2,7 @@
 title: mRSS V2.0
 description: 
 published: true
-date: 2021-06-09T18:17:18.849Z
+date: 2021-06-09T18:18:36.127Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-09T18:16:50.280Z
@@ -73,6 +73,7 @@ dateCreated: 2021-06-09T18:16:50.280Z
             </amagi:platform>
             <dcterms:valid>start=2016-07-13T09:42:31+00:00; end=2016-07-13T09:42:31+00:00; scheme=W3C-DTF</dcterms:valid>
             <seasons>
+              <item>
                 <guid>guid-of-the-episode</guid>
                 <amagi:externalId provider="gracenote" type="tms">tms-id-of-the-episode</amagi:externalId>
                 <title>
@@ -100,6 +101,7 @@ dateCreated: 2021-06-09T18:16:50.280Z
                     <media:subTitle type="text/srt" name="name-1" lang="en-us" href="http://www.example.org/subtitle.srt" />
                     <media:subTitle type="text/vtt" name="name-1" lang="en-us" href="http://www.example.org/subtitle.vtt" />
                 </media:group>
+                
                 <episodes>
                     <item>
                         <guid>guid-of-the-episode</guid>
@@ -153,6 +155,7 @@ dateCreated: 2021-06-09T18:16:50.280Z
                         </media:group>
                     </item>
                 </episodes>
+                </item>
             </seasons>
         </item>
     </series>
