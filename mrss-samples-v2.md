@@ -2,7 +2,7 @@
 title: mRSS V2.0
 description: 
 published: true
-date: 2021-06-10T06:42:43.358Z
+date: 2021-06-10T13:26:49.380Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-09T18:16:50.280Z
@@ -11,7 +11,7 @@ dateCreated: 2021-06-09T18:16:50.280Z
 # mRSS Version 2.0
 
 ```xml
-<rss xmlns:amagi="http://www.amagi.com/rss/namespace" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:media="https://www.rssboard.org/media-rss/" version="2.0">
+<rss xmlns:amagi="http://www.amagi.com/rss/namespace" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
     <title>
         <![CDATA[ Title of the Feed ]]>
     </title>
@@ -32,20 +32,20 @@ dateCreated: 2021-06-09T18:16:50.280Z
             <description>
                 <![CDATA[ Description of the series ]]>
             </description>
-            <short-description>
+            <amagi:shortDescription>
                 <![CDATA[ Short description of the series ]]>
-            </short-description>
-            <long-description>
+            </amagi:shortDescription>
+            <amagi:longDescription>
                 <![CDATA[ Long description of the series ]]>
-            </long-description>
+            </amagi:longDescription>
             <genre>genre-of-the-series</genre>
             <media:keywords>keyword-1, keyword-2, keyword-3</media:keywords>
             <media:category>category-1</media:category>
             <media:category>category-2</media:category>
-          	<media:rating scheme="urn:simple">adult</media:rating>
-						<media:rating scheme="urn:icra">r (cz 1 lz 1 nz 1 oz 1 vz 1</media:rating>
-						<media:rating scheme="urn:mpaa">pg</media:rating>
-						<media:rating scheme="urn:v-chip">tv-y7-fv</media:rating>
+            <media:rating scheme="urn:simple">adult</media:rating>
+            <media:rating scheme="urn:icra">r (cz 1 lz 1 nz 1 oz 1 vz 1</media:rating>
+            <media:rating scheme="urn:mpaa">pg</media:rating>
+            <media:rating scheme="urn:v-chip">tv-y7-fv</media:rating>
             <media:group>
                 <media:thumbnail url="url-of-image-media" width="2048" height="1536">
                     <media:category>media-category-1</media:category>
@@ -54,7 +54,6 @@ dateCreated: 2021-06-09T18:16:50.280Z
                     <media:category>media-category-2</media:category>
                 </media:thumbnail>
                 <media:content url="url" type="mime-type-1" name="name-1" duration="1320" medium="video" adBreakPoints="00:10:10.100,00:16:19.340,00:22:00.560" fps="23.97" />
-                <closedCaptions name="name-1">url-of-closed-caption</closedCaptions>
                 <media:subTitle type="text/srt" name="name-1" lang="en-us" href="http://www.example.org/subtitle.srt" />
                 <media:subTitle type="text/vtt" name="name-1" lang="en-us" href="http://www.example.org/subtitle.vtt" />
             </media:group>
@@ -73,6 +72,7 @@ dateCreated: 2021-06-09T18:16:50.280Z
                 <dcterms:valid>start=2016-07-13T09:42:31+00:00; end=2016-07-13T09:42:31+00:00; scheme=W3C-DTF</dcterms:valid>
             </amagi:platform>
             <dcterms:valid>start=2016-07-13T09:42:31+00:00; end=2016-07-13T09:42:31+00:00; scheme=W3C-DTF</dcterms:valid>
+            <amagi:releaseDate>2016-07-13</amagi:releaseDate>
             <seasons>
                 <item>
                     <guid>guid-of-the-episode</guid>
@@ -102,7 +102,7 @@ dateCreated: 2021-06-09T18:16:50.280Z
                         <media:subTitle type="text/srt" name="name-1" lang="en-us" href="http://www.example.org/subtitle.srt" />
                         <media:subTitle type="text/vtt" name="name-1" lang="en-us" href="http://www.example.org/subtitle.vtt" />
                     </media:group>
-
+                    <amagi:releaseDate>2016-07-13</amagi:releaseDate>
                     <episodes>
                         <item>
                             <guid>guid-of-the-episode</guid>
@@ -113,12 +113,12 @@ dateCreated: 2021-06-09T18:16:50.280Z
                             <description>
                                 <![CDATA[ Description of the episode ]]>
                             </description>
-                            <short-description>
-                                <![CDATA[ Short description of the episode ]]>
-                            </short-description>
-                            <long-description>
-                                <![CDATA[ Long description of the episode ]]>
-                            </long-description>
+                            <amagi:shortDescription>
+                                <![CDATA[ Short description of the series ]]>
+                            </amagi:shortDescription>
+                            <amagi:longDescription>
+                                <![CDATA[ Long description of the series ]]>
+                            </amagi:longDescription>
                             <episodeNumber>1</episodeNumber>
                             <media:thumbnail width="1920" height="1080" url="url" />
                             <amagi:meta>
@@ -136,11 +136,13 @@ dateCreated: 2021-06-09T18:16:50.280Z
                                 <dcterms:valid>start=2016-07-13T09:42:31+00:00; end=2016-07-13T09:42:31+00:00; scheme=W3C-DTF</dcterms:valid>
                             </amagi:platform>
                             <dcterms:valid>start=2016-07-13T09:42:31+00:00; end=2016-07-13T09:42:31+00:00; scheme=W3C-DTF</dcterms:valid>
-                                    	<media:rating scheme="urn:simple">adult</media:rating>
-						<media:rating scheme="urn:icra">r (cz 1 lz 1 nz 1 oz 1 vz 1</media:rating>
-						<media:rating scheme="urn:mpaa">pg</media:rating>
-						<media:rating scheme="urn:v-chip">tv-y7-fv</media:rating>
-
+                            <amagi:releaseDate>2016-07-13</amagi:releaseDate>
+                            <!-- RATINGS -->
+                            <media:rating scheme="urn:simple">adult</media:rating>
+                            <media:rating scheme="urn:icra">r (cz 1 lz 1 nz 1 oz 1 vz 1</media:rating>
+                            <media:rating scheme="urn:mpaa">pg</media:rating>
+                            <media:rating scheme="urn:v-chip">tv-y7-fv</media:rating>
+                            <!-- MEDIA RESOURCES -->
                             <media:group>
                                 <media:thumbnail url="url-of-image-media" width="2048" height="1536">
                                     <media:category>media-category-1</media:category>
@@ -148,16 +150,15 @@ dateCreated: 2021-06-09T18:16:50.280Z
                                 <media:thumbnail url="url-of-image-media" width="1980" height="1080">
                                     <media:category>media-category-2</media:category>
                                 </media:thumbnail>
-                                <media:content url="url" type="mime-type-1" name="name-1" duration="1320" medium="video" adBreakPoints="00:10:10.100,00:16:19.340,00:22:00.560" fps="23.97" />
-                                <media:content url="url" type="mime-type-2" name="name-1" duration="1320" medium="video" adBreakPoints="00:10:10.100,00:16:19.340,00:22:00.560" fps="23.97" />
-                                <media:content url="url" type="mime-type-1" name="name-2" duration="1300" medium="video" adBreakPoints="00:10:10.100,00:16:19.340,00:22:00.560" fps="23.97" />
-                                <media:content url="url" type="mime-type-2" name="name-2" duration="1300" medium="video" adBreakPoints="00:10:10.100,00:16:19.340,00:22:00.560" fps="23.97" />
-                                <closedCaptions name="name-1">url-of-closed-caption</closedCaptions>
-                                <closedCaptions name="name-2">url-of-closed-caption</closedCaptions>
+                                <media:content url="url" type="mime-type-1" name="name-1" duration="1320" medium="video" adBreakPoints="00:10:10.100,00:16:19.340,00:22:00.560" fps="23.97" lang="en-us"/>
+                                <media:content url="url" type="mime-type-2" name="name-1" duration="1320" medium="video" adBreakPoints="00:10:10.100,00:16:19.340,00:22:00.560" fps="23.97" lang="en-us"/>
+                                <media:content url="url" type="mime-type-1" name="name-2" duration="1300" medium="video" adBreakPoints="00:10:10.100,00:16:19.340,00:22:00.560" fps="23.97" lang="en-us"/>
+                                <media:content url="url" type="mime-type-2" name="name-2" duration="1300" medium="video" adBreakPoints="00:10:10.100,00:16:19.340,00:22:00.560" fps="23.97" lang="en-us"/>
+                                <media:subTitle type="captions" category="name-1" lang="en-us" href="http://www.example.org/cations.scc" />
                                 <media:subTitle type="text/srt" name="name-1" lang="en-us" href="http://www.example.org/subtitle.srt" />
                                 <media:subTitle type="text/vtt" name="name-1" lang="en-us" href="http://www.example.org/subtitle.vtt" />
-                                <media:subTitle type="text/srt" name="name-2" lang="en-us" href="http://www.example.org/subtitle.srt" />
-                                <media:subTitle type="text/vtt" name="name-2" lang="en-us" href="http://www.example.org/subtitle.vtt" />
+                                <media:subTitle type="text/srt" name="name-2" lang="de" href="http://www.example.org/subtitle.srt" />
+                                <media:subTitle type="text/vtt" name="name-2" lang="de" href="http://www.example.org/subtitle.vtt" />
                             </media:group>
                         </item>
                     </episodes>
@@ -185,10 +186,12 @@ dateCreated: 2021-06-09T18:16:50.280Z
             <media:keywords>keyword-1, keyword-2, keyword-3</media:keywords>
             <media:category>category-1</media:category>
             <media:category>category-2</media:category>
-          	<media:rating scheme="urn:simple">adult</media:rating>
-						<media:rating scheme="urn:icra">r (cz 1 lz 1 nz 1 oz 1 vz 1</media:rating>
-						<media:rating scheme="urn:mpaa">pg</media:rating>
-						<media:rating scheme="urn:v-chip">tv-y7-fv</media:rating>
+            <!-- RATINGS -->
+            <media:rating scheme="urn:simple">adult</media:rating>
+            <media:rating scheme="urn:icra">r (cz 1 lz 1 nz 1 oz 1 vz 1</media:rating>
+            <media:rating scheme="urn:mpaa">pg</media:rating>
+            <media:rating scheme="urn:v-chip">tv-y7-fv</media:rating>
+            <!-- MEDIA RESOURCES -->
             <amagi:meta>
                 <amagi:meta-value name="custom-meta-1" value="custom-meta-value-1" />
                 <amagi:meta-value name="custom-meta-2" value="custom-meta-value-2" />
@@ -204,6 +207,7 @@ dateCreated: 2021-06-09T18:16:50.280Z
                 <dcterms:valid>start=2016-07-13T09:42:31+00:00; end=2016-07-13T09:42:31+00:00; scheme=W3C-DTF</dcterms:valid>
             </amagi:platform>
             <dcterms:valid>start=2016-07-13T09:42:31+00:00; end=2016-07-13T09:42:31+00:00; scheme=W3C-DTF</dcterms:valid>
+            <amagi:releaseDate>2016-07-13</amagi:releaseDate>
             <media:group>
                 <media:thumbnail url="url-of-image-media" width="2048" height="1536">
                     <media:category>media-category-1</media:category>
@@ -215,12 +219,11 @@ dateCreated: 2021-06-09T18:16:50.280Z
                 <media:content url="url" type="mime-type-2" name="name-1" duration="1320" medium="video" adBreakPoints="00:10:10.100,00:16:19.340,00:22:00.560" fps="23.97" />
                 <media:content url="url" type="mime-type-1" name="name-2" duration="1300" medium="video" adBreakPoints="00:10:10.100,00:16:19.340,00:22:00.560" fps="23.97" />
                 <media:content url="url" type="mime-type-2" name="name-2" duration="1300" medium="video" adBreakPoints="00:10:10.100,00:16:19.340,00:22:00.560" fps="23.97" />
-                <closedCaptions name="name-1">url-of-closed-caption</closedCaptions>
-                <closedCaptions name="name-2">url-of-closed-caption</closedCaptions>
-                <media:subTitle type="text/srt" category="name-1" lang="en-us" href="http://www.example.org/subtitle.srt" />
-                <media:subTitle type="text/vtt" category="name-1" lang="en-us" href="http://www.example.org/subtitle.vtt" />
-                <media:subTitle type="text/srt" category="name-2" lang="en-us" href="http://www.example.org/subtitle.srt" />
-                <media:subTitle type="text/vtt" category="name-2" lang="en-us" href="http://www.example.org/subtitle.vtt" />
+                <media:subTitle type="captions" category="name-1" lang="en-us" href="http://www.example.org/cations.scc" />
+                <media:subTitle type="text/srt" name="name-1" lang="en-us" href="http://www.example.org/subtitle.srt" />
+                <media:subTitle type="text/vtt" name="name-1" lang="en-us" href="http://www.example.org/subtitle.vtt" />
+                <media:subTitle type="text/srt" name="name-2" lang="de" href="http://www.example.org/subtitle.srt" />
+                <media:subTitle type="text/vtt" name="name-2" lang="de" href="http://www.example.org/subtitle.vtt" />
             </media:group>
         </item>
     </standalone>
