@@ -2,7 +2,7 @@
 title: mRSS V2.0
 description: 
 published: true
-date: 2021-06-09T18:19:07.154Z
+date: 2021-06-10T06:38:31.334Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-09T18:16:50.280Z
@@ -11,7 +11,7 @@ dateCreated: 2021-06-09T18:16:50.280Z
 # mRSS Version 2.0
 
 ```xml
-<rss xmlns:amagi="http://www.amagi.com/rss/namespace" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<rss xmlns:amagi="http://www.amagi.com/rss/namespace" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:media="https://www.rssboard.org/media-rss/" version="2.0">
     <title>
         <![CDATA[ Title of the Feed ]]>
     </title>
