@@ -2,7 +2,7 @@
 title: mRSS V2.0
 description: 
 published: true
-date: 2021-06-10T06:41:45.718Z
+date: 2021-06-10T06:42:43.358Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-09T18:16:50.280Z
@@ -46,9 +46,6 @@ dateCreated: 2021-06-09T18:16:50.280Z
 						<media:rating scheme="urn:icra">r (cz 1 lz 1 nz 1 oz 1 vz 1</media:rating>
 						<media:rating scheme="urn:mpaa">pg</media:rating>
 						<media:rating scheme="urn:v-chip">tv-y7-fv</media:rating>
-            <media:rating scheme="urn:simple">adult</media:rating>
-            <media:rating scheme="urn:mpaa">pg</media:rating>
-            <media:rating scheme="urn:v-chip">tv-y7-fv</media:rating>
             <media:group>
                 <media:thumbnail url="url-of-image-media" width="2048" height="1536">
                     <media:category>media-category-1</media:category>
@@ -139,6 +136,11 @@ dateCreated: 2021-06-09T18:16:50.280Z
                                 <dcterms:valid>start=2016-07-13T09:42:31+00:00; end=2016-07-13T09:42:31+00:00; scheme=W3C-DTF</dcterms:valid>
                             </amagi:platform>
                             <dcterms:valid>start=2016-07-13T09:42:31+00:00; end=2016-07-13T09:42:31+00:00; scheme=W3C-DTF</dcterms:valid>
+                                    	<media:rating scheme="urn:simple">adult</media:rating>
+						<media:rating scheme="urn:icra">r (cz 1 lz 1 nz 1 oz 1 vz 1</media:rating>
+						<media:rating scheme="urn:mpaa">pg</media:rating>
+						<media:rating scheme="urn:v-chip">tv-y7-fv</media:rating>
+
                             <media:group>
                                 <media:thumbnail url="url-of-image-media" width="2048" height="1536">
                                     <media:category>media-category-1</media:category>
@@ -183,11 +185,10 @@ dateCreated: 2021-06-09T18:16:50.280Z
             <media:keywords>keyword-1, keyword-2, keyword-3</media:keywords>
             <media:category>category-1</media:category>
             <media:category>category-2</media:category>
-            <media:rating scheme="urn:simple">adult</media:rating>
-            <media:rating scheme="urn:mpaa">pg</media:rating>
-            <media:rating scheme="urn:v-chip">tv-y7-fv</media:rating>
-            <media:thumbnail width="4320" height="3240" url="url" />
-            <media:thumbnail width="1920" height="1080" url="url" />
+          	<media:rating scheme="urn:simple">adult</media:rating>
+						<media:rating scheme="urn:icra">r (cz 1 lz 1 nz 1 oz 1 vz 1</media:rating>
+						<media:rating scheme="urn:mpaa">pg</media:rating>
+						<media:rating scheme="urn:v-chip">tv-y7-fv</media:rating>
             <amagi:meta>
                 <amagi:meta-value name="custom-meta-1" value="custom-meta-value-1" />
                 <amagi:meta-value name="custom-meta-2" value="custom-meta-value-2" />
