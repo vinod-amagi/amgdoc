@@ -2,7 +2,7 @@
 title: mRSS V2.0
 description: 
 published: true
-date: 2021-06-10T06:38:31.334Z
+date: 2021-06-10T06:41:45.718Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-09T18:16:50.280Z
@@ -42,6 +42,10 @@ dateCreated: 2021-06-09T18:16:50.280Z
             <media:keywords>keyword-1, keyword-2, keyword-3</media:keywords>
             <media:category>category-1</media:category>
             <media:category>category-2</media:category>
+          	<media:rating scheme="urn:simple">adult</media:rating>
+						<media:rating scheme="urn:icra">r (cz 1 lz 1 nz 1 oz 1 vz 1</media:rating>
+						<media:rating scheme="urn:mpaa">pg</media:rating>
+						<media:rating scheme="urn:v-chip">tv-y7-fv</media:rating>
             <media:rating scheme="urn:simple">adult</media:rating>
             <media:rating scheme="urn:mpaa">pg</media:rating>
             <media:rating scheme="urn:v-chip">tv-y7-fv</media:rating>
