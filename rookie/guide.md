@@ -2,7 +2,7 @@
 title: Hitchhiker's guide to Amagi
 description: It is all in the name!!!
 published: true
-date: 2021-06-09T14:24:23.392Z
+date: 2021-06-11T07:43:56.756Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-03T07:10:10.956Z
@@ -83,7 +83,10 @@ Good references for various programming languages
 - [Go](https://www.gopl.io/)
 
 
+### Good Reads
 
+From [Leslie Lamport](https://en.wikipedia.org/wiki/Leslie_Lamport)
+- https://www.wired.com/2013/01/code-bugs-programming-why-we-need-specs/
 
 ## Welcome to Amagi
 
