@@ -2,7 +2,7 @@
 title: Hitchhiker's guide to Amagi
 description: It is all in the name!!!
 published: true
-date: 2021-06-11T07:44:27.377Z
+date: 2021-06-11T07:45:44.463Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-03T07:10:10.956Z
@@ -88,6 +88,9 @@ Good references for various programming languages
 From [Leslie Lamport](https://en.wikipedia.org/wiki/Leslie_Lamport)
 - https://www.wired.com/2013/01/code-bugs-programming-why-we-need-specs/
 - http://lamport.azurewebsites.net/pubs/pubs.html
+
+Scalable Network Programming (The Quest For A Good Web Server)
+ - http://bulk.fefe.de/scalable-networking.pdf
 
 ## Welcome to Amagi
 
