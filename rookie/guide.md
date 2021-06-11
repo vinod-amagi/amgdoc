@@ -2,7 +2,7 @@
 title: Hitchhiker's guide to Amagi
 description: It is all in the name!!!
 published: true
-date: 2021-06-11T07:45:44.463Z
+date: 2021-06-11T08:16:25.726Z
 tags: 
 editor: markdown
 dateCreated: 2021-06-03T07:10:10.956Z
@@ -86,6 +86,7 @@ Good references for various programming languages
 ### Good Reads
 
 From [Leslie Lamport](https://en.wikipedia.org/wiki/Leslie_Lamport)
+Leslie Lamport in an interview about "Blueprint" of software (specification)
 - https://www.wired.com/2013/01/code-bugs-programming-why-we-need-specs/
 - http://lamport.azurewebsites.net/pubs/pubs.html
 
