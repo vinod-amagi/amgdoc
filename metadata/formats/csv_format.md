@@ -2,10 +2,10 @@
 title: CSV Format
 description: 
 published: true
-date: 2021-01-14T10:17:46.405Z
+date: 2021-02-18T06:36:43.297Z
 tags: 
 editor: undefined
-dateCreated: 2021-01-14T10:17:44.579Z
+dateCreated: 2021-02-18T06:13:41.175Z
 ---
 
 ## Metadata Ingest Formats

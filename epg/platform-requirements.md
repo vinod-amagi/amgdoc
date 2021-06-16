@@ -2,9 +2,9 @@
 title: Metadata Requirements
 description: Summarizes the metadata requirements for all the platforms to which Amagi delivers EPG
 published: true
-date: 2021-02-24T06:57:42.232Z
-tags: epg
-editor: markdown
+date: 2021-02-24T06:57:43.816Z
+tags: 
+editor: undefined
 dateCreated: 2021-02-23T20:30:39.462Z
 ---
 

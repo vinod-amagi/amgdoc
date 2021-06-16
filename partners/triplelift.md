@@ -2,9 +2,9 @@
 title: Amagi Triplelift Integration
 description: A short how-to on the Amagi API for Triplelift integration..
 published: true
-date: 2021-05-05T08:49:20.256Z
+date: 2021-05-05T08:49:21.854Z
 tags: 
-editor: markdown
+editor: undefined
 dateCreated: 2021-05-05T08:49:20.256Z
 ---
 

@@ -2,9 +2,9 @@
 title: Artwork
 description: Artwork requirements for all the MVPDs
 published: true
-date: 2021-05-05T13:10:44.888Z
+date: 2021-05-05T13:10:46.644Z
 tags: 
-editor: markdown
+editor: undefined
 dateCreated: 2021-02-18T06:12:42.279Z
 ---
 

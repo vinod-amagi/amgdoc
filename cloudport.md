@@ -2,9 +2,9 @@
 title: CLOUDPORT
 description: Amagi CLOUDPORT Platform
 published: true
-date: 2021-02-23T19:47:38.190Z
+date: 2021-02-23T19:47:39.876Z
 tags: 
-editor: markdown
+editor: undefined
 dateCreated: 2021-02-18T06:34:05.741Z
 ---
 

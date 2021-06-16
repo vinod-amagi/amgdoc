@@ -2,9 +2,9 @@
 title: USA Today Programmatic Scheduling
 description: 
 published: true
-date: 2021-03-23T13:16:45.465Z
+date: 2021-03-23T13:16:47.117Z
 tags: 
-editor: markdown
+editor: undefined
 dateCreated: 2021-03-22T13:40:42.376Z
 ---
 

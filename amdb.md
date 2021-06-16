@@ -2,9 +2,9 @@
 title: Introduction
 description: Describes Amagi Media DataBase serving Amagi services - CLOUDPORT, EPG, VoD and Analytics
 published: true
-date: 2021-02-18T13:35:53.827Z
-tags: amdb
-editor: markdown
+date: 2021-02-18T13:35:55.459Z
+tags: 
+editor: undefined
 dateCreated: 2021-02-18T06:12:40.033Z
 ---
 

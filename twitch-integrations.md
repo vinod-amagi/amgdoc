@@ -2,9 +2,9 @@
 title: Amagi Twitch Integrations
 description: Details the various Twitch integrations implemented in Amagi
 published: true
-date: 2021-05-10T16:09:14.051Z
+date: 2021-05-10T16:09:15.696Z
 tags: 
-editor: markdown
+editor: undefined
 dateCreated: 2021-02-18T06:34:42.729Z
 ---
 

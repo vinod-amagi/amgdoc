@@ -2,10 +2,10 @@
 title: XML Formats
 description: Supported XML Formats
 published: true
-date: 2021-01-14T10:17:36.871Z
+date: 2021-02-18T06:36:24.430Z
 tags: 
 editor: undefined
-dateCreated: 2021-01-14T10:17:35.248Z
+dateCreated: 2021-02-18T06:13:15.503Z
 ---
 
 ## Episode XML

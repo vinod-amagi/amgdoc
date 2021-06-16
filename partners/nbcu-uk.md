@@ -2,9 +2,9 @@
 title: NBCU Integration
 description: 
 published: true
-date: 2021-05-21T07:23:12.715Z
+date: 2021-05-21T07:23:14.232Z
 tags: 
-editor: markdown
+editor: undefined
 dateCreated: 2021-05-21T07:13:01.099Z
 ---
 

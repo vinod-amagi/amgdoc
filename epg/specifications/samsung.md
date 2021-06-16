@@ -2,10 +2,10 @@
 title: Samsung EPG API Specifications
 description: Details of the Samsung EPG API
 published: true
-date: 2021-02-01T05:48:22.867Z
+date: 2021-02-18T06:36:39.830Z
 tags: 
 editor: undefined
-dateCreated: 2021-02-01T05:48:20.881Z
+dateCreated: 2021-02-18T06:13:36.785Z
 ---
 
 ### Samsung TV+ Channel Data Specifications

@@ -2,9 +2,9 @@
 title: Platform Specifications
 description: All platform-provided specifications
 published: true
-date: 2021-05-19T08:46:55.629Z
+date: 2021-05-19T08:46:57.149Z
 tags: 
-editor: markdown
+editor: undefined
 dateCreated: 2021-02-18T06:13:18.020Z
 ---
 

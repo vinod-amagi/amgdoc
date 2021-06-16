@@ -2,10 +2,10 @@
 title: Metadata
 description: 
 published: true
-date: 2021-01-18T06:03:23.922Z
+date: 2021-02-18T06:36:33.002Z
 tags: 
 editor: undefined
-dateCreated: 2021-01-14T10:17:39.768Z
+dateCreated: 2021-02-18T06:13:27.200Z
 ---
 
 ## What is metadata?

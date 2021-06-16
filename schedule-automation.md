@@ -2,10 +2,10 @@
 title: Scheduling Automation
 description: Automated scheduling
 published: true
-date: 2021-02-11T13:31:10.571Z
+date: 2021-02-18T06:36:12.437Z
 tags: 
 editor: undefined
-dateCreated: 2021-02-11T13:17:56.897Z
+dateCreated: 2021-02-18T06:34:31.705Z
 ---
 
 # Automations

@@ -2,10 +2,10 @@
 title: Technology Stack
 description: Details on the technology stack used to implement the ingest service
 published: true
-date: 2021-01-14T10:17:32.208Z
+date: 2021-02-18T06:36:19.122Z
 tags: 
 editor: undefined
-dateCreated: 2021-01-14T10:17:30.569Z
+dateCreated: 2021-02-18T06:13:10.763Z
 ---
 
 # Technology Stack

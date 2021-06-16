@@ -2,10 +2,10 @@
 title: Glossary
 description: Vocabulary used in this documentation
 published: true
-date: 2021-02-10T08:08:23.079Z
+date: 2021-02-18T06:35:57.206Z
 tags: 
 editor: undefined
-dateCreated: 2021-01-14T10:17:14.994Z
+dateCreated: 2021-02-18T06:12:54.469Z
 ---
 
 # Glossary

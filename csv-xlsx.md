@@ -2,9 +2,9 @@
 title: CSV / XLSX Formats
 description: All supported CSV formats
 published: true
-date: 2021-04-16T07:44:33.587Z
+date: 2021-04-16T07:44:35.539Z
 tags: 
-editor: markdown
+editor: undefined
 dateCreated: 2021-02-18T06:12:44.799Z
 ---
 

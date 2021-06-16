@@ -2,10 +2,10 @@
 title: CLOUDPORT Segments
 description: 
 published: true
-date: 2021-02-10T06:25:29.931Z
+date: 2021-02-18T06:36:41.465Z
 tags: 
 editor: undefined
-dateCreated: 2021-02-02T19:24:25.108Z
+dateCreated: 2021-02-18T06:13:38.984Z
 ---
 
 # CLOUDPORT Segment XML

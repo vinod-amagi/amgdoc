@@ -2,9 +2,9 @@
 title: EPG Artwork Association
 description: This page captures how artworks are provided by content partners and how those associated to the respective assets.
 published: true
-date: 2021-05-25T11:32:19.361Z
+date: 2021-05-25T11:32:20.861Z
 tags: 
-editor: markdown
+editor: undefined
 dateCreated: 2021-05-25T06:26:49.983Z
 ---
 

@@ -2,9 +2,9 @@
 title: Metastore
 description: Amagi Metastore
 published: true
-date: 2021-05-12T16:16:36.745Z
+date: 2021-05-12T16:16:38.299Z
 tags: 
-editor: markdown
+editor: undefined
 dateCreated: 2021-05-12T11:21:49.050Z
 ---
 

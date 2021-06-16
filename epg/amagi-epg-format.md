@@ -2,9 +2,9 @@
 title: Amagi EPG Format
 description: Details the default Amagi EPG format
 published: true
-date: 2021-04-21T12:27:29.518Z
-tags: epg
-editor: markdown
+date: 2021-04-21T12:27:31.255Z
+tags: 
+editor: undefined
 dateCreated: 2021-02-19T07:14:29.310Z
 ---
 

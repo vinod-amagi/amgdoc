@@ -2,10 +2,10 @@
 title: README
 description: 
 published: true
-date: 2021-01-14T10:17:43.871Z
+date: 2021-02-18T06:36:34.778Z
 tags: 
 editor: undefined
-dateCreated: 2021-01-14T10:17:42.137Z
+dateCreated: 2021-02-18T06:13:29.590Z
 ---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.

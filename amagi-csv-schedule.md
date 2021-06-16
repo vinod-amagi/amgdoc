@@ -2,9 +2,9 @@
 title: Amagi Native Format (CSV)
 description: Native format of Amagi CLOUDPORT
 published: true
-date: 2021-02-18T16:09:52.777Z
+date: 2021-02-18T16:09:54.505Z
 tags: 
-editor: markdown
+editor: undefined
 dateCreated: 2021-02-18T06:33:59.705Z
 ---
 

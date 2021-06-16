@@ -2,9 +2,9 @@
 title: Supported Platforms
 description: Details on the platforms to which Amagi delivers EPG
 published: true
-date: 2021-04-26T14:11:42.377Z
-tags: epg
-editor: markdown
+date: 2021-04-26T14:11:43.881Z
+tags: 
+editor: undefined
 dateCreated: 2021-02-18T16:58:26.623Z
 ---
 

@@ -2,9 +2,9 @@
 title: Schedules Ingest
 description: Describes the method to ingest schedule to Amagi CLOUDPORT
 published: true
-date: 2021-02-23T19:57:38.362Z
+date: 2021-02-23T19:57:40.055Z
 tags: 
-editor: markdown
+editor: undefined
 dateCreated: 2021-02-18T06:34:36.303Z
 ---
 

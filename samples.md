@@ -2,10 +2,10 @@
 title: Metadata Samples
 description: Samples of metadata in various supported formats
 published: true
-date: 2021-01-14T10:17:29.921Z
+date: 2021-02-18T06:36:09.105Z
 tags: 
 editor: undefined
-dateCreated: 2021-01-14T10:17:28.318Z
+dateCreated: 2021-02-18T06:13:08.559Z
 ---
 
 # Metadata Samples

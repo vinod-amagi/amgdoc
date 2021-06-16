@@ -2,9 +2,9 @@
 title: Production Setup
 description: 
 published: true
-date: 2021-03-17T19:33:34.568Z
+date: 2021-03-17T19:33:36.398Z
 tags: 
-editor: markdown
+editor: undefined
 dateCreated: 2021-02-24T07:27:54.147Z
 ---
 

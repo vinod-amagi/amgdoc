@@ -2,9 +2,9 @@
 title: mRSS V2.0
 description: 
 published: true
-date: 2021-06-10T13:26:49.380Z
+date: 2021-06-10T13:26:50.907Z
 tags: 
-editor: markdown
+editor: undefined
 dateCreated: 2021-06-09T18:16:50.280Z
 ---
 
